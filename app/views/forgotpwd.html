@@ -1,0 +1,73 @@
+<div class="auth" data-ng-controller="resetPasswordController">
+
+  <div id="newErrorMessageID" data-ng-show="error && errorMessage"
+       class="alert alert-danger">
+    <b>Error!</b>
+    <span>{{errorMessage}}</span>
+    <a href='javascript:void(0)' class="close" aria-label="close" title="close"><img src="images/icons/close.png" width="10" ng-click="closeModal()"/></a>
+  </div>
+  <div id="newSuccessMessageID" data-ng-show="success && successMessage"
+       class="alert alert-success">
+    <b>Thank you!</b>
+    <span>{{successMessage}}</span>
+    <a href="javascript:void(0)" class="close" aria-label="close" title="close"><img src="images/icons/close.png" width="10" ng-click="closeModal()"/></a>
+  </div>
+
+  <div class="sidebar py-5 px-5">
+    <div class="text-center relative">
+      <a class="back" href="#/"></a>
+      <a class="logo" href="/"><img src="images/logo.svg" alt="logo"></a>
+    </div>
+    <div class="d-flex h-100 justify-content-center align-items-center">
+      <div class="w-100">
+        <h1 class="title text-center">Forgot your password?</h1>
+        <h2 class="description text-center mt-2">We'll email you instructions on how to reset it.</h2>
+        <div class="form mt-5">
+          <form id="forgorpasswordFormId" name="forgorpasswordForm"  class="form-horizontal" role="form">
+
+            <!-- Email -->
+            <div class="form-group" ng-class="{'error': (submitted) && (forgorpasswordForm.resetEmail.$invalid || forgorpasswordForm.resetEmail.$error.required) }">
+              <input type="email" class="form-control with-icon icon-mail transition" placeholder="Email address" name="resetEmail" data-ng-model="resetEmail" required>
+              <div class="invalid-feedback" ng-show="(submitted) && forgorpasswordForm.resetEmail.$error.required">Email is required.</div>
+              <div class="invalid-feedback" ng-show="(submitted) && (!forgorpasswordForm.resetEmail.$error.required && forgorpasswordForm.resetEmail.$invalid)">Please enter valid email.</div>
+            </div>
+
+            <div class="form-group mt-4">
+              <button type="button" class="btn btn-primary btn-lg btn-block" id="btn-fbsignup" data-ng-click="sendResetPasswordMail(forgorpasswordForm.$valid)">Reset password</button>
+            </div>
+          </form>
+        </div>
+        <small class="form-text text-muted text-center d-block mt-3 form-bottom w-100">Already have an account? <a href="#/">Sign in</a>.</small>
+      </div>
+    </div>
+  </div>
+  <div class="container h-100">
+    <div class="row h-100 justify-content-center align-items-center">
+      <div class="col-md-8 text-center">
+        <div class="w-100">
+          <img src="images/phone.png" alt="">
+        </div>
+        <div class="app">
+          <h3>Find the right person on the go.</h3>
+          <p>No databases. No lengthy profiles. Just matches<br/>that make sense. And it’s free! </p>
+          <div class="getapp px-4 py-3 w-50 mx-auto">
+            <span class="pr-3">Get the app</span>
+            <a href="https://itunes.apple.com/in/app/workruit/id1189752813?mt=8" class="pr-2 transition"><img src="images/icons/ios.svg" alt="ios"></a>
+            <a href="https://play.google.com/store/apps/details?id=com.workruit&hl=en" class="transition"><img src="images/icons/android.svg" alt="android"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $('body').css("height", '100%');
+  $('body').addClass('no-scroll');
+  $(".users-box, .chat-box, .sidebar").niceScroll({
+    cursorcolor: "#337ab7",
+    cursorborderradius: "0px",
+    cursorborder: "1px solid #fff",
+    spacebarenabled: false
+  });
+</script>

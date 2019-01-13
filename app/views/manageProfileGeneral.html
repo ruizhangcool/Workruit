@@ -1,0 +1,80 @@
+<div ng-include="'views/includes/header-before-login.html'"></div>
+
+<div id="errorMessageID" data-ng-show="error && errorMessage"
+     class="alert alert-danger">
+  <b>Error!</b>
+  <span>{{errorMessage}}</span>
+  <a href='javascript:void(0)' class="close" aria-label="close" title="close"><img src="images/icons/close.png" width="10" ng-click="closeModal()"/></a>
+</div>
+<div id="successMessageID" data-ng-show="success && successMessage"
+     class="alert alert-success">
+  <b>Thank you!</b>
+  <span>{{successMessage}}</span>
+  <a href="javascript:void(0)" class="close" aria-label="close" title="close"><img src="images/icons/close.png" width="10" ng-click="closeModal()"/></a>
+</div>
+
+
+<style>
+.toggle.ios, .toggle-on.ios, .toggle-off.ios { border-radius: 20px; }
+.toggle.ios .toggle-handle { border-radius: 20px; }
+.toggle.android .toggle-handle {border-radius: 0px;}
+.btn-color {background-color:#3ebb64 !important; border-color:#3ebb64 !important;}
+.btn:active, .btn.active{box-shadow:none; background: #d4d4d4; border-color: #d4d4d4 !important;}
+</style>
+
+<div class="container">
+  <div id="signupbox" class="mainbox your_profile settings-container" >
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <div class="panel-title">Manage Your Preferences</div>
+      </div>
+      <div class="panel-body">
+        <form name="settingsForm" class="form-horizontal" role="form">
+            <div class="row">
+              <div class="col-md-6">
+                <h3 class="notification-headding">Email Preferences</h3>
+              </div>
+              <div class="col-md-6 txt-aln-r"><h3 class="notification-headding"> </h3></div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <input type="checkbox"
+                       ng-model="promotionsr" id="promotionsr"
+                       name="promotionsr"  ng-click="updatePromoterbox();">
+                <span class="notification-label">Profile Recommendations</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <input type="checkbox"
+                       ng-model="newsletter" id="newsletter"
+                       name="newsletter"  ng-click="updateNewsLetterbox();">
+                <span class="notification-label">News Letters</span>
+              </div>
+
+            </div>
+          <div class="row">
+            <div class="col-md-6">
+              <input type="checkbox"
+                     ng-model="unsubscribeAll" id="unsubscribeAll"
+                     name="unsubscribeAll"  ng-click="updateUnsubscribebox();">
+              <span class="notification-label">Unsubscribe All</span>
+            </div>
+          </div>
+          </form>
+      </div>
+        <!-- Username -->
+        <div class="form-group">
+          <label>Username</label>
+          <div ng-dropdown-multiselect="" option="industrylist" selected-model="industry" extra-settings="industryDropDownSettings" style="width: 100%;"></div>
+          <p class="help-block" style="padding-left:5px; margin-top: 5px; margin-bottom: 5px;">Username</p>
+        </div>
+
+  </div>
+</div>
+<div class="modal fade" id="appDownloadDialog" role="dialog">
+  <div class="modal-dialog">
+    
+  </div>
+</div>

@@ -1,0 +1,369 @@
+<div ng-include="'views/includes/header.html'"></div>
+
+<div class="content w-100">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <ul class="nav nav-pills nav-fill" role="tablist" id="tabs">
+          <li class="nav-item"><a class="nav-link" ng-class="{'active' : tabIndex == 0}" data-toggle="tab" data-target="#myprofile" role="tab" aria-controls="myprofile" aria-selected="true">My Profile</a></li>
+          <li class="nav-item"><a class="-link" ng-class="{'active' : tabIndex == 1}" data-toggle="tab" data-target="#company" role="tab" aria-controls="company" aria-selected="false">Company Profile</a></li>
+          <li class="nav-item"><a class="nav-link" ng-class="{'active' : tabIndex == 2}" data-toggle="tab" data-target="#notifications" role="tab" aria-controls="notifications" aria-selected="false">Notificationnavs</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="tab-content w-100 d-flex justify-content-center" id="tabsContent">
+
+        <!-- My Profile -->
+        <div class="tab-pane fade col-md-6" ng-class="{'show active' : tabIndex == 0}" id="myprofile" role="tabpanel" aria-labelledby="myprofile">
+          <div class="card w-100">
+            <div class="card-body">
+              <form id="myProfileForm" name = "myProfileForm" role="form">
+
+                <!-- First Name -->
+                <div class="form-group" ng-class="{'error': myProfileForm.firstname.$invalid || myProfileForm.firstname.$error.required}">
+                  <label>First Name</label>
+                  <input type="text" class="form-control transition with-icon icon-user" name="firstname" data-ng-model="viewProfile.firstname" ng-change="changedMyProfile" required>
+                  <div class="invalid-feedback" ng-show="myProfileForm.firstname.$error.required">First Name is required.</div>
+                </div>
+
+                <!-- Last Name -->
+                <div class="form-group" ng-class="{'error': myProfileForm.lastname.$invalid || myProfileForm.lastname.$error.required}">
+                  <label>Last Name</label>
+                  <input type="text" class="form-control transition with-icon icon-user" name="lastname"  data-ng-model="viewProfile.lastname" required>
+                  <div class="invalid-feedback" ng-show="myProfileForm.lastname.$error.required">Last Name is required.</div>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group" ng-class="{'error': myProfileForm.email.$invalid || myProfileForm.email.$error.required}">
+                  <label>Email</label>
+                  <input type="email" class="form-control transition with-icon icon-mail" name="email" data-ng-model="viewProfile.email" required>
+                  <div class="invalid-feedback" ng-show="myProfileForm.email.$error.required">Email is required.</div>
+                </div>
+
+                <!-- Phone Number -->
+                <div class="form-group" ng-class="{'error': myProfileForm.phone.$invalid || myProfileForm.phone.$error.required}">
+                  <label>Phone Number</label>
+                  <input type="text" class="form-control transition with-icon icon-phone" name="phone" data-ng-model="viewProfile.telephone" maxlength="10" required>
+                  <div class="invalid-feedback" ng-show="myProfileForm.phone.$error.required">Phone Number is required.</div>
+                </div>
+
+                <!-- Role -->
+                <div class="form-group">
+                  <label>Role</label>
+                  <select class="form-control" name="jobRoleName" data-ng-model="jobName" validator="required" required-error-message="Role is required.">
+                    <option value=""> - Your Role - </option>
+                    <option ng-repeat="roles in masterData.jobRoles" value="{{roles.jobRoleName}}">{{roles.jobRoleName}}</option>
+                  </select>
+                </div>
+
+                <!-- Company Name -->
+                <div class="form-group">
+                  <label>Company Name</label>
+                  <input type="text" disabled class="form-control with-icon icon-company transition" data-ng-model="viewProfile.recruiterCompanyName">
+                </div>
+
+                <!-- Save Button -->
+                <div class="form-group control-buttons hidden">
+                  <button type="button" class="btn btn-primary btn-lg btn-save" data-ng-click="saveMyProfile(myProfileForm.$valid)">Save changes</button>
+                </div>
+              </form>
+
+                <!-- Change Password -->
+                <div id="change-password" class="hidden">
+                  <form id="resetPasswordForm" name = "resetPasswordForm" role="form">
+                    <div class="form-group">
+                      <label>Password</label>
+                      <div class="form-group" style="margin-bottom: 10px;" ng-class="{'error': resetPasswordSubmitted && (resetPasswordForm.old_password.$invalid || resetPasswordForm.old_password.$error.required)}">
+                        <input type="password" name="old_password" class="form-control transition with-icon icon-password password-changer" placeholder="******" data-ng-model="resetPasswordData.oldPassword" required>
+                        <div class="invalid-feedback" style="margin-bottom: 10px;" ng-show="resetPasswordSubmitted && resetPasswordForm.old_password.$error.required">Old Password is required.</div>
+                      </div>
+
+                      <div class="form-group" style="margin-bottom: 10px;" ng-class="{'error': resetPasswordSubmitted && (resetPasswordForm.new_password.$invalid || resetPasswordForm.new_password.$error.required)}">
+                        <input type="password" name="new_password" class="form-control transition with-icon icon-password password-changer" placeholder="New password" data-ng-model="resetPasswordData.newPassword" required>
+                        <div class="invalid-feedback" style="margin-bottom: 10px;" ng-show="resetPasswordSubmitted && resetPasswordForm.new_password.$error.required">New Password is required.</div>
+                      </div>
+
+                      <div class="form-group" style="margin-bottom: 0px;" ng-class="{'error': resetPasswordSubmitted && (resetPasswordForm.reenter_new_password.$invalid || resetPasswordForm.reenter_new_password.$error.required)}">
+                        <input type="password" name="reenter_new_password" class="form-control transition with-icon icon-password password-changer" placeholder="Re-enter new password" data-ng-model="resetPasswordData.reenterNewPassword" required>
+                        <div class="invalid-feedback" style="margin-bottom: 10px;" ng-show="resetPasswordSubmitted && resetPasswordForm.reenter_new_password.$error.required">Confirm Password is required.</div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="form-group">
+                  <button type="button" class="btn btn-default btn-lg btn-change-password">Change password</button>
+                </div>
+                <div class="form-group control-buttons2 hidden">
+                  <button type="button" class="btn btn-primary btn-lg btn-save" id="change_password_button" data-ng-click="resetPassword(resetPasswordForm.$valid)">Save password</button>
+                  <button type="button" class="btn btn-default btn-close btn-lg" onclick="hideChangePassword()">Cancel</button>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Company Profile -->
+        <div class="tab-pane fade col-md-8" ng-class="{'show active' : tabIndex == 1}" id="company" role="tabpanel" aria-labelledby="company">
+          <div class="card w-100">
+            <div class="card-body row">
+              <div class="col-md-9">
+                <form id="myCompanyForm" name="myCompanyForm" role="form">
+
+                  <!-- Company Name -->
+                  <div class="form-group" ng-class="{'error': company.recruiterCompanyName == null || company.recruiterCompanyName.length == 0}">
+                    <label>Company Name</label>
+                    <autocomplete class="form-control transition with-icon icon-user company" ng-model="company.recruiterCompanyName" data="companyList" on-type="updateCompanies" attr-placeholder="Company Name" style="padding-top: 10px;"></autocomplete>
+                    <div class="invalid-feedback" ng-show="company.recruiterCompanyName == null || company.recruiterCompanyName == 0">Company Name is required.</div>
+                  </div>
+
+                  <!-- WebSite -->
+                  <div class="form-group" ng-class="{'error': company.website == null || company.website.length == 0}">
+                    <label>Website</label>
+                    <input type="text" class="form-control transition with-icon icon-web company" ng-model="company.website" required>
+                    <div class="invalid-feedback" ng-show="company.website == null || company.website == 0">Website is required.</div>
+                  </div>
+
+                  <!-- Location -->
+                  <div class="form-group">
+                    <label>Location</label>
+                    <select class="form-control transition with-icon company" id="location_select" name="location" ng-model="company.location.title" validator="required" required-error-message="Location is required.">
+                      <option ng-repeat="loc in masterData.locations" value="{{loc.title}}">{{loc.title}}</option>
+                    </select>
+                  </div>
+
+                  <!-- Size -->
+                  <div class="form-group">
+                    <label>Size</label>
+                    <select class="form-control transition company" name="compsize" ng-model="company.size.csTitle" validator="required" required-error-message="Company Size is required.">
+                      <option ng-repeat="comp in masterData.companySizes" value="{{comp.csTitle}}">{{comp.csTitle}}</option>
+                    </select>
+                  </div>
+
+                  <!-- Industry -->
+                  <div class="form-group" ng-class="{'error': industry == null || industry.length <= 0}">
+                    <label>Industry</label>
+                    <input type="text" class="form-control transition company" id="industry_input">
+                    <div class="invalid-feedback" ng-show="industry == null || industry.length <= 0">Select minimum 1 industry.</div>
+                  </div>
+
+                  <!-- Founded -->
+                  <div class="form-group" ng-class="{'error': foundError}">
+                    <label>Founded</label>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <select id="founded" name="founded" data-ng-options="mn for mn in months track by mn" data-ng-model="company.establishedMon" class="form-control company">
+                        </select>
+                      </div>
+                      <div class="col-sm-6">
+                        <select id="foundedYear" name="foundedYear" data-ng-options="yr for yr in years track by yr" class="form-control company" data-ng-model="company.establishedYear">
+                        </select>
+                      </div>
+                    </div>
+                    <div class="invalid-feedback" ng-show="foundError">Founded date should be less than or equal to current date.</div>
+                  </div>
+
+                  <!-- Bio -->
+                  <div class="form-group" ng-class="{'error': company.about == null || company.about.length == 0}">
+                    <label>Bio</label>
+                    <textarea class="form-control company" rows="5" ng-model="company.about"></textarea>
+                    <div class="invalid-feedback" ng-show="company.about == null || company.about.length == 0">Bio is required.</div>
+                  </div>
+
+                  <!-- Facebook -->
+                  <div class="form-group" ng-class="{'error': company.facebook == null || company.facebook.length == 0}">
+                    <label>Facebook</label>
+                    <input type="text" class="form-control transition company" ng-model="company.facebook" required>
+                    <div class="invalid-feedback" ng-show="company.facebook == null || company.facebook.length == 0">Facebook is required.</div>
+                  </div>
+
+                  <!-- Linkedin -->
+                  <div class="form-group" ng-class="{'error': company.linkedIn == null || company.linkedIn.length == 0}">
+                    <label>Linkedin</label>
+                    <input type="text" class="form-control transition company" ng-model="company.linkedIn" required>
+                    <div class="invalid-feedback" ng-show="company.linkedIn == null || company.linkedIn.length == 0">Linkein is required.</div>
+                  </div>
+
+                  <!-- Twitter -->
+                  <div class="form-group" ng-class="{'error': company.twitter == null || company.twitter.length == 0}">
+                    <label>Twitter</label>
+                    <input type="text" class="form-control transition company" ng-model="company.twitter" required>
+                    <div class="invalid-feedback" ng-show="company.twitter == null || company.twitter.length == 0">Twitter is required.</div>
+                  </div>
+
+                  <!-- Save -->
+                  <div class="form-group hidden" id="save_company_box">
+                    <button type="button" class="btn btn-primary btn-lg btn-save" data-ng-click="saveCompany()" id="company_profile_save_button">Save changes</button>
+                    <button type="button" class="btn btn-default btn-close btn-lg">Cancel</button>
+                  </div>
+                </form>
+              </div>
+              <div class="col-md-3 text-center pt-3">
+                <div class="mb-3">
+                  <img src="images/img_com_1x.png" class="clogo" ng-if="!company.picture"/>
+                  <img src="{{companyPicture}}" class="clogo"  ng-if="company.picture"/>
+                </div>
+                <button type="button" class="btn btn-default btn-block btn-remove" data-toggle="modal" data-target="#myModelUploadPhoto">Change image</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Settings -->
+        <div class="tab-pane fade col-md-6" ng-class="{'show active' : tabIndex == 2}" id="notifications" role="tabpanel" aria-labelledby="notifications">
+          <div class="card w-100">
+            <div class="card-body">
+              <form id="settingsForm" name="settingsForm" role="form">
+              <table class="table notifications">
+                <thead>
+                <tr>
+                  <th></th>
+                  <th class="text-center">Email</th>
+                  <th class="text-center">Mobile</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>New Candidates</td>
+                  <td class="text-center"><input type="checkbox" class="switch" id="new_candidate_email" ng-model="recruiterSettings.newCandidates.email"><label class="switch-label" for="new_candidate_email">Toggle</label></td>
+                  <td class="text-center"><input type="checkbox" class="switch" id="new_candidate_mobile" ng-model="recruiterSettings.newCandidates.mobile"><label class="switch-label" for="new_candidate_mobile">Toggle</label></td>
+                </tr>
+                <tr>
+                  <td>Candidate Interested</td>
+                  <td class="text-center"><input type="checkbox" class="switch" id="candidate_interest_email" ng-model="recruiterSettings.someoneInterested.email"><label class="switch-label" for="candidate_interest_email">Toggle</label></td>
+                  <td class="text-center"><input type="checkbox" class="switch" id="candidate_interest_mobile" ng-model="recruiterSettings.someoneInterested.mobile"><label class="switch-label" for="candidate_interest_mobile">Toggle</label></td>
+                </tr>
+                <tr>
+                  <td>Candidate Match</td>
+                  <td class="text-center"><input type="checkbox" class="switch" id="candidate_match_email" ng-model="recruiterSettings.newMatch.email"><label class="switch-label" for="candidate_match_email">Toggle</label></td>
+                  <td class="text-center"><input type="checkbox" class="switch" id="candidate_match_mobile" ng-model="recruiterSettings.newMatch.mobile"><label class="switch-label" for="candidate_match_mobile">Toggle</label></td>
+                </tr>
+                <tr>
+                  <td>Job Active</td>
+                  <td class="text-center"><input type="checkbox" class="switch" id="job_active_email" ng-model="recruiterSettings.jobIsActive.email"><label class="switch-label" for="job_active_email">Toggle</label></td>
+                  <td class="text-center"><input type="checkbox" class="switch" id="job_active_mobile" ng-model="recruiterSettings.jobIsActive.mobile"><label class="switch-label" for="job_active_mobile">Toggle</label></td>
+                </tr>
+                <tr>
+                  <td>Job Closed</td>
+                  <td class="text-center"><input type="checkbox" class="switch" id="job_closed_email" ng-model="recruiterSettings.jobIsClosed.email"><label class="switch-label" for="job_closed_email">Toggle</label></td>
+                  <td class="text-center"><input type="checkbox" class="switch" id="job_closed_mobile" ng-model="recruiterSettings.jobIsClosed.mobile"><label class="switch-label" for="job_closed_mobile">Toggle</label></td>
+                </tr>
+                </tbody>
+              </table>
+              </form>
+
+              <!-- Save Button -->
+              <div class="form-group control-buttons hidden" id="settings_save_button" style="text-align: center;">
+                <button type="button" class="btn btn-primary btn-lg btn-save" id="settings_button" data-ng-click="saveSettings(settingsForm.$valid)">Save changes</button>
+              </div>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModelUploadPhoto" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div>Select an image file: <input type="file" id="fileInput" /></div>
+        <div class="cropArea">
+          <img-crop image="myImage" result-image="myCroppedImage" style="margin-top: 0px; margin-left: 0px; cursor: default; ">
+          </img-crop>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-ng-click="aliasUploadFile()" data-dismiss="modal">Save</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  $('body').css("height", 'auto');
+
+  function showSaveCompanyBox() {
+    $('#save_company_box').removeClass('hidden');
+  }
+
+  $(document).on('change keypress', 'input.company, textarea.company, select.company', function() {
+    showSaveCompanyBox();
+  });
+
+  function initIndustryField(industrylist, selectedIndustry) {
+    console.log("industrylist: ", industrylist);
+    console.log("selectedIndustry: ", selectedIndustry);
+
+    var allTags = [];
+    for(var i = 0; i < industrylist.length; i++) {
+      var item = industrylist[i];
+      allTags[i] = item["label"];
+    }
+
+    var selectedTags = [];
+    for(var i = 0; i < selectedIndustry.length; i++) {
+      var item = selectedIndustry[i];
+      selectedTags[i] = item["industry"]["industryName"];
+    }
+    console.log("selectedIndustry = ", selectedTags);
+
+    $('#industry_input').inputTags({
+      autocomplete: {
+        values: allTags,
+        only: true
+      },
+      maxLength: 100,
+      tags: selectedTags,
+
+      change: function() {
+        setTimeout(function(){
+          var tags = $("#industry_input").val();
+          angular.element(document.getElementById('industry_input')).scope().changedIndustryTags(tags);
+        },100);
+
+        showSaveCompanyBox();
+      },
+
+    });
+  }
+
+  // Save Company Profile.
+  function showSavingCompanyProfileAnimate() {
+    $('#company_profile_save_button').prop('disabled', true);
+    $('#company_profile_save_button').prepend("<img src='images/ajax-loader.gif' alt='loader'>");
+  }
+
+  function showSavedCompanyProfileAnimate() {
+    $("<div class='saved-message'><strong>Sweet:</strong> Your company profile has been changed.</div>").insertAfter("header");
+    $('#company_profile_save_button').prop('disabled', false);
+    $('#company_profile_save_button').text('Save changes');
+
+    $('#save_company_box').addClass('hidden');
+
+    setTimeout(function(){
+      $('.saved-message').slideUp('slow');
+    },3000);
+  }
+
+  function showErrorMessageForSavedCompanyProfile(message) {
+    $("<div class='error-message'><strong>Error:</strong> " + message + "</div>").insertAfter("header");
+    $('#company_profile_save_button').prop('disabled', false);
+    $('#company_profile_save_button').text('Save changes');
+
+    setTimeout(function(){
+      $('.error-message').slideUp('slow');
+    },3000);
+  }
+</script>

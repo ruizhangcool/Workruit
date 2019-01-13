@@ -1,0 +1,24 @@
+
+
+<div class="chat_block scrollbar" id="style-4" >
+<div ng-repeat="message in messages" >
+  <div class="form-group chat_txt">
+    <div class="col-md-12" data-ng-if="message.from_id == email">
+      <p class="chat_txt_right"> {{ message.msg}}-{{ message.from_id}}</p>
+    </div>
+  </div>
+  <div class="form-group chat_txt" data-ng-if="(message.from_id != email)">
+    <div class="col-md-12">
+      <p class="chat_txt_left">{{ message.msg}}-{{ message.from_id}}</p>
+    </div>
+  </div>
+
+</div>
+
+  <div class="send-message">
+    <input ng-model="newMessage" ng-keypress="($event.which === 13) ? sendMessage() : 0" placeholder="Please enter message"/>
+    <button ng-click="sendMessage()">
+      <i class="fa fa-location-arrow"></i>
+    </button>
+  </div>
+</div>

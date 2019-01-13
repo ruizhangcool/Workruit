@@ -1,0 +1,155 @@
+<div ng-include="'views/includes/header.html'"></div>
+<div id="errorMessageID" data-ng-show="error && errorMessage"
+     class="alert alert-danger">
+  <span><b>{{errorMessage}}</b></span>
+  <a href='javascript:void(0)' class="close" aria-label="close" title="close"><img src="images/cross.svg" width="10" ng-click="closeModal()"/></a>
+</div>
+<div id="successMessageID" data-ng-show="success && successMessage"
+     class="alert alert-success">
+  <span><b>{{successMessage}}</b></span>
+  <a href="javascript:void(0)" class="-="close" title="close"><img src="images/cross.svg" width="10" ng-click="closeModal()"/></a>
+</div>
+
+<div class="content w-100">" closearialabel
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-3">
+        <ul class="nav nav-pills nav-fill" role="tablist" id="tabs">
+          <li class="nav-item"><a class="nav-link active" data-toggle="tab" role="tab" aria-controls="company" aria-selected="false">Company Profile</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="tab-content w-100 d-flex justify-content-center" id="tabsContent">
+        <div class="tab-pane fade col-md-8 show active" id="company" role="tabpanel" aria-labelledby="company">
+          <div class="card w-100">
+            <div class="card-body row">
+              <div class="col-md-9">
+                <form id="aboutCompanyForm" name="aboutCompanyForm" role="form">
+
+                  <!-- Company Name -->
+                  <div class="form-group">
+                    <label>Company Name</label>
+                    <input type="text" class="form-control transition with-icon icon-user" name="companyname" data-ng-model="company.companyName" placeholder="Company name" ng-disabled="true">
+                  </div>
+
+                  <!-- Website -->
+                  <div class="form-group">
+                    <label>Website</label>
+                    <input id="website" type="text" class="form-control transition with-icon icon-web" placeholder="www.storytech.in" data-ng-model="company.website" name="website" value="" placeholder="www.example.com" validator="required,link" required-error-message="Website is required.">
+                  </div>
+
+                  <!-- Location -->
+                  <div class="form-group">
+                    <label>Location</label>
+                    <select class="form-control transition with-icon icon-location" name="location" ng-model="company.location.title" validator="required" required-error-message="Location is required.">
+                      <option value=""> - Your Location - </option>
+                      <option ng-repeat="loc in masterData.locations" value="{{loc.title}}">{{loc.title}}</option>
+                    </select>
+                  </div>
+
+                  <!-- Size -->
+                  <div class="form-group">
+                    <label>Size</label>
+                    <select class="form-control transition" name="compsize" ng-model="company.size.csTitle" validator="required" required-error-message="Company Size is required.">
+                      <option value=""> - Your Size - </option>
+                      <option ng-repeat="comp in masterData.companySizes" value="{{comp.csTitle}}">{{comp.csTitle}}</option>
+                    </select>
+                  </div>
+
+                  <!-- Industry -->
+                  <div class="form-group">
+                    <label>Industry</label>
+                    <div ng-dropdown-multiselect="" options="industrylist" selected-model="industry" extra-settings="industryDropDownSettings" style="width: 100%;"></div>
+                    <p class="help-block" style="padding-left: 5px; margin-top: 5px; margin-bottom: 5px;">Select minimum 1 industry</p>
+                  </div>
+
+                  <!-- Founded -->
+                  <div class="form-group">
+                    <label>Founded</label>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <select id="founded" name="founded" data-ng-options="mn for mn in months track by mn" data-ng-model="company.establishedMon" class="form-control transition">
+                          <option value=""> -Select Month- </option>
+                        </select>
+                      </div>
+                      <div class="col-sm-6">
+                        <select id="foundedYear" name="foundedYear" data-ng-options="yr for yr in years track by yr" class="form-control transition" data-ng-model="company.establishedYear">
+                          <option value=""> -Select Year- </option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- About Company -->
+                  <div class="form-group">
+                    <label>Bio</label>
+                    <textarea class="form-control" rows="5" name="companyDescription" data-ng-model="company.about" validator="required" required-error-message="About is required."> </textarea>
+                  </div>
+
+                  <!-- Facebook -->
+                  <div class="form-group">
+                    <label>Facebook</label>
+                    <input type="text" class="form-control transition" name="facebook" data-ng-model="company.facebook" placeholder="http://facebook.com/storytech" validator="required,url" required-error-message="Facebook is required.">
+                  </div>
+
+                  <!-- Linked In -->
+                  <div class="form-group">
+                    <label>Linkedin</label>
+                    <input type="text" class="form-control transition" name="linkedin" placeholder="http://linkedin.com/storytech" data-ng-model="company.linkedin" validator="required,url" required-error-message="LinkedIn is required.">
+                  </div>
+
+                  <!-- Twitter -->
+                  <div class="form-group">
+                    <label>Twitter</label>
+                    <input type="text" class="form-control transition" name="twitter" placeholder="http://twitter.com/storytech" data-ng-model="company.twitter" validator="required,url" required-error-message="Twitter is required.">
+                  </div>
+
+                  <!-- Save Button -->
+                  <div class="form-group control-buttons hidden">
+                    <button id="btn-fbsignup" type="button" validation-submit="aboutCompanyForm" data-ng-click="saveCompany()" class="btn btn-primary btn-save btn-lg">
+                      Save changes</button>
+                    <button type="button" class="btn btn-default btn-close btn-lg">Cancel</button>
+                  </div>
+                </form>
+              </div>
+
+              <!-- Company Logo Image -->
+              <div class="col-md-3 text-center pt-3">
+                <div class="mb-3">
+                  <img src="images/img_com_1x.png" class="clogo" ng-if="!company.picture"/>
+                  <img src="{{myCroppedImage}}" class="clogo"  ng-if="company.picture"/>
+                </div>
+                <button type="button" class="btn btn-default btn-block btn-remove" data-toggle="modal" data-target="#myModelUploadPhoto">Upload</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModelUploadPhoto" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div>Select an image file: <input type="file" id="fileInput" /></div>
+        <div class="cropArea">
+          <img-crop image="myImage" result-image="myCroppedImage" style="margin-top: 0px; margin-left: 0px; cursor: default; ">
+          </img-crop>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-ng-click="aliasUploadFile()" data-dismiss="modal">Save</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+

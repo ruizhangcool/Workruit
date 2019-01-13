@@ -1,0 +1,133 @@
+<div ng-include="'views/includes/header.html'"></div>
+
+<div class="content w-100">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <nav aria-label="breadcrumb" role="navigation">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="javascript:void(0)" data-ng-click="loadMatched()">← Matched List</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{candidate.userJobTitle}} for {{job.title}}r</li>
+          </ol>
+        </nav>
+        <div class="card w-100">
+          <div class="col-sm-12 m-0 bordered">
+            <div class="row py-3 px-3">
+              <div class="col-md-2 text-center pt-2">
+                <img src="images/icons/non-defined-user.svg" alt="avatar">
+              </div>
+              <div class="col-md-8">
+                <div class="item-title">
+                  <span class="name mr-4">{{candidate.userJobTitle}}</span>
+                  <span class="tag" data-ng-if="candidate.isRecommended">Recommended</span>
+                  <span class="tag" data-ng-if="candidate.isInterested">interested</span>
+                  <div class="item-description">
+                        <span data-ng-repeat="fs in candidate.jobFunctions">
+                          {{fs.jobFunctionName}}
+                          {{(candidate.jobFunctions.length > 0 && $index != (candidate.jobFunctions.length -1))? '•':' '}}
+                        </span>
+                  </div>
+                  <div class="item-meta mt-2">
+                    <span class="meta-location">{{candidate.location}}</span>
+                    <span class="meta-exp">{{candidate.totalExperienceText}}</span>
+                    <span class="meta-price">
+                          <span ng-if="!candidate.hideSalary">{{candidate.minSalaryExp}}L - <i aria-hidden="true"></i> {{candidate.maxSalaryExp}}L</span>
+                          <span ng-if="candidate.hideSalary"> - </span>
+                        </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 text-right">
+                <!--<a href="#" class="btn-outline transition">resume</a>-->
+              </div>
+            </div>
+            <div class="row item-info py-3 px-3">
+
+              <!-- About -->
+              <div class="col-md-2 text-right element-info">About</div>
+              <div class="col-md-10"><p>{{candidate.coverLetter}}</p></div>
+              <div class="col-md-10" data-ng-if="!candidate.coverLetter">
+                <p class="muted">No information provided.</p>
+              </div>
+
+              <!-- Experience -->
+              <div class="col-md-2 text-right element-info">Experience</div>
+              <div class="col-md-10">
+                <div class="row" data-ng-if="candidate.userExperienceSet.length==0">
+                  <div class="col-md-6">
+                    <p class="muted">No information provided.</p>
+                  </div>
+                </div>
+
+                <div data-ng-if="candidate.userExperienceSet.length!=0">
+                  <div class="row" data-ng-repeat="exp in candidate.userExperienceSet" >
+                    <div class="col-md-6">
+                      <p>{{exp.company}}<br/>{{exp.jobTitle}}</p>
+                    </div>
+                    <div class="col-md-6 text-right">
+                      <p class="muted">{{exp.startDate}} - <span ng-if="!exp.isPresent">{{exp.endDate}}</span> <span ng-if="exp.isPresent">Present</span><br/>{{exp.location}}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Education -->
+              <div class="col-md-2 text-right element-info">Education</div>
+              <div class="col-md-10">
+                <div class="row" data-ng-if="candidate.userEducationSet.length==0">
+                  <div class="col-md-6">
+                    <p class="muted">No information provided.</p>
+                  </div>
+                </div>
+
+                <div data-ng-if="candidate.userEducationSet.length!=0">
+                  <div class="row" data-ng-repeat="edu in candidate.userEducationSet" >
+                    <div class="col-md-6">
+                      <p>{{edu.institution}}<br/>{{edu.fieldOfStudy}}</p>
+                    </div>
+                    <div class="col-md-6 text-right">
+                      <p class="muted">{{edu.startDate}} - <span ng-if="!edu.isPresent">{{edu.endDate}}</span> <span ng-if="edu.isPresent">Present</span><br/>{{edu.location}}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Academic -->
+              <div class="col-md-2 text-right element-info"><p class="muted">Academic Projects</p></div>
+              <div class="col-md-10">
+                <div class="row" data-ng-if="candidate.userAcademic.length==0">
+                  <div class="col-md-6">
+                    <p class="muted">No information provided.</p>
+                  </div>
+                </div>
+
+                <div data-ng-if="candidate.userAcademic.length!=0">
+                  <div class="row" data-ng-repeat="edu in candidate.userAcademic" >
+                    <div class="col-md-6">
+                      <p>{{edu.projectTitle}}<br/>{{edu.role}}</p>
+                    </div>
+                    <div class="col-md-6 text-right">
+                      <p class="muted">{{edu.startDate}} - <span ng-if="!edu.isPresent">{{edu.endDate}}</span> <span ng-if="edu.isPresent">Present</span><br/>{{edu.location}}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Skills -->
+              <div class="col-md-2 text-right element-info">Skills</div>
+              <div class="col-md-10">
+                <div class="row">
+                  <div class="col-md-6">
+                        <span data-ng-repeat="skilldata in candidate.userSkillsSet">{{skilldata.title}}{{(candidate.userSkillsSet.length > 0 && $index != (candidate.userSkillsSet.length -1))? ', ':' '}}
+                        </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

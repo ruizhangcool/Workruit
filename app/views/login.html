@@ -1,0 +1,96 @@
+<div class="auth" data-ng-controller = "loginController">
+
+  <div id="newErrorMessageID" data-ng-show="error && errorMessage"
+       class="alert alert-danger">
+    <b>Error!</b>
+    <span>{{errorMessage}}</span>
+    <a href='javascript:void(0)' class="close" aria-label="close" title="close"><img src="images/icons/close.png" width="10" ng-click="closeModal()"/></a>
+  </div>
+  <div id="newErrorMessageID" data-ng-show="success && successMessage"
+       class="alert alert-success">
+    <b>Thank you!</b>
+    <span>{successMessage}}</span>
+    <a href="javascript:void(0)" class="close" aria-label="close" title="close"><img src="images/icons/close.png" width="10" ng-click="closeModal()"/></a>
+  </div>
+
+  <div class="sidebar py-5 px-5">
+    <div class="text-center relative">
+      <a class="back" href="/"></a>
+      <a class="logo" href="/"><img src="images/logo.svg" alt="logo"></a>
+    </div>
+    <div class="d-flex h-100 justify-content-center align-items-center">
+      <div class="w-100">
+        <h1 class="title text-center">Welcome back.</h1>
+        <h2 class="description text-center mt-2">Sign into your account here:</h2>
+        <div class="form mt-5">
+
+          <form id="loginForm" name="loginForm" role="form" novalidate>
+
+            <div id="signupalert" style="display:none" class="alert alert-danger">
+              <p>Error:</p>
+              <span ng-show="loginForm.email.$dirty && loginForm.email.$error.required">Email is required</span>
+              <span></span>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group" ng-class="{'error': (submitted) && (loginForm.email.$invalid || loginForm.email.$error.required) }">
+              <input type="email" class="form-control with-icon icon-mail transition" name="email" data-ng-model = "email" placeholder="Email address" required>
+              <div class="invalid-feedback" ng-show="(submitted) && loginForm.email.$error.required">Email is required.</div>
+              <div class="invalid-feedback" ng-show="(submitted) && (!loginForm.email.$error.required && loginForm.email.$invalid)">Please enter valid email.</div>
+            </div>
+
+            <!-- Password -->
+            <div class="form-group" ng-class="{'error': (submitted) && (loginForm.passwd.$invalid || loginForm.passwd.$error.required) }">
+              <input type="password" class="form-control with-icon icon-password transition" name="passwd" data-ng-model = "passwd" placeholder="Password" required>
+              <div class="invalid-feedback" ng-show="(submitted) && loginForm.passwd.$error.required">Password is required.</div>
+            </div>
+
+
+            <div class="form-group">
+              <a class="text-right d-block mt-3" href="#resetpwd">Forgotten password?</a>
+            </div>
+
+            <div class="form-group mt-4">
+              <button id="btn-fbsignup" type="button" class="btn btn-primary btn-lg btn-block" data-ng-click="validateLogin(loginForm.$valid)">Sign in</button>
+              <!--<button id="btn-fbsignup" type="button" class="btn btn-primary btn-lg btn-block" validation-submit="loginForm" data-ng-click="validateLogin()">Sign in</button>-->
+            </div>
+          </form>
+        </div>
+        <small class="form-text text-muted text-center d-block mt-3 form-bottom w-100">Don’t have an account? <a href="#/signup">Sign up</a>.</small>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container h-100">
+    <div class="row h-100 justify-content-center align-items-center">
+      <div class="col-md-8 text-center">
+        <div class="w-100">
+          <img src="images/phone.png" alt="">
+        </div>
+        <div class="app">
+          <h3>Find the right person on the go.</h3>
+          <p>No databases. No lengthy profiles. Just matches<br/>that make sense. And it’s free! </p>
+          <div class="getapp px-4 py-3 w-50 mx-auto">
+            <span class="pr-3">Get the app</span>
+            <a href="https://itunes.apple.com/in/app/workruit/id1189752813?mt=8" class="pr-2 transition"><img src="images/icons/ios.svg" alt="ios"></a>
+            <a href="https://play.google.com/store/apps/details?id=com.workruit&hl=en" class="transition"><img src="images/icons/android.svg" alt="android"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $('body').css("height", '100%');
+  $('body').addClass('no-scroll');
+  $(".users-box, .chat-box, .sidebar").niceScroll({
+    cursorcolor: "#337ab7",
+    cursorborderradius: "0px",
+    cursorborder: "1px solid #fff",
+    spacebarenabled: false
+  });
+
+</script>
+

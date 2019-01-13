@@ -1,0 +1,181 @@
+<div class="container" data-ng-controller="candidateCardController">
+  <div class="f17 font-color cursor-pointer" data-ng-click="showMainDiv()">Back</div>
+  <div id="signupbox" style="margin-top:70px;margin-bottom:50px;" class="mainbox your_profile user_view">
+
+    <div class="panel panel-info">
+      <!-- <div class="panel-heading">
+          <div class="panel-title"> This candidate is interested in your job </div>
+      </div> -->
+
+      <div class="panel-body" 
+        <form id="signupform" class="form-horizontal" role="form" action="about_company.html">
+>
+
+          <div id="signupalert" style="display:none" class="alert alert-danger">
+            <p>Error:</p>
+            <span></span>
+          </div>
+          <div>
+            <div>
+              <div class="form-group" style="margin-top:25px; margin-bottom:50px;">
+                <label for="email" class="col-md-12 control-label txtcenter">
+                  <!--    <img src="images/pic1.svg" class="plogo" /> <br /> <br /> -->
+                  <img src="images/pic1.png" class="plogo"  /><br/><br/>
+                  <!-- <span class="f17">Manikanth Challa</span> <br /> -->
+                  <span class="f17 font-color">{{candidate.firstname}} {{candidate.lastname}}</span> <br />
+                  <span class="f15 txt6a6a6a">{{candidate.userJobTitle}}</span>
+                </label>
+              </div>
+
+              <div class="col-md-8 col-md-offset-2 mb40">
+                <label for="" class="col-md-4 control-label txtcenter">
+                  <span class="f15"> <img src="images/experience.svg" class="wicon mb5" /> </span> <br />
+                  <span class="f15"> {{candidate.totalExperience}} years </span>
+                </label>
+
+                <label for="" class="col-md-4 control-label txtcenter">
+                  <span class="f15"> <img src="images/location.svg" class="wicon mb5" /> </span> <br />
+                  <span class="f15"> {{candidate.location}} </span>
+                </label>
+
+                <label for="" class="col-md-4 control-label txtcenter">
+                  <span class="f15"> <img src="images/salary.svg" class="wicon mb5" /> </span> <br />
+                  <span class="f15" ng-if="!candidate.hideSalary"> <i class="fa fa-inr fnormal f15" aria-hidden="true"></i>  {{candidate.minSalaryExp}}L - <i class="fa fa-inr fnormal f15" aria-hidden="true"></i> {{candidate.maxSalaryExp}}L</span>
+                  <span class="f15" ng-if="candidate.hideSalary"> <i class="fa fa-inr fnormal f15" aria-hidden="true"></i>  L - <i class="fa fa-inr fnormal f15" aria-hidden="true"></i>  L </span>
+                </label>
+              </div>
+
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-md-12">
+                    <label class="form-control" style=" border-bottom: 1px solid #e5e5e5;"> Summary </label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12" style="margin-bottom:20px;">
+                    <span class="form-control details"> {{candidate.coverLetter}} </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group form-group-no-margin">
+                <div class="row">
+                  <!-- Username -->
+                  <div class="form-group">
+                    <label>Username</label>
+                    <div ng-dropdown-multiselect="" option="industrylist" selected-model="industry" extra-settings="industryDropDownSettings" style="width: 100%;"></div>
+                    <p class="help-block" style="padding-left:5px; margin-top: 5px; margin-bottom"
+                  </div>
+                  opdown-multiselect="" option="industrylist" selected-model="industry" extra-settings="industryDropDownSettings" style="width: 100%;"></div>
+                    <p class="help-block" style="padding-left:5px; margin-top: 5px; margin-bottom: 5px;">Username</p>
+                  </div>
+
+              </div>
+
+  <!-- Username -->
+  <div class="form-group">
+    <label>Username</label>
+    <div ng-dropdown-multiselect="" option="industrylist" selected-model="industry" extra-settings="industryDropDownSettings" style="width: 100%;"></div>
+    <p class="help-block" style="padding-left:5px; margin-top: 5px; margin-bottom: 5px;">Username</p>
+  </div>
+  s="form-control details f17 mt5"> {{exp.company}} </span>
+                  </div>
+                  <div class="col-md-6">
+                    <span class="form-control details txtright mt5"> {{exp.startDate}} - <span ng-if="!exp.isPresent">{{exp.endDate}}</span> <span ng-if="exp.isPresent">Present</span></span>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <span class="form-control details txt6a6a6a"> {{exp.jobTitle}} </span>
+                  </div>
+                  <div class="col-md-6">
+                    <span class="form-control details txtright txt6a6a6a"> {{exp.location}} </span>
+                  </div>
+                </div>
+
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-md-12">
+                    <label class="form-control"> Education </label>
+                  </div>
+              </div>
+
+              <div class="form-group profile-seperator" style="" data-ng-repeat="edu in candidate.userEducationSet">
+                <div class="row">
+              </div>
+                  <div class="col-md-6">
+                    <span class="form-control details f17 mt5"> {{edu.institution}} </span>
+                  </div>
+                  <div class="col-md-6">
+                    <span class="form-control details txtright mt5"> {{edu.startDate}} - <span ng-if="!edu.isPresent">{{edu.endDate}}</span> <span ng-if="edu.isPresent">Present</span> </span>
+                </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <span class="form-control details txt6a6a6a"> {{edu.degree.title}} </span>
+                  </div>
+                  <div class="col-md-6">
+                    <span class="form-control details txtright txt6a6a6a"> {{edu.location}} </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group" style="margin-bottom:20px;" data-ng-show="candidate.totalExperience ===  0">
+                <div class="row">
+                  <div class="col-md-12">
+                    <label class="form-control"> Academic Projects </label>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <span class="form-control details f17 mt5"> {{candidate.userAcademic.projectTitle}} </span>
+                  </div>
+                  <div class="col-md-6">
+                    <span class="form-control details txtright mt5"> {{candidate.userAcademic.startDate}} - <span ng-if="!candidate.userAcademic.isPresent">{{candidate.userAcademic.endDate}} </span> <span ng-if="candidate.userAcademic.isPresent">Present</span> </span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <span class="form-control details txt6a6a6a"> {{candidate.userAcademic.role}} </span>
+                  </div>
+                  <div class="col-md-6">
+                    <span class="form-control details txtright txt6a6a6a"> {{candidate.userAcademic.location}} </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group" style="margin-bottom:20px;">
+                <div class="row">
+                  <div class="col-md-12">
+                    <label class="form-control" style="border-bottom: 1px solid #e5e5e5;"> Skills </label>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12">
+                    <span class="form-control details your-profile-skill-left"  data-ng-repeat="skilldata in candidate.userSkillsSet">{{skilldata.title}}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div></form>
+      </div>
+
+
+    </div>
+
+  </div><div class="modal fade" id="appDownloadDialog" role="dialog">
+    <div class="modal-dialog">
+      
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="appDownloadDialog" role="dialog">
+  <div class="modal-dialog">
+    
+  </div>
+</div>

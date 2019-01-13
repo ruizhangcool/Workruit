@@ -1,0 +1,145 @@
+<!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content user-notification-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+        <div class="modal-body user-notification-info" >
+          <h3>It's Matched</h3>
+          <p>You've matched with {{payload.data.applicant_first_name}} {{payload.data.applicant_last_name}} for your<br/>
+{{payload.data.job_post_title}}!</p>
+        <img src="images/pic1.png"  ng-show="!payload.data.applicant_photo" class="user-pic" />
+        <img src="{{imageUrl+payload.data.applicant_photo}}"  ng-show="payload.data.applicant_photo" class="user-pic" />
+        <p class="title">{{payload.data.applicant_first_name}} {{payload.data.applicant_last_name}}</p>
+        <p class="designation">{{payload.data.applicant_user_job_title}}</p>
+        <p class="user-info">Download our app and start a conversation right away.</p>
+        <div class="text-center inner_subscribe" style="margin-bottom: 10px; margin-top: 10px;">
+         <a href="https://play.google.com/store/apps/details?id=com.workruit&hl=en" class="app-download-link" target="_blank"><img src="images/google-play-badge.png" width="170px"></a>
+        <a href="https://itunes.apple.com/in/app/workruit/id1189752813?mt=8" target="_blank"><img src="images/iphone-play-badge.png" width="170px"></a>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button type="button" id="openModalButton" ng-show="false"  class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Large Modal</button>
+
+<header class="w-100">
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-md-5">
+        <ul class="nav">
+          <li class="nav-item" data-ng-class="nav.activeTab === '/applicants'? 'active' :''"><a class="nav-link transition" href="#applicants">Applicants</a></li>
+          <li class="nav-item" data-ng-class="nav.activeTab === '/messages'? 'active' :''"><a class="nav-link transition" href="#messages">Messages</a></li>
+          <li class="nav-item" data-ng-class="(nav.activeTab === '/jobs' || nav.activeTab === '/pending' || nav.activeTab === '/closed') ? 'active' :''"><a class="nav-link transition" href="#jobs">Jobs</a></li>
+        </ul>
+      </div>
+      <div class="col-md-2 text-center">
+        <a href="https://devapp.workruit.com/#/applicants" class="logo"><img src="images/logo.svg" alt="logo"></a>
+      </div>
+
+      <div class="col-md-5">
+        <ul class="nav justify-content-end">
+          <li class="nav-item user dropdown">
+            <a class="nav-link transition dropdown-toggle" data-toggle="dropdown" id="profile" aria-haspopup="true" aria-expanded="false"><img src="{{companyPicture}}" style="border-radius: 50%;" alt=""></a>
+            <div class="dropdown-menu" aria-labelledby="profile">
+              <a class="dropdown-item transition" href="">Mani Challa</a>
+              <a class="dropdown-item transition"><span>mani@storytech.in</span></a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item transition" href="#viewProfile?tabIndex=0">My Profile</a>
+              <a class="dropdown-item transition" href="#viewProfile?tabIndex=1">Company Profile</a>
+              <a class="dropdown-item transition" href="#viewProfile?tabIndex=2">Notifications</a>
+              <a class="dropdown-item transition" href="mailto:support@workruit.com">Contact Suport</a>
+              <a class="dropdown-item transition" onclick="downloadApp()" href="">Download app</a>
+              <a class="dropdown-item transition" href="" data-ng-click="logout()"><span>Sign Out</span></a>
+            </div>
+          </li>
+          <li class="nav-item notifications"><a class="nav-link transition" href="#/activity" data-badge="3">Notifications</a></li>
+        </ul>
+      </div>
+
+      <!--<div class="col-md-5">-->
+        <!--<ul class="nav justify-content-end">-->
+          <!--<li class="nav-item user dropdown">-->
+            <!--<a href="javascript.void(0);" class="dropdown nav-link transition dropdown-toggle" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" role="button">-->
+              <!--<img src="{{companyPicture}}" style="border-radius: 50%;" />-->
+            <!--</a>-->
+            <!--<div class="dropdown-menu">-->
+              <!--<a class="dropdown-item transition" href="#viewProfile">Your Profile</a>-->
+              <!--&lt;!&ndash;<a class="dropdown-item transition" href="#viewCompany">Company Profile</a>&ndash;&gt;-->
+              <!--&lt;!&ndash;<a class="dropdown-item transition" href="#resetPasswd">Change Password</a>&ndash;&gt;-->
+              <!--&lt;!&ndash;<a class="dropdown-item transition" href="#settings/">Settings</a>&ndash;&gt;-->
+              <!--<a class="dropdown-item transition" href="mailto:support@workruit.com">Support</a>-->
+              <!--<a class="dropdown-item transition" href="" data-ng-click="logout()">Logout</a>-->
+            <!--</div>-->
+          <!--</li>-->
+
+          <!--&lt;!&ndash;<li class="nav-item user dropdown">&ndash;&gt;-->
+            <!--&lt;!&ndash;<a href="javascript.void(0);" class="dropdown nav-link transition dropdown-toggle profile" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="padding-right: 0px;">&ndash;&gt;-->
+              <!--&lt;!&ndash;<img src="{{companyPicture}}" />&ndash;&gt;-->
+            <!--&lt;!&ndash;</a>&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<ul class="dropdown-menu user_drop_down">&ndash;&gt;-->
+              <!--&lt;!&ndash;<li><a href="#viewProfile">Your Profile</a></li>&ndash;&gt;-->
+              <!--&lt;!&ndash;<li><a href="#viewCompany">Company Profile</a></li>&ndash;&gt;-->
+              <!--&lt;!&ndash;<li><a href="#resetPasswd">Change Password</a></li>&ndash;&gt;-->
+              <!--&lt;!&ndash;<li><a href="#settings/">Settings</a></li>&ndash;&gt;-->
+              <!--&lt;!&ndash;<li><a href="mailto:support@workruit.com">Support</a></li>&ndash;&gt;-->
+              <!--&lt;!&ndash;<li><a href="" data-ng-click="logout()">Logout</a></li>&ndash;&gt;-->
+            <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+          <!--&lt;!&ndash;</li>&ndash;&gt;-->
+
+          <!--<li class="nav-item notifications"><a class="nav-link transition" href="#activity" data-badge="3">Notifications</a></li>-->
+        <!--</ul>-->
+      <!--</div>-->
+    </div>
+  </div>
+</header>
+
+<div class="modal fade" id="download-app" tabindex="-1" role="dialog" aria-labelledby="download-app" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-5 text-center">
+            <img src="images/phone.png" alt="phone" height="320px" width="auto">
+          </div>
+          <div class="col-md-7 pt-5">
+            <div class="modal-title">Find the right person on the go.</div>
+            <div class="modal-description">Post jobs, chat with applicants. All features in<br/>your pocket. </div>
+            <div class="getapp px-4 text-center mt-3">
+              <span class="pr-3">Get the app</span>
+              <a href="https://itunes.apple.com/in/app/workruit/id1189752813?mt=8" class="pr-2 transition"><img src="images/icons/ios-white.svg" alt="ios"></a>
+              <a class="transition" href="https://play.google.com/store/apps/details?id=com.workruit&hl=en"><img src="images/icons/android-white.svg" alt="android"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="errorMessageID" data-ng-show="error && errorMessage"
+               class="alert alert-danger">
+            <b>Error!</b>
+            <span>{{errorMessage}}</span>
+            <a href='javascript:void(0)' class="close" aria-label="close" title="close"><img src="images/icons/close.png" width="10" ng-click="closeModal()"/></a>
+          </div>
+          <div id="successMessageID" data-ng-show="success && successMessage"
+               class="alert alert-success">
+               <b>Thank you!</b>
+            <span>{{successMessage}}</span>
+            <a href="javascript:void(0)" class="close" aria-label="close" title="close"><img src="images/icons/close.png" width="10" ng-click="closeModal()"/></a>
+          </div>
+
+<script>
+  function downloadApp() {
+    $('#download-app').modal('show');
+  }
+</script>

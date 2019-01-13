@@ -1,0 +1,102 @@
+<div ng-include="'views/includes/header.html'"></div>
+
+<div class="content h-100 w-100">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <ul class="nav nav-pills nav-fill" role="tablist" id="tabs">
+          <li class="nav-item"><a class="nav-link transition" ng-class="{'active': tab == 'interested'}"  data-toggle="tab" data-target="#interested" role="tab" aria-controls="interested" aria-selected="true" ng-click="tabSelected('interested')">Interested ({{recruiterInterestedProfilesLength}})</a></li>
+          <li class="nav-item"><a class="nav-link transition" ng-class="{'active': tab == 'matched'}" data-toggle="tab" data-target="#matched" role="tab" aria-controls="matched" aria-selected="false" ng-click="tabSelected('matched')">Matched ({{recruiterApplicantMatchesLength}})</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-md-12">
+
+        <div id="welcombox-interested" class="mainbox welcombox" ng-show="tab == 'interested' && message==0">
+          <div class="panel panel-info sform col-md-6 col-sm-6 col-md-offset-3">
+            <div class="panel-body" >
+              <p class="text-center formhead"> No interested profiles </p>
+              <p class="text-center formsubhead">When you like applicants, you'll be able to review their profiles here.</p>
+              <p class="text-center formbtn">
+                <a href="#postjob" class="col-md-6 col-md-offset-3"><button class="btn btn-primary form-control">Post a Job</button></a></p>
+            </div>
+          </div>
+        </div>
+
+        <div id="welcombox-matched" class="mainbox welcombox" ng-show="tab == 'matched' && message==0">
+          <div class="panel panel-info sform col-md-6 col-sm-6 col-md-offset-3">
+            <div class="panel-body" >
+              <p class="text-center formhead"> No new matches </p>
+              <p class="text-center formsubhead">Your conversations with matched applicants will appear here.</p>
+              <p class="text-center formbtn">
+                <a href="#postjob" class="col-md-6 col-md-offset-3"><button class="btn btn-primary form-control">Post a Job</button></a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-content" id="tabsContent">
+
+          <!-- Interested -->
+          <div class="tab-pane fade" ng-class="{'show active': tab == 'interested'}" id="interested" role="tabpanel" aria-labelledby="interested">
+            <table class="table table-hover" ng-show="message==1">
+              <thead>
+              <tr>
+                <th>Applicants</th>
+                <th>Job</th>
+                <th>Date</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr data-ng-repeat="profiles in recruiterInterestedProfiles">
+                <td>
+                  <a href="" data-ng-click="loadFullProfileInterested(profiles.userId,profiles.jobPostId)" class="hundline txtblack">{{profiles.userId.userJobTitle}}</a>
+                </td>
+                <td>
+                  <a href="" data-ng-click="editPostJob(profiles.jobPostId)" class="hundline txtblack"> {{profiles.jobPostId.title}} </a>
+                </td>
+                <td>{{profiles.jobPostId.candidateJobActionDate | workruitDate }}</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Matched -->
+          <div class="tab-pane fade" ng-class="{'show active': tab == 'matched'}" id="matched" role="tabpanel" aria-labelledby="matched">
+            <table class="table table-hover" ng-show="message==1">
+              <thead>
+              <tr>
+                <th width="100px"></th>
+                <th>Name</th>
+                <th width="600px">Position</th>
+                <th>Date</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr data-ng-repeat="profiles in recruiterApplicantMatches">
+                <td>
+                  <img src="images/user_logo.png" class="activity_user_img" ng-show="!profiles.userId.pic" />
+                  <img src="{{imageUrl+profiles.userId.pic}}" class="activity_user_img" ng-show="profiles.userId.pic" />
+                </td>
+                <td>
+                  <a href="" data-ng-click="loadFullProfile(profiles.userId, profiles.jobPostId)" class="hundline txtblack"> {{profiles.userId.firstname}}&nbsp;{{profiles.userId.lastname}} </a>
+                </td>
+                <td>
+                  <a href="" data-ng-click="editPostJob(profiles.jobPostId)" class="hundline txtblack"> {{profiles.jobPostId.title}} </a>
+                </td>
+                <td>
+                  {{profiles.jobPostId.conversationMatchDate | workruitDate }}
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $('body').css("height", 'auto');
+</script>

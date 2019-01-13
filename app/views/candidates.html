@@ -1,0 +1,242 @@
+<div ng-include="'views/includes/header.html'"></div>
+
+
+<div class="content">
+  <div class="container">
+    <div class="row m-0">
+
+      <!-- Search -->
+      <div class="col-md-12 filter mt-3 py-3 border-radius" id="search-box" data-ng-if="prefbox">
+        <div class="row
+          <!-- Job -->
+          <div class="col-md-3">">
+
+            <div class="form-group">
+              <label>Job</label>
+              <select class="form-control" data-ng-model="jobsearch.jobid"  data-ng-change="getMatchedProfiles(jobsearch.jobid)">
+                <option data-ng-repeat="jf in JobsData" ng-show="jf.status != 3" value="{{jf.jobPostId}}">{{jf.title}}</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Experience -->
+          <div class="col-md-4">
+            <div class="form-group">
+              <label>Experience (years)</label>
+              <div class="mt-4" style="margin-top: 1.0rem !important;">
+                <div class="form-group" ng-show="jobsearch.jobTypeId.jobTypeId!=3">
+                  <div><rzslider  rz-slider-model="slider.min"
+                                  rz-slider-high="slider.max"
+                                  rz-slider-options="slider.options"></rzslider></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+
+            <!-- Location -->
+            <div class="form-group" style="margin-bottom: 5px;">
+              <label>Location</label>
+              <input type="text" class="form-control transition tags" id="location_tags">
+            </div>
+
+            <!-- Search Button -->
+            <div class="form-group" style="float: right; margin-bottom: 0px;">
+              <a href="#applicants" class="btnn"
+                 data-ng-click="getProfilesOnCriteriaChange(jobsearch.jobid, jobsearch.expMin, jobsearch.expMax, jobsearch.locId, '', 'Other')">
+                <button class="btn btn-primary mrg-t-b-5"><img src="images/icons/search.png" class="profile-img" /> SEARCH </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="notifications" class="w-100 mt-3">
+        <div class='liked transition'><span>Liked</span></div>
+        <div class='passed transition'><span>Passed</span></div>
+      </div>
+
+      <!-- Applicats Section -->
+      <div class="col-md-12 mt-3 mb-3" ng-class="message==1 ? 'd-block' : 'hidden'">
+        <div class="row" id="applicants">
+          <div class="item col-md-12 transition border-radius" data-ng-repeat="candidate in candidateArray">
+            <div class="row" data-ng-if=
+<div class="form-goUP<!-- Username -->
+              images/icons/non-defined-user.svg" alt="avatar">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="item-title">
+                      <span class="name mr-4">{{candidate.userJobTitle}}</span>
+                      <span class="tag" data-ng-if="candidate.isRecommended">Recommended</span>
+                      <span class="tag" data-ng-if="candidate.isInterested">interested</span>
+                      <div class="item-description">
+                        <span data-ng-repeat="fs in candidate.jobFunctions">
+                          {{fs.jobFunctionName}}
+                          {{(candidate.jobFunctions.length > 0 && $index != (candidate.jobFunctions.length -1))? '•':' '}}
+                        </span>
+                      </div>
+                      <div class="item-meta mt-2">
+                        <span class="meta-location">{{candidate.location}}</span>
+                        <span class="meta-exp">{{candidate.totalExperienceText}}</span>
+                        <span class="meta-price">
+                          <span ng-if="!candidate.hideSalary">{{candidate.minSalaryExp}}L - <i aria-hidden="true"></i> {{candidate.maxSalaryExp}}L</span>
+                          <span ng-if="candidate.hideSalary"> - </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-2 text-right">
+                    <!--<a href="#" class="btn-outline transition">resume</a>-->
+                  </div>
+                </div>
+                <div class="row item-info py-3 px-3">
+
+                  <!-- About -->
+                  <div class="col-md-2 text-right element-info">About</div>
+                  <div class="col-md-10"><p>{{candidate.coverLetter}}</p></div>
+                  <div class="col-md-10" data-ng-if="!candidate.coverLetter">
+                    <p class="muted">No information provided.</p>
+                  </div>
+
+                  <!-- Experience -->
+                  <div class="col-md-2 text-right element-info">Experience</div>
+                  <div class="col-md-10">
+                    <div class="row" data-ng-if="candidate.userExperienceSet.length==0">
+                      <div class="col-md-6">
+                        <p class="muted">No information provided.</p>
+                      </div>
+                    </div>
+
+                    <div data-ng-if="candidate.userExperienceSet.length!=0">
+                      <div class="row" data-ng-repeat="exp in candidate.userExperienceSet" >
+                        <div class="col-md-6">
+                          <p>{{exp.company}}<br/>{{exp.jobTitle}}</p>
+                        </div>
+                        <div class="col-md-6 text-right">
+                          <p class="muted">{{exp.startDate}} - <span ng-if="!exp.isPresent">{{exp.endDate}}</span> <span ng-if="exp.isPresent">Present</span><br/>{{exp.location}}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Education -->
+                  <div class="col-md-2 text-right element-info">Education</div>
+                  <div class="col-md-10">
+                    <div class="row" data-ng-if="candidate.userEducationSet.length==0">
+                      <div class="col-md-6">
+                        <p class="muted">No information provided.</p>
+                      </div>
+                    </div>
+
+                    <div data-ng-if="candidate.userEducationSet.length!=0">
+                      <div class="row" data-ng-repeat="edu in candidate.userEducationSet" >
+                        <div class="col-md-6">
+                          <p>{{edu.institution}}<br/>{{edu.fieldOfStudy}}</p>
+                        </div>
+                        <div class="col-md-6 text-right">
+                          <p class="muted">{{edu.startDate}} - <span ng-if="!edu.isPresent">{{edu.endDate}}</span> <span ng-if="edu.isPresent">Present</span><br/>{{edu.location}}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Academic -->
+                  <div class="col-md-2 text-right element-info"><p class="muted">Academic Projects</p></div>
+                  <div class="col-md-10">
+                    <div class="row" data-ng-if="candidate.userAcademic.length==0">
+                      <div class="col-md-6">
+                        <p class="muted">No information provided.</p>
+                      </div>
+                    </div>
+
+                    <div data-ng-if="candidate.userAcademic.length!=0">
+                      <div class="row" data-ng-repeat="edu in candidate.userAcademic" >
+                        <div class="col-md-6">
+                          <p>{{edu.projectTitle}}<br/>{{edu.role}}</p>
+                        </div>
+                        <div class="col-md-6 text-right">
+                          <p class="muted">{{edu.startDate}} - <span ng-if="!edu.isPresent">{{edu.endDate}}</span> <span ng-if="edu.isPresent">Present</span><br/>{{edu.location}}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Skills -->
+                  <div class="col-md-2 text-right element-info">Skills</div>
+                  <div class="col-md-10">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <span data-ng-repeat="skilldata in candidate.userSkillsSet">{{skilldata.title}}{{(candidate.userSkillsSet.length > 0 && $index != (candidate.userSkillsSet.length -1))? ', ':' '}}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3 m-0">
+                <div class="row h-100">
+                  <button class="d-block w-100 h-50 like" data-ng-click="next(true)"><span>Like</span></button>
+                  <button class="d-block w-100 h-50 pass" data-ng-click="next(false)"><span>Pass</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Status Box -->
+<div class="content w-100" data-ng-show="limit" style="padding-top: 250px;">
+  <div class="container h-100">
+    <div class="row h-100 justify-content-center align-items-center">
+      <div class="col-md-4 empty text-center">
+        <h1>{{limitTitle}}</h1>
+        <h2>{{limitDescription}}</h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Welcome Box -->
+<div class="content w-100" data-ng-show="!prefbox && !limit" style="padding-top: 250px;">
+  <div id="welcombox-2" class="container h-100" data-ng-show="message==0">
+    <div class="row h-100 justify-content-center align-items-center">
+      <div class="col-md-4 empty text-center">
+        <h1>Welcome to Workruit!</h1>
+        <h2>You can start by posting a new<br/>job, clicking on the button below.</h2>
+        <a href="#postjob"><button type="button" class="btn btn-primary btn-lg px-5 mt-3">Post a job</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div ng-if="showVariable" ng-include="'views/candidatesCardProfile.html'"></div>
+
+<script>
+  function initLocationTag(tags) {
+    var values = [];
+    for(var i = 0; i < tags.length; i++) {
+      values[i] = tags[i]["name"];
+    }
+
+    console.log("Tags: ", values);
+
+    $('#location_tags').inputTags({
+      autocomplete: {
+        values: values,
+        only: true
+      },
+      tags: [],
+      change: function() {
+        $('.control-buttons').removeClass('hidden');
+      }
+    });
+  }
+  $('body').css("height", 'auto');
+</script>
+

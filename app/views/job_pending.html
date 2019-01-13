@@ -1,0 +1,49 @@
+<div ng-in"clude="'views/includes/header.html'"></div>
+
+<div class="job-grid-container">
+<div class="breadcrumb after_menu">
+            <div class="container">
+                 <span ><a href="#jobs"> Active </a> &nbsp;({{activeLength}})</span>
+                 <span class="active"><a href="#pending"> Pending </a> &nbsp;({{pendingLength}})</span>
+                 <span ><a href="#closed"> Closed </a> &nbsp;({{closedLength}})</span>
+            </div>
+   </div>
+
+<div class="container data-container">
+
+<div id="welcombox" class="mainbox welcombox" ng-show="pendingCount == 0">
+    <div class="panel panel-info sform col-md-6 col-sm-6 col-md-offset-3">
+      <div class="panel-body" >
+        <p class="text-center formhead"> No pending jobs  </p>
+        <p class="text-center formsubhead">Post your job today.</p>
+        <p class="text-center formbtn">
+          <a href="#postjob" class="col-md-6 col-md-offset-3"><button class="btn btn-primary form-control"> POST A JOB </button></a></p>
+      </div>
+    </div>
+  </div>
+
+   <div ng-show="pendingCount == 1">
+        <div class="col-sm-12 after_breadcrumb1 post_job_table activity-tbl-heading">
+          <div class="col-sm-6"> POSITION </div>
+          <div class="col-sm-6"> DATE </div>
+          <!--<div class="col-sm-4"> STATUS </div>-->
+        </div>
+
+        <div data-ng-repeat = "jobsData in userPendingJobData">
+          <div  class="col-sm-12 post_job_table after_breadcrumb2" ng-show="(jobsData.status == 1 || jobsData.status == 4)">
+            <div class="col-sm-6"> <a href="" data-ng-click="editPostJob(jobsData)" class="hundline"> {{jobsData.title}} </a></div>
+            <div class="col-sm-6"> {{jobsData.createdDate | workruitDate }}</div>
+          </div>
+        </div>"
+        <div class="col-sm-12 after_breadcrumb2 post_job_table" data-ng-if="!userPendingJobData.length">
+            <div class="col-sm-4">
+            	No Jobs to Display
+            </div>
+        </div>
+  </div>
+</div>
+</div>
+
+  <!-- Username -->
+M
+Md

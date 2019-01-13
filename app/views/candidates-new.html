@@ -1,0 +1,190 @@
+<div ng-include="'views/includes/header.html'"></div>
+<div class="search-section">
+<div class="container">
+	<div class="row">
+		<div class="col-md-3">
+	      <div class="form-group">
+	        <label class="form-control searchead"> JOB </label>
+	                   <span class="form-control details searctxt">
+	                       <select class="form-control" data-ng-model="jobsearch.jobid"  data-ng-change="getMatchedProfiles(jobsearch.jobid)">
+	                         <option data-ng-repeat="jf in JobsData" ng-show="jf.status != 3" value="{{jf.jobPostId}}">{{jf.title}}</option>
+	                       </select>
+	                   </span>
+	      </div>
+    	</div>
+    	<div class="col-md-3">
+	      <div class="form-group">
+	        <label class="form-control searchead"> JOB TYPE </label>
+	        <div class="details searctxt">
+	          <select id="jobTypes" name="jobTypes" class="form-control" data-ng-model="jobsearch.jobTypeId" ng-disabled="true">
+	          	<option value="{{jobTy.jobTypeId}}" selected="selected">{{jobTy.jobTypeTitle}}</option>
+	          </select>
+	        </div>
+	      </div>
+    	</div>
+    	<div class="col-md-3">
+	      <div class="form-group">
+	        <label class="form-control searchead"> EXPERIENCE </label>
+	        <div><rzslider  rz-slider-model="slider.min"  rz-slider-high="slider.max" rz-slider-options="slider.options"></rzslider></div>
+	      </div>
+	    </div>
+	    <div class="col-md-3">
+	       <a href="#applicants" class="btnn" data-ng-click="getProfilesOnCriteriaChange(jobsearch.jobid,jobsearch.expMin,jobsearch.expMax,jobsearch.locId,jobsearch.jobTypeId,locType)"> <button class="btn btn-primary mrg-t-b-5"><img src="images/icons/search.png" class="profile-img" /> SEARCH </button> </a>
+	 
+	    </div>
+	</div>
+	<div class="row">
+       <div class="col-md-2">
+
+         <div class="form-group" >
+          <label class="searchead pull-left"> LOCATION </label> 
+          <div class="details searctxt">
+            <select ng-model="locType" class="form-control" ng-init="locType='All'" >
+              <option value="All">All</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+         </div>
+       </div>
+       <div class="form-group" ng-show="locType=='Other'">
+        <div class="col-md-6">
+          <!-- <label class="form-control searchead"> LOCATION </label>  -->
+            <md-chips ng-model="locations" md-autocomplete-snap md-transform-chip="transformChip($chip)" md-on-add="addChip($chip)" md-on-remove="removeChip($chip)" md-require-match="true" md-max-chips="3">
+                <md-autocomplete md-selected-item="selectedItem" md-search-text="searchText" md-items="item in chipSearch(searchText)" md-item-text="item.name" placeholder="+ search by location">
+                  <span md-highlight-text="searchText">{{item.name}}</span>
+                </md-autocomplete>
+                <md-chip-template>
+                  <span  md-chip-remove>{{$chip.name}}</span>
+                </md-chip-template>
+            </md-chips>
+            <small>Add maximum 3 locations</small>
+            <span class="validation-invalid" ng-if="isShow">Please select skills only from dropdown.</span>
+          </div>
+          </div>
+    </div>
+
+</div>
+</div>
+<div data-ng-show="message==1">
+  <div data-ng-repeat="candidate in candidateArray">
+	<div class="container candidate-container" data-ng-if="cand_index == $index">
+	  <div class="col-md-9 candidate-details" >
+
+          <div class="row">
+            <div class="col-md-7">
+              <img src="images/pic1.png" class="profile-img" />
+              <div class="user-detials">
+                <span class="user-title">{{candidate.userJobTitle}}</span>
+                <span class="user-designation text-uppercase">
+                   <span data-ng-repeat="fs in candidate.jobFunctions">
+                          {{fs.jobFunctionName}}
+                     {{(candidate.jobFunctions.length > 0 && $index != (candidate.jobFunctions.length -1))? '-':' '}}
+                      </span>
+                </span>
+              </div>
+            </div>
+            <div class="col-md-5 user-info ">
+              <div class="pull-right">
+              <a href="javascript:void(0)"><img src="images/experience.svg">{{candidate.totalExperienceText}}</a>
+              <a href="javascript:void(0)"><img src="images/location.svg">{{candidate.location}} </a>
+              <a href="javascript:void(0)"><img src="images/salary.svg">
+                <span ng-if="!candidate.hideSalary"> <i aria-hidden="true"></i> <i aria-hidden="true" class="fa fa-inr fnormal f15"></i> {{candidate.minSalaryExp}}L - <i aria-hidden="true"></i> {{candidate.maxSalaryExp}}L</span>
+                <span ng-if="candidate.hideSalary"> - <i aria-hidden="true" class="fa fa-inr fnormal f15"></i> - </span>
+              </a>
+              <span href="javascript:void(0)" class="interested" data-ng-if="candidate.isInterested">* Interested</span>
+               </div>
+            </div>
+          </div>
+
+    <!-- About Section -->
+          <div class="row full-info">
+            <div class="col-md-2">ABOUT ME</div>
+            <div class="col-md-7">{{candidate.coverLetter}} </div>
+             <div class="col-md-7 no-info" data-ng-if="!candidate.coverLetter">No information provided.</div>
+          </div>
+    <!-- /About Section -->
+
+    <!-- Experience Section -->
+          <div class="row full-info">
+            <div class="col-md-2">Experience</div>
+            <div class="col-md-7 no-info" data-ng-if="candidate.userExperienceSet.length==0">No information provided.</div>
+            <div class="col-md-7" data-ng-if="candidate.userExperienceSet.length!=0">
+            <div class="row" data-ng-repeat="exp in candidate.userExperienceSet">
+              <div class="col-md-6">
+                <span class="company">{{exp.company}}</span>
+                <span class="designation">{{exp.jobTitle}}</span>
+              </div>
+              <div class="col-md-6 txt-aln-r">
+                <span class="date">
+                   <span> {{exp.startDate}} - <span ng-if="!exp.isPresent">{{exp.endDate}}</span> <span ng-if="exp.isPresent">Present</span></span>
+                </span>
+                <span class="place">{{exp.location}}</span>
+              </div>
+            </div>
+
+            </div>
+          </div>
+    <!-- /Experience Section -->
+
+    <!-- Education Section -->
+          <div class="row full-info">
+            <div class="col-md-2">Education</div>
+            <div class="col-md-7 no-info" data-ng-if="candidate.userEducationSet.length==0">No information provided.</div>
+            <div class="col-md-7" data-ng-if="candidate.userEducationSet.length!=0">
+            <div class="row" data-ng-repeat="edu in candidate.userEducationSet">
+              <div class="col-md-6">
+                <span class="company">{{edu.institution}} </span>
+                <span class="designation">{{edu.fieldOfStudy}}</span>
+              </div>
+              <div class="col-md-6 txt-aln-r">
+                <span class="date">
+                  <span> {{edu.startDate}} - <span ng-if="!edu.isPresent">{{edu.endDate}}</span> <span ng-if="edu.isPresent">Present</span></span>
+                </span>
+                <span class="place">{{edu.location}}</span>
+              </div>
+            </div>
+            </div>
+          </div>
+    <!-- /Experience Section -->
+
+    <!-- Academic Projects Section -->
+          <div class="row full-info">
+            <div class="col-md-2">Academic Projects</div>
+            <div class="col-md-7 no-info" data-ng-if="candidate.userAcademic.length==0">No information provided.</div>
+            <div class="col-md-7" data-ng-if="candidate.userAcademic.length!=0" >
+            <div class="row" data-ng-repeat="edu in candidate.userAcademic" >
+              <div class="col-md-6">
+                <span class="company">{{edu.projectTitle}} </span>
+                <span class="designation">{{edu.role}}</span>
+              </div>
+              <div class="col-md-6 txt-aln-r">
+                <span class="date">
+                  <span> {{edu.startDate}} - <span ng-if="!edu.isPresent">{{edu.endDate}}</span> <span ng-if="edu.isPresent">Present</span></span>
+                </span>
+                <span class="place">{{edu.location}}</span>
+              </div>
+            </div>
+          </div>
+          </div>
+    <!-- /Academic Projects Section -->
+
+    <!-- Skills Projects Section -->
+          <div class="row full-info">
+            <div class="col-md-2">Skills</div>
+            <div class="col-md-7">
+              <span data-ng-repeat="skilldata in candidate.userSkillsSet">{{skilldata.title}}{{(candidate.userSkillsSet.length > 0 && $index != (candidate.userSkillsSet.length -1))? ', ':' '}}
+              </span>
+            </div>
+          </div>
+    <!-- /Skills Projects Section -->
+
+        </div>
+        <div class="col-md-3 actions-section">
+          <a href="#applicants" data-ng-click="next(true)" class="like"><img src="../images/icons/like.png"/>LIKE</a>
+          <a href="#applicants" data-ng-click="next(false)" class="pass"><img src="../images/icons/pass.png" />PASS</a>
+
+        </div>
+	</div>
+  </div>
+</div>
+

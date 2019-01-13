@@ -1,0 +1,125 @@
+<div ng-include="'views/includes/header-before-login.html'"></div>
+
+<div id="errorMessageID" data-ng-show="error && errorMessage"
+     class="alert alert-danger">
+  <b>Error!</b>
+  <span>{{errorMessage}}</span>
+  <a href='javascript:void(0)' class="close" aria-label="close" title="close"><img src="images/icons/close.png" width="10" ng-click="closeModal()"/></a>
+</div>
+<div id="successMessageID" data-ng-show="success && successMessage"
+     class="alert alert-success">
+  <b>Thank you!</b>
+  <span>{{successMessage}}</span>
+  <a href="javascript:void(0)" class="close" aria-label="close" title="close"><img src="images/icons/close.png" width="10" ng-click="closeModal()"/></a>
+</div>
+
+<style>
+.toggle.ios, .toggle-on.ios, .toggle-off.ios { border-radius: 20px; }
+.toggle.ios .toggle-handle { border-radius: 20px; }
+.toggle.android .toggle-handle {border-radius: 0px;}
+.btn-color {background-color:#3ebb64 !important; border-color:#3ebb64 !important;}
+.btn:active, .btn.active{box-shadow:none; background: #d4d4d4; border-color: #d4d4d4 !important;}
+</style>
+
+<div class="container">
+  <div id="signupbox" class="mainbox your_profile settings-container" >
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <div class="panel-title">Email Alerts Subscription</div>
+      </div>
+      <div class="panel-body">
+        <form name="settingsForm" class="form-horizontal" role="form">
+          <div data-ng-if="isApplicant==0">
+            <div class="row">
+              <div class="col-md-6">
+                <h3 class="notification-headding">Email Preferences</h3>
+              </div>
+              <div class="col-md-6 txt-aln-r"><h3 class="notification-headding"></h3></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <span class="notification-label">Job Active</span>
+              </div>
+              <div class="col-md-6 txt-aln-r">
+                <toggle ng-model="settings.companyJobActive" ng-change="changed()" style="ios" onstyle="btn-info btn-color" ></toggle>
+              </div>
+              </div>
+            <div class="row">
+              <div class="col-md-6">
+                <span class="notification-label">Job Closed</span>
+              </div>
+
+              <div class="col-md-6 txt-aln-r">
+              <toggle ng-model="settings.companyJobClosed" ng-change="changed()" style="ios" onstyle="btn-info btn-color" ></toggle>
+            </div>
+
+              </div>
+            <div class="row">
+              <div class="col-md-6">
+                <span class="notification-label">New Matches</span>
+              </div>
+              <div class="col-md-6 txt-aln-r">
+              <toggle ng-model="settings.companyApplicantIsMatched" ng-change="changed()" style="ios" onstyle="btn-info btn-color" ></toggle>
+            </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <span class="notification-label">New Likes</span>
+              </div>
+              <div class="col-md-6 txt-aln-r">
+              <toggle ng-model="settings.companyApplicantIsInterested" ng-change="changed()" style="ios" onstyle="btn-info btn-color" ></toggle>
+            </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <span class="notification-label">Applicant Alerts</span>
+              </div>
+              <div class="col-md-6 txt-aln-r">
+              <toggle ng-model="settings.companyAlerts" ng-change="changed()" style="ios" onstyle="btn-info btn-color" ></toggle>
+            </div>
+            </div>
+          </div>
+
+          <div data-ng-if="isApplicant==1">
+              <div class="row">
+                <div class="col-md-6">
+                  <h3 class="notification-headding"> Manger Profile Email Alerts </h3>
+                </div>
+                <div class="col-md-6 txt-aln-r"><h3 class="notification-headding"> Email</h3></div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <span class="notification-label">New Likes</span>
+                </div>
+                <div class="col-md-6 txt-aln-r">
+                  <toggle ng-model="settings.applicantCompanyIsInterested" ng-change="changed()" style="ios" onstyle="btn-info btn-color" ></toggle>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <span class="notification-label">New Matches</span>
+                </div>
+                <div class="col-md-6 txt-aln-r">
+                  <toggle ng-model="settings.applicantCompanyIsMatched" ng-change="changed()" style="ios" onstyle="btn-info btn-color" ></toggle>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <span class="notification-label">Job Alerts</span>
+                </div>
+                <div class="col-md-6 txt-aln-r">
+                  <toggle ng-model="settings.applicantsAlerts" ng-change="changed()" style="ios" onstyle="btn-info btn-color" ></toggle>
+                </div>
+              </div>
+
+          </div>
+          </form>
+      </div>
+    </div>
+    <div class="row text-center">
+      <button class="btn btn-primary form-control" data-ng-click="saveSettings()">SAVE</button>
+  </div>
+  </div>
+</div>

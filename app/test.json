@@ -1,0 +1,4008 @@
+{
+   "msg":"recruiter Interested Profiles Successful",
+   "data":[
+      {
+         "jobPostId":{
+            "endDate":"",
+            "jobPostId":700,
+            "experienceMin":0,
+            "description":"Hhhhhhhhh",
+            "title":"Admini Full",
+            "unpaid":false,
+            "salaryMax":10,
+            "skills":[
+               "Billing Solutions",
+               "Appointment Scheduling",
+               "Billing Services"
+            ],
+            "hideSalary":0,
+            "jobFunction":[
+               141
+            ],
+            "experienceMax":5,
+            "location":{
+               "locationId":80,
+               "title":"Bangalore, IN"
+            },
+            "candidateJobActionDate":"Oct 2017 17 11:10 AM",
+            "jobType":{
+               "jobTypeId":1,
+               "jobTypeTitle":"Full Time"
+            },
+            "salaryMin":0,
+            "startDate":"",
+            "status":3
+         },
+         "userId":{
+            "firstname":"Akshay",
+            "totalExperienceText":"1.11 years",
+            "regdId":"NA",
+            "pic":"",
+            "userJobTitle":"Ckfkf",
+            "userExperienceSet":[
+               {
+                  "totalExperienceText":"1.11 years",
+                  "endDate":"Mar 2014",
+                  "jobTitle":"Ckfkf",
+                  "isPresent":false,
+                  "company":"Dkdkfk",
+                  "location":"Kanpura Rural, Karnataka",
+                  "startDate":"May 2012",
+                  "expId":61
+               }
+            ],
+            "coverLetter":"The one on the right now but I am not in the future of I.",
+            "email":"mac34@workruit.com",
+            "deviceType":"Android",
+            "resume":"",
+            "minSalaryExp":1,
+            "telephone":"9866345672",
+            "userId":104,
+            "lastname":"Fourr",
+            "maxSalaryExp":50,
+            "userEducationSet":[
+               {
+                  "institution":"Djxjx",
+                  "educationId":61,
+                  "endDate":"May 2017",
+                  "degree":{
+                     "degreeId":39,
+                     "shortTitle":"A.A",
+                     "title":"Associate of Arts "
+                  },
+                  "isPresent":false,
+                  "location":"Agrate Brianza, Province of Monza and Brianza",
+                  "fieldOfStudy":"Xkdkd",
+                  "startDate":"May 2014"
+               }
+            ],
+            "hideSalary":true,
+            "totalExperience":1.11,
+            "userSkillsSet":[
+               {
+                  "skillId":843,
+                  "title":"Appointment Scheduling"
+               },
+               {
+                  "skillId":1521,
+                  "title":"Billing Services"
+               },
+               {
+                  "skillId":1522,
+                  "title":"Billing Solutions"
+               },
+               {
+                  "skillId":2087,
+                  "title":"Calendar Planning"
+               }
+            ],
+            "jobFunctions":[
+               {
+                  "jobFunctionId":141,
+                  "jobFunctionName":"Administrative",
+                  "categoryId":7
+               }
+            ],
+            "totalExperienceDisplay":"1.00 years ",
+            "location":"Delhi",
+            "userAcademic":[
+
+            ],
+            "status":1
+         }
+      },
+      {
+         "jobPostId":{
+            "endDate":"",
+            "jobPostId":651,
+            "experienceMin":0,
+            "description":"Customer service  job",
+            "title":"Customer Service Fre Job",
+            "unpaid":false,
+            "salaryMax":31.4,
+            "skills":[
+               "Customer Support",
+               "Customer Satisfaction",
+               "Customer Retention"
+            ],
+            "hideSalary":1,
+            "jobFunction":[
+               149
+            ],
+            "experienceMax":11,
+            "location":{
+               "locationId":80,
+               "title":"Bangalore, IN"
+            },
+            "candidateJobActionDate":"Sep 2017 11 07:38 AM",
+            "jobType":{
+               "jobTypeId":4,
+               "jobTypeTitle":"Freelance"
+            },
+            "salaryMin":0,
+            "startDate":"",
+            "status":3
+         },
+         "userId":{
+            "firstname":"Mg91",
+            "totalExperienceText":"0.0 years",
+            "regdId":"NA",
+            "pic":"",
+            "userJobTitle":"Mg91",
+            "userExperienceSet":[
+
+            ],
+            "coverLetter":"Fresher",
+            "email":"mg91@workruit.com",
+            "deviceType":"iOS",
+            "resume":"",
+            "minSalaryExp":0,
+            "telephone":"8977131619",
+            "userId":478,
+            "lastname":"Mg9",
+            "maxSalaryExp":50,
+            "userEducationSet":[
+               {
+                  "institution":"Amssoi",
+                  "educationId":243,
+                  "endDate":"Sep 2015",
+                  "degree":{
+                     "degreeId":47,
+                     "shortTitle":"B.Com",
+                     "title":"Bachelor of Commerce "
+                  },
+                  "isPresent":false,
+                  "location":"Hyderabad, Telangana",
+                  "fieldOfStudy":"Commence",
+                  "startDate":"Jul 2013"
+               }
+            ],
+            "hideSalary":true,
+            "totalExperience":0,
+            "userSkillsSet":[
+               {
+                  "skillId":4938,
+                  "title":"Enterprise Software"
+               },
+               {
+                  "skillId":3475,
+                  "title":"Customer Satisfaction"
+               },
+               {
+                  "skillId":9128,
+                  "title":"Long Term Relationship Building"
+               }
+            ],
+            "jobFunctions":[
+               {
+                  "jobFunctionId":149,
+                  "jobFunctionName":"Customer Service",
+                  "categoryId":7
+               },
+               {
+                  "jobFunctionId":143,
+                  "jobFunctionName":"Android Developer",
+                  "categoryId":6
+               }
+            ],
+            "totalExperienceDisplay":"0 years",
+            "location":"Hyderabad",
+            "userAcademic":[
+
+            ],
+            "status":1
+         }
+      },
+      {
+         "jobPostId":{
+            "endDate":"",
+            "jobPostId":616,
+            "experienceMin":3.1,
+            "description":"Architecture job",
+            "title":"Architect Contract Job",
+            "unpaid":false,
+            "salaryMax":8.2,
+            "skills":[
+               "3D Architectural Rendering",
+               "Architecture",
+               "Building Codes",
+               "Construction Drawings"
+            ],
+            "hideSalary":1,
+            "jobFunction":[
+               144
+            ],
+            "experienceMax":7.9,
+            "location":{
+               "locationId":80,
+               "title":"Bangalore, IN"
+            },
+            "candidateJobActionDate":"Sep 2017 09 05:21 AM",
+            "jobType":{
+               "jobTypeId":2,
+               "jobTypeTitle":"Contract"
+            },
+            "salaryMin":8.2,
+            "startDate":"",
+            "status":3
+         },
+         "userId":{
+            "firstname":"Gagahana",
+            "totalExperienceText":"4.1 years",
+            "regdId":"f8bkc43xR1o:APA91bFj5WZNnt4x_WM8imwtCknZnBC4Fs6JidOBYboZhorOipnjFo1i3KvfvqoL8TfRD50NXzcLI27G8HJfMOxnCpCtzCz3CZEz44gl8e6P3SFcud_9hRSYvmY_ISFKNPIZ2eYRL4mP",
+            "pic":"",
+            "userJobTitle":"Gggg",
+            "userExperienceSet":[
+               {
+                  "totalExperienceText":"4.1 years",
+                  "endDate":"Aug 2016",
+                  "jobTitle":"Gggg",
+                  "isPresent":false,
+                  "company":"Ghhhhh",
+                  "location":"Hyderabad, Telangana.",
+                  "startDate":"Aug 2012",
+                  "expId":731
+               }
+            ],
+            "coverLetter":"Looking for a job in Account Management,Administrative,Architect roles.",
+            "email":"aggahaha@ahhahaha.com",
+            "deviceType":"iOS",
+            "resume":"",
+            "minSalaryExp":0,
+            "telephone":"9494945488",
+            "userId":1684,
+            "lastname":"Vagabahah",
+            "maxSalaryExp":5,
+            "userEducationSet":[
+               {
+                  "institution":"Ghhhh",
+                  "educationId":569,
+                  "endDate":"Aug 2016",
+                  "degree":{
+                     "degreeId":39,
+                     "shortTitle":"A.A",
+                     "title":"Associate of Arts "
+                  },
+                  "isPresent":false,
+                  "location":"Hyderabad, Telangana.",
+                  "fieldOfStudy":"Ghhhhhj",
+                  "startDate":"Aug 2014"
+               }
+            ],
+            "hideSalary":false,
+            "totalExperience":4.1,
+            "userSkillsSet":[
+               {
+                  "skillId":5,
+                  "title":"3D Architectural Rendering"
+               },
+               {
+                  "skillId":111,
+                  "title":"Accounting"
+               },
+               {
+                  "skillId":274,
+                  "title":"Adobe Creative Suite"
+               }
+            ],
+            "jobFunctions":[
+               {
+                  "jobFunctionId":144,
+                  "jobFunctionName":"Architect",
+                  "categoryId":2
+               },
+               {
+                  "jobFunctionId":140,
+                  "jobFunctionName":"Account Management",
+                  "categoryId":8
+               },
+               {
+                  "jobFunctionId":141,
+                  "jobFunctionName":"Administrative",
+                  "categoryId":7
+               }
+            ],
+            "totalExperienceDisplay":"2.0",
+            "location":"Hyderabad",
+            "userAcademic":[
+
+            ],
+            "status":1
+         }
+      },
+      {
+         "jobPostId":{
+            "endDate":"",
+            "jobPostId":616,
+            "experienceMin":3.1,
+            "description":"Architecture job",
+            "title":"Architect Contract Job",
+            "unpaid":false,
+            "salaryMax":8.2,
+            "skills":[
+               "3D Architectural Rendering",
+               "Architecture",
+               "Building Codes",
+               "Construction Drawings"
+            ],
+            "hideSalary":1,
+            "jobFunction":[
+               144
+            ],
+            "experienceMax":7.9,
+            "location":{
+               "locationId":80,
+               "title":"Bangalore, IN"
+            },
+            "candidateJobActionDate":"Sep 2017 07 08:59 AM",
+            "jobType":{
+               "jobTypeId":2,
+               "jobTypeTitle":"Contract"
+            },
+            "salaryMin":8.2,
+            "startDate":"",
+            "status":3
+         },
+         "userId":{
+            "firstname":"Mg282",
+            "totalExperienceText":"0.0 years",
+            "regdId":"NA",
+            "pic":"",
+            "userJobTitle":"No User Title",
+            "userExperienceSet":[
+
+            ],
+            "coverLetter":"",
+            "email":"mg282@workruit.com",
+            "deviceType":"Android",
+            "resume":"",
+            "minSalaryExp":0,
+            "telephone":"8977131619",
+            "userId":1083,
+            "lastname":"Mg28",
+            "maxSalaryExp":5,
+            "userEducationSet":[
+               {
+                  "institution":"Mg282",
+                  "educationId":442,
+                  "endDate":"Oct 2015",
+                  "degree":{
+                     "degreeId":39,
+                     "shortTitle":"A.A",
+                     "title":"Associate of Arts "
+                  },
+                  "isPresent":false,
+                  "location":"Hyderabad, Telangana",
+                  "fieldOfStudy":"Arys",
+                  "startDate":"Jul 2012"
+               }
+            ],
+            "hideSalary":false,
+            "totalExperience":0,
+            "userSkillsSet":[
+               {
+                  "skillId":5,
+                  "title":"3D Architectural Rendering"
+               },
+               {
+                  "skillId":274,
+                  "title":"Adobe Creative Suite"
+               },
+               {
+                  "skillId":1913,
+                  "title":"Building Codes"
+               }
+            ],
+            "jobFunctions":[
+               {
+                  "jobFunctionId":144,
+                  "jobFunctionName":"Architect",
+                  "categoryId":2
+               }
+            ],
+            "totalExperienceDisplay":"0 years",
+            "location":"Hyderabad",
+            "userAcademic":[
+
+            ],
+            "status":1
+         }
+      },
+      {
+         "jobPostId":{
+            "endDate":"",
+            "jobPostId":616,
+            "experienceMin":3.1,
+            "description":"Architecture job",
+            "title":"Architect Contract Job",
+            "unpaid":false,
+            "salaryMax":8.2,
+            "skills":[
+               "3D Architectural Rendering",
+               "Architecture",
+               "Building Codes",
+               "Construction Drawings"
+            ],
+            "hideSalary":1,
+            "jobFunction":[
+               144
+            ],
+            "experienceMax":7.9,
+            "location":{
+               "locationId":80,
+               "title":"Bangalore, IN"
+            },
+            "candidateJobActionDate":"Sep 2017 07 08:59 AM",
+            "jobType":{
+               "jobTypeId":2,
+               "jobTypeTitle":"Contract"
+            },
+            "salaryMin":8.2,
+            "startDate":"",
+            "status":3
+         },
+         "userId":{
+            "firstname":"Mg232",
+            "totalExperienceText":"0.0 years",
+            "regdId":"NA",
+            "pic":"",
+            "userJobTitle":"No User Title",
+            "userExperienceSet":[
+
+            ],
+            "coverLetter":"Looking for a job in JobFunction{jobFunctionId=179, jobFunctionName='Advertising'}, JobFunction{jobFunctionId=144, jobFunctionName='Architect'} roles",
+            "email":"mg232@workruit.com",
+            "deviceType":"Android",
+            "resume":"",
+            "minSalaryExp":0,
+            "telephone":"8977131619",
+            "userId":889,
+            "lastname":"Mg23",
+            "maxSalaryExp":5,
+            "userEducationSet":[
+               {
+                  "institution":"Bhaduka",
+                  "educationId":415,
+                  "endDate":"Sep 2015",
+                  "degree":{
+                     "degreeId":46,
+                     "shortTitle":"B.B.M",
+                     "title":"Bachelor of Business Management "
+                  },
+                  "isPresent":false,
+                  "location":"Hyderabad, Telangana",
+                  "fieldOfStudy":"Management",
+                  "startDate":"Jul 2012"
+               }
+            ],
+            "hideSalary":false,
+            "totalExperience":0,
+            "userSkillsSet":[
+               {
+                  "skillId":11011,
+                  "title":"Online Advertising"
+               },
+               {
+                  "skillId":14229,
+                  "title":"Social Media"
+               },
+               {
+                  "skillId":5,
+                  "title":"3D Architectural Rendering"
+               }
+            ],
+            "jobFunctions":[
+               {
+                  "jobFunctionId":144,
+                  "jobFunctionName":"Architect",
+                  "categoryId":2
+               },
+               {
+                  "jobFunctionId":179,
+                  "jobFunctionName":"Advertising",
+                  "categoryId":4
+               }
+            ],
+            "totalExperienceDisplay":"0 years",
+            "location":"Hyderabad",
+            "userAcademic":[
+
+            ],
+            "status":1
+         }
+      },
+      {
+         "jobPostId":{
+            "endDate":"Sep 2017",
+            "jobPostId":596,
+            "experienceMin":0,
+            "description":"Graphic design internship",
+            "title":"Graphic Design Internship",
+            "unpaid":false,
+            "salaryMax":50,
+            "skills":[
+               "Brand Development",
+               "Animation",
+               "Adobe Creative Suite"
+            ],
+            "hideSalary":0,
+            "jobFunction":[
+               157
+            ],
+            "experienceMax":1,
+            "location":{
+               "locationId":83,
+               "title":"Hyderabad, IN"
+            },
+            "candidateJobActionDate":"Sep 2017 04 07:28 AM",
+            "jobType":{
+               "jobTypeId":3,
+               "jobTypeTitle":"Internship"
+            },
+            "salaryMin":0,
+            "startDate":"Aug 2017",
+            "status":3
+         },
+         "userId":{
+            "firstname":"Mg03",
+            "totalExperienceText":"11 months",
+            "regdId":"NA",
+            "pic":"",
+            "userJobTitle":"No User Title",
+            "userExperienceSet":[
+               {
+                  "totalExperienceText":"11 months",
+                  "endDate":"Jul 2017",
+                  "jobTitle":"Mg02",
+                  "isPresent":true,
+                  "company":"Thub",
+                  "location":"Hyderabad, Telangana.",
+                  "startDate":"Jan 2017",
+                  "expId":311
+               }
+            ],
+            "coverLetter":"I am a marketing executive ",
+            "email":"mg03@workruit.com",
+            "deviceType":"iOS",
+            "resume":"",
+            "minSalaryExp":0,
+            "telephone":"8977131619",
+            "userId":536,
+            "lastname":"Mg",
+            "maxSalaryExp":5,
+            "userEducationSet":[
+               {
+                  "institution":"Bhadruka",
+                  "educationId":254,
+                  "endDate":"Jul 2016",
+                  "degree":{
+                     "degreeId":51,
+                     "shortTitle":"B.C.S",
+                     "title":"Bachelor of Computer Science "
+                  },
+                  "isPresent":false,
+                  "location":"Hyderabad, Telangana.",
+                  "fieldOfStudy":"Computers",
+                  "startDate":"Aug 2013"
+               }
+            ],
+            "hideSalary":false,
+            "totalExperience":0.9,
+            "userSkillsSet":[
+               {
+                  "skillId":668,
+                  "title":"Analytics"
+               },
+               {
+                  "skillId":274,
+                  "title":"Adobe Creative Suite"
+               },
+               {
+                  "skillId":324,
+                  "title":"Advertising Agency"
+               }
+            ],
+            "jobFunctions":[
+               {
+                  "jobFunctionId":148,
+                  "jobFunctionName":"Content Writer",
+                  "categoryId":4
+               },
+               {
+                  "jobFunctionId":157,
+                  "jobFunctionName":"Graphic Design",
+                  "categoryId":2
+               },
+               {
+                  "jobFunctionId":175,
+                  "jobFunctionName":"Venture Capital",
+                  "categoryId":1
+               }
+            ],
+            "totalExperienceDisplay":"0 years",
+            "location":"Hyderabad",
+            "userAcademic":[
+
+            ],
+            "status":1
+         }
+      },
+      {
+         "jobPostId":{
+            "endDate":"Sep 2018",
+            "jobPostId":610,
+            "experienceMin":0,
+            "description":"customer service intern",
+            "title":"Customer service intern Job",
+            "unpaid":false,
+            "salaryMax":37.5,
+            "skills":[
+               "Team Management",
+               "Negotiation",
+               "Advertising Sales",
+               "Sales Operations"
+            ],
+            "hideSalary":1,
+            "jobFunction":[
+               149
+            ],
+            "experienceMax":1,
+            "location":{
+               "locationId":80,
+               "title":"Bangalore, IN"
+            },
+            "candidateJobActionDate":"Sep 2017 04 07:25 AM",
+            "jobType":{
+               "jobTypeId":3,
+               "jobTypeTitle":"Internship"
+            },
+            "salaryMin":0,
+            "startDate":"Sep 2017",
+            "status":3
+         },
+         "userId":{
+            "firstname":"Test",
+            "totalExperienceText":"2.5 years",
+            "regdId":"NA",
+            "pic":"",
+            "userJobTitle":"No User Title",
+            "userExperienceSet":[
+               {
+                  "totalExperienceText":"2.5 years",
+                  "endDate":"Jul 2017",
+                  "jobTitle":"Abc",
+                  "isPresent":true,
+                  "company":"Cjcj",
+                  "location":"Jaipur, Rajasthan",
+                  "startDate":"Jul 2015",
+                  "expId":330
+               }
+            ],
+            "coverLetter":"Looking for a job in Business Analyst, Customer Service roles, located in Hyderabad.",
+            "email":"shr1@workruit.com",
+            "deviceType":"Android",
+            "resume":"",
+            "minSalaryExp":0,
+            "telephone":"8639217011",
+            "userId":615,
+            "lastname":"Account",
+            "maxSalaryExp":5,
+            "userEducationSet":[
+               {
+                  "institution":"Djxj",
+                  "educationId":289,
+                  "endDate":"Jul 2015",
+                  "degree":{
+                     "degreeId":44,
+                     "shortTitle":"B.A",
+                     "title":"Bachelor of Arts "
+                  },
+                  "isPresent":false,
+                  "location":"Jaipur, Rajasthan",
+                  "fieldOfStudy":"Zkkzk",
+                  "startDate":"Jul 2013"
+               }
+            ],
+            "hideSalary":false,
+            "totalExperience":2.3,
+            "userSkillsSet":[
+               {
+                  "skillId":326,
+                  "title":"Advertising Sales"
+               },
+               {
+                  "skillId":1957,
+                  "title":"Business Analysis"
+               },
+               {
+                  "skillId":8185,
+                  "title":"Java"
+               },
+               {
+                  "skillId":8186,
+                  "title":"JavaBeans"
+               },
+               {
+                  "skillId":8188,
+                  "title":"JavaFX"
+               }
+            ],
+            "jobFunctions":[
+               {
+                  "jobFunctionId":146,
+                  "jobFunctionName":"Business Analyst",
+                  "categoryId":1
+               },
+               {
+                  "jobFunctionId":149,
+                  "jobFunctionName":"Customer Service",
+                  "categoryId":7
+               }
+            ],
+            "totalExperienceDisplay":"0 years",
+            "location":"Hyderabad",
+            "userAcademic":[
+
+            ],
+            "status":1
+         }
+      },
+      {
+         "jobPostId":{
+            "endDate":"Sep 2018",
+            "jobPostId":610,
+            "experienceMin":0,
+            "description":"customer service intern",
+            "title":"Customer service intern Job",
+            "unpaid":false,
+            "salaryMax":37.5,
+            "skills":[
+               "Team Management",
+               "Negotiation",
+               "Advertising Sales",
+               "Sales Operations"
+            ],
+            "hideSalary":1,
+            "jobFunction":[
+               149
+            ],
+            "experienceMax":1,
+            "location":{
+               "locationId":80,
+               "title":"Bangalore, IN"
+            },
+            "candidateJobActionDate":"Sep 2017 04 07:25 AM",
+            "jobType":{
+               "jobTypeId":3,
+               "jobTypeTitle":"Internship"
+            },
+            "salaryMin":0,
+            "startDate":"Sep 2017",
+            "status":3
+         },
+         "userId":{
+            "firstname":"Gm18",
+            "totalExperienceText":"0.0 years",
+            "regdId":"NA",
+            "pic":"",
+            "userJobTitle":"Gm18",
+            "userExperienceSet":[
+
+            ],
+            "coverLetter":"Looking for a job in Android Developer roles.located in hyderabad",
+            "email":"gm18@workruit.com",
+            "deviceType":"iOS",
+            "resume":"",
+            "minSalaryExp":0,
+            "telephone":"8977131619",
+            "userId":1496,
+            "lastname":"Gm1",
+            "maxSalaryExp":41.53,
+            "userEducationSet":[
+               {
+                  "institution":"Badruka",
+                  "educationId":526,
+                  "endDate":"Jun 2015",
+                  "degree":{
+                     "degreeId":39,
+                     "shortTitle":"A.A",
+                     "title":"Associate of Arts "
+                  },
+                  "isPresent":false,
+                  "location":"Hyderabad, Telangana",
+                  "fieldOfStudy":"Arts",
+                  "startDate":"Aug 2013"
+               }
+            ],
+            "hideSalary":false,
+            "totalExperience":0,
+            "userSkillsSet":[
+               {
+                  "skillId":485,
+                  "title":"AJAX"
+               },
+               {
+                  "skillId":596,
+                  "title":"Amazon Web Services (AWS)"
+               },
+               {
+                  "skillId":417,
+                  "title":"Agile Methodologies"
+               },
+               {
+                  "skillId":326,
+                  "title":"Advertising Sales"
+               },
+               {
+                  "skillId":12233,
+                  "title":"Presentation Skills"
+               },
+               {
+                  "skillId":4938,
+                  "title":"Enterprise Software"
+               }
+            ],
+            "jobFunctions":[
+               {
+                  "jobFunctionId":149,
+                  "jobFunctionName":"Customer Service",
+                  "categoryId":7
+               },
+               {
+                  "jobFunctionId":141,
+                  "jobFunctionName":"Administrative",
+                  "categoryId":7
+               },
+               {
+                  "jobFunctionId":143,
+                  "jobFunctionName":"Android Developer",
+                  "categoryId":6
+               }
+            ],
+            "totalExperienceDisplay":"0 years",
+            "location":"Hyderabad",
+            "userAcademic":[
+
+            ],
+            "status":1
+         }
+      },
+      {
+         "jobPostId":{
+            "endDate":"",
+            "jobPostId":616,
+            "experienceMin":3.1,
+            "description":"Architecture job",
+            "title":"Architect Contract Job",
+            "unpaid":false,
+            "salaryMax":8.2,
+            "skills":[
+               "3D Architectural Rendering",
+               "Architecture",
+               "Building Codes",
+               "Construction Drawings"
+            ],
+            "hideSalary":1,
+            "jobFunction":[
+               144
+            ],
+            "experienceMax":7.9,
+            "location":{
+               "locationId":80,
+               "title":"Bangalore, IN"
+            },
+            "candidateJobActionDate":"Sep 2017 01 02:27 PM",
+            "jobType":{
+               "jobTypeId":2,
+               "jobTypeTitle":"Contract"
+            },
+            "salaryMin":8.2,
+            "startDate":"",
+            "status":3
+         },
+         "userId":{
+            "firstname":"Mg283",
+            "totalExperienceText":"4.5 years",
+            "regdId":"NA",
+            "pic":"",
+            "userJobTitle":"No User Title",
+            "userExperienceSet":[
+               {
+                  "totalExperienceText":"4.5 years",
+                  "endDate":"Jul 2017",
+                  "jobTitle":"Mg282",
+                  "isPresent":true,
+                  "company":"Thub",
+                  "location":"Hyderabad, Telangana",
+                  "startDate":"Jul 2013",
+                  "expId":611
+               }
+            ],
+            "coverLetter":"Looking for a job in Education role.",
+            "email":"mg283@workruit.com",
+            "deviceType":"Android",
+            "resume":"",
+            "minSalaryExp":0,
+            "telephone":"8977131619",
+            "userId":1085,
+            "lastname":"Mg28",
+            "maxSalaryExp":5,
+            "userEducationSet":[
+               {
+                  "institution":"Ams",
+                  "educationId":443,
+                  "endDate":"Oct 2015",
+                  "degree":{
+                     "degreeId":40,
+                     "shortTitle":"A.S",
+                     "title":"Associate of Science "
+                  },
+                  "isPresent":false,
+                  "location":"Hyderabad, Telangana",
+                  "fieldOfStudy":"Science",
+                  "startDate":"Jul 2014"
+               }
+            ],
+            "hideSalary":false,
+            "totalExperience":4.3,
+            "userSkillsSet":[
+               {
+                  "skillId":9650,
+                  "title":"Mentoring"
+               },
+               {
+                  "skillId":12494,
+                  "title":"Public Speaking"
+               },
+               {
+                  "skillId":12233,
+                  "title":"Presentation Skills"
+               },
+               {
+                  "skillId":5,
+                  "title":"3D Architectural Rendering"
+               }
+            ],
+            "jobFunctions":[
+               {
+                  "jobFunctionId":144,
+                  "jobFunctionName":"Architect",
+                  "categoryId":2
+               },
+               {
+                  "jobFunctionId":152,
+                  "jobFunctionName":"Education",
+                  "categoryId":0
+               }
+            ],
+            "totalExperienceDisplay":"4.9 years",
+            "location":"Hyderabad",
+            "userAcademic":[
+
+            ],
+            "status":1
+         }
+      },
+      {
+         "jobPostId":{
+            "endDate":"",
+            "jobPostId":616,
+            "experienceMin":3.1,
+            "description":"Architecture job",
+            "title":"Architect Contract Job",
+            "unpaid":false,
+            "salaryMax":8.2,
+            "skills":[
+               "3D Architectural Rendering",
+               "Architecture",
+               "Building Codes",
+               "Construction Drawings"
+            ],
+            "hideSalary":1,
+            "jobFunction":[
+               144
+            ],
+            "experienceMax":7.9,
+            "location":{
+               "locationId":80,
+               "title":"Bangalore, IN"
+            },
+            "candidateJobActionDate":"Sep 2017 01 02:26 PM",
+            "jobType":{
+               "jobTypeId":2,
+               "jobTypeTitle":"Contract"
+            },
+            "salaryMin":8.2,
+            "startDate":"",
+            "status":3
+         },
+         "userId":{
+            "firstname":"Sudheer",
+            "totalExperienceText":"3.1 years",
+            "regdId":"NA",
+            "pic":"",
+            "userJobTitle":"Dd",
+            "userExperienceSet":[
+               {
+                  "totalExperienceText":"1.1 years",
+                  "endDate":"May 2017",
+                  "jobTitle":"Dd",
+                  "isPresent":false,
+                  "company":"Gshs",
+                  "location":"Hyderabad, Telangana",
+                  "startDate":"May 2016",
+                  "expId":171
+               },
+               {
+                  "totalExperienceText":"2.1 years",
+                  "endDate":"May 2016",
+                  "jobTitle":"Developing",
+                  "isPresent":false,
+                  "company":"Bdjdj",
+                  "location":"Hyderabad, Telangana",
+                  "startDate":"May 2014",
+                  "expId":172
+               }
+            ],
+            "coverLetter":"Shshsj",
+            "email":"ms33@gmail.com",
+            "deviceType":"Android",
+            "resume":"",
+            "minSalaryExp":0,
+            "telephone":"74299220",
+            "userId":269,
+            "lastname":"Reddy",
+            "maxSalaryExp":50,
+            "userEducationSet":[
+               {
+                  "institution":"Shjs",
+                  "educationId":173,
+                  "endDate":"May 2017",
+                  "degree":{
+                     "degreeId":48,
+                     "shortTitle":"B.D.S",
+                     "title":"Bachelor of Dental Surgery "
+                  },
+                  "isPresent":false,
+                  "location":"Hyderabad, Telangana",
+                  "fieldOfStudy":"Hshs",
+                  "startDate":"May 2011"
+               }
+            ],
+            "hideSalary":true,
+            "totalExperience":3.1,
+            "userSkillsSet":[
+               {
+                  "skillId":274,
+                  "title":"Adobe Creative Suite"
+               },
+               {
+                  "skillId":8185,
+                  "title":"Java"
+               },
+               {
+                  "skillId":5,
+                  "title":"3D Architectural Rendering"
+               }
+            ],
+            "jobFunctions":[
+               {
+                  "jobFunctionId":144,
+                  "jobFunctionName":"Architect",
+                  "categoryId":2
+               },
+               {
+                  "jobFunctionId":145,
+                  "jobFunctionName":"Back-end Developer",
+                  "categoryId":9
+               },
+               {
+                  "jobFunctionId":143,
+                  "jobFunctionName":"Android Developer",
+                  "categoryId":6
+               }
+            ],
+            "totalExperienceDisplay":"3.00 years ",
+            "location":"Hyderabad",
+            "userAcademic":[
+
+            ],
+            "status":1
+         }
+      },
+      {
+         "jobPostId":{
+            "endDate":"",
+            "jobPostId":613,
+            "experienceMin":6.5,
+            "description":"Business Development",
+            "title":"Business development 3 job Workruit Logo From Storytech",
+            "unpaid":false,
+            "salaryMax":50,
+            "skills":[
+               "Business Strategy",
+               "Business Intelligence",
+               "Budgeting"
+            ],
+            "hideSalary":0,
+            "jobFunction":[
+               147
+            ],
+            "experienceMax":20,
+            "location":{
+               "locationId":83,
+               "title":"Hyderabad, IN"
+            },
+            "candidateJobActionDate":"Sep 2017 01 11:06 AM",
+            "jobType":{
+               "jobTypeId":2,
+               "jobTypeTitle":"Contract"
+            },
+            "salaryMin":0,
+            "startDate":"",
+            "status":3
+         },
+         "userId":{
+            "firstname":"Saasdasd",
+            "totalExperienceText":"12.2 years",
+            "regdId":"NA",
+            "pic":"",
+            "userJobTitle":"Jhfjhfgjhfjgh",
+            "userExperienceSet":[
+               {
+                  "totalExperienceText":"4.1 years",
+                  "endDate":"Jul 2017",
+                  "jobTitle":"Gjghfhjfhjfhj",
+                  "isPresent":false,
+                  "company":"Lkhljkhjlkhjlkh",
+                  "location":"Hyderabad, Telangana.",
+                  "startDate":"Jul 2013",
+                  "expId":423
+               },
+               {
+                  "totalExperienceText":"8.1 years",
+                  "endDate":"Jul 2003",
+                  "jobTitle":"Nvbnmvmnv",
+                  "isPresent":false,
+                  "company":",jnb,mnb,mn",
+                  "location":"Hyderabad, Sindh.",
+                  "startDate":"Jul 1995",
+                  "expId":424
+               }
+            ],
+            "coverLetter":"Guytiuytiutiuytyuit",
+            "email":"asddasdds@asdads.adsa",
+            "deviceType":"iOS",
+            "resume":"",
+            "minSalaryExp":0,
+            "telephone":"9949325577",
+            "userId":777,
+            "lastname":"Asdasd",
+            "maxSalaryExp":5,
+            "userEducationSet":[
+               {
+                  "institution":"Jhgkjgkjg",
+                  "educationId":363,
+                  "endDate":"Jul 2017",
+                  "degree":{
+                     "degreeId":44,
+                     "shortTitle":"B.A",
+                     "title":"Bachelor of Arts "
+                  },
+                  "isPresent":false,
+                  "location":"Hyderabad, Sindh.",
+                  "fieldOfStudy":"Hhghkjgk",
+                  "startDate":"Jul 2014"
+               }
+            ],
+            "hideSalary":false,
+            "totalExperience":12.2,
+            "userSkillsSet":[
+               {
+                  "skillId":1979,
+                  "title":"Business Management"
+               },
+               {
+                  "skillId":1971,
+                  "title":"Business Intelligence"
+               },
+               {
+                  "skillId":417,
+                  "title":"Agile Methodologies"
+               },
+               {
+                  "skillId":1957,
+                  "title":"Business Analysis"
+               }
+            ],
+            "jobFunctions":[
+               {
+                  "jobFunctionId":146,
+                  "jobFunctionName":"Business Analyst",
+                  "categoryId":1
+               },
+               {
+                  "jobFunctionId":147,
+                  "jobFunctionName":"Business Development",
+                  "categoryId":1
+               },
+               {
+                  "jobFunctionId":154,
+                  "jobFunctionName":"CEO",
+                  "categoryId":1
+               }
+            ],
+            "totalExperienceDisplay":"4.0 years",
+            "location":"Hyderabad",
+            "userAcademic":[
+
+            ],
+            "status":1
+         }
+      },
+      {
+         "jobPostId":{
+            "endDate":"",
+            "jobPostId":559,
+            "experienceMin":0,
+            "description":"Hr recruiter",
+            "title":"Hr Recruiter",
+            "unpaid":false,
+            "salaryMax":50,
+            "skills":[
+               "Account Reconciliation",
+               "Accounting",
+               "Applied Mathematics"
+            ],
+            "hideSalary":0,
+            "jobFunction":[
+               160
+            ],
+            "experienceMax":20,
+            "location":{
+               "locationId":83,
+               "title":"Hyderabad, IN"
+            },
+            "candidateJobActionDate":"Sep 2017 01 09:35 AM",
+            "jobType":{
+               "jobTypeId":1,
+               "jobTypeTitle":"Full Time"
+            },
+            "salaryMin":0,
+            "startDate":"",
+            "status":3
+         },
+         "userId":{
+            "firstname":"Gm89",
+            "totalExperienceText":"0.0 years",
+            "regdId":"NA",
+            "pic":"",
+            "userJobTitle":"intern",
+            "userExperienceSet":[
+
+            ],
+            "coverLetter":"Looking for a job in Architect,Back-end Developer,HR and Recruiting roles.",
+            "email":"gm89@workruit.com",
+            "deviceType":"iOS",
+            "resume":"",
+            "minSalaryExp":0,
+            "telephone":"8977131619",
+            "userId":2046,
+            "lastname":"Gm8",
+            "maxSalaryExp":5,
+            "userEducationSet":[
+               {
+                  "institution":"Ams",
+                  "educationId":791,
+                  "endDate":"Dec 2015",
+                  "degree":{
+                     "degreeId":39,
+                     "shortTitle":"A.A",
+                     "title":"Associate of Arts "
+                  },
+                  "isPresent":false,
+                  "location":"Hyderabad, Telangana.",
+                  "fieldOfStudy":"Arts",
+                  "startDate":"Aug 2013"
+               }
+            ],
+            "hideSalary":false,
+            "totalExperience":0,
+            "userSkillsSet":[
+               {
+                  "skillId":111,
+                  "title":"Accounting"
+               },
+               {
+                  "skillId":2999,
+                  "title":"Construction Estimating"
+               },
+               {
+                  "skillId":10454,
+                  "title":"Network Security"
+               }
+            ],
+            "jobFunctions":[
+               {
+                  "jobFunctionId":144,
+                  "jobFunctionName":"Architect",
+                  "categoryId":2
+               },
+               {
+                  "jobFunctionId":160,
+                  "jobFunctionName":"HR and Recruiting",
+                  "categoryId":0
+               },
+               {
+                  "jobFunctionId":145,
+                  "jobFunctionName":"Back-end Developer",
+                  "categoryId":9
+               }
+            ],
+            "totalExperienceDisplay":"0 years",
+            "location":"Hyderabad",
+            "userAcademic":[
+
+            ],
+            "status":1
+         }
+      },
+      {
+         "jobPostId":{
+            "endDate":"",
+            "jobPostId":559,
+            "experienceMin":0,
+            "description":"Hr recruiter",
+            "title":"Hr Recruiter",
+            "unpaid":false,
+            "salaryMax":50,
+            "skills":[
+               "Account Reconciliation",
+               "Accounting",
+               "Applied Mathematics"
+            ],
+            "hideSalary":0,
+            "jobFunction":[
+               160
+            ],
+            "experienceMax":20,
+            "location":{
+               "locationId":83,
+               "title":"Hyderabad, IN"
+            },
+            "candidateJobActionDate":"Sep 2017 01 09:35 AM",
+            "jobType":{
+               "jobTypeId":1,
+               "jobTypeTitle":"Full Time"
+            },
+            "salaryMin":0,
+            "startDate":"",
+            "status":3
+         },
+         "userId":{
+            "firstname":"Gm92",
+            "totalExperienceText":"0.0 years",
+            "regdId":"ceZ6ltA8OT4:APA91bEG9kJE-U1pksZaHPNnuDccLS1AaIHRqY03PoQH_w92avAtFpNcSfUKsEwwg5AWlaircrBokV8FuS0yOEpJqR0QizJZxseUjSle0o1p9AKs7I2e3aOkGRfjjVVby-zl9udxaq1I",
+            "pic":"",
+            "userJobTitle":"Looking for new roles",
+            "userExperienceSet":[
+
+            ],
+            "coverLetter":"Looking for a job in Architect,Business Development,HR and Recruiting roles.",
+            "email":"gm92@workruit.com",
+            "deviceType":"iOS",
+            "resume":"",
+            "minSalaryExp":0,
+            "telephone":"8977131619",
+            "userId":2049,
+            "lastname":"Gm9",
+            "maxSalaryExp":5,
+            "userEducationSet":[
+               {
+                  "institution":"Bhavans",
+                  "educationId":783,
+                  "endDate":"Aug 2017",
+                  "degree":{
+                     "degreeId":47,
+                     "shortTitle":"B.Com",
+                     "title":"Bachelor of Commerce "
+                  },
+                  "isPresent":false,
+                  "location":"Hyderabad, Telangana",
+                  "fieldOfStudy":"Commerce",
+                  "startDate":"Aug 2014"
+               }
+            ],
+            "hideSalary":false,
+            "totalExperience":0,
+            "userSkillsSet":[
+               {
+                  "skillId":111,
+                  "title":"Accounting"
+               },
+               {
+                  "skillId":116,
+                  "title":"Account Reconciliation"
+               },
+               {
+                  "skillId":841,
+                  "title":"Applied Mathematics"
+               }
+            ],
+            "jobFunctions":[
+               {
+                  "jobFunctionId":144,
+                  "jobFunctionName":"Architect",
+                  "categoryId":2
+               },
+               {
+                  "jobFunctionId":160,
+                  "jobFunctionName":"HR and Recruiting",
+                  "categoryId":0
+               },
+               {
+                  "jobFunctionId":147,
+                  "jobFunctionName":"Business Development",
+                  "categoryId":1
+               }
+            ],
+            "totalExperienceDisplay":"0 years",
+            "location":"Hyderabad",
+            "userAcademic":[
+
+            ],
+            "status":1
+         }
+      },
+      {
+         "jobPostId":{
+            "endDate":"",
+            "jobPostId":553,
+            "experienceMin":0,
+            "description":"Architect job",
+            "title":"Architect Job",
+            "unpaid":false,
+            "salaryMax":50,
+            "skills":[
+               "3D Architectural Rendering",
+               "Building Codes",
+               "Adobe Creative Suite"
+            ],
+            "hideSalary":1,
+            "jobFunction":[
+               144
+            ],
+            "experienceMax":20,
+            "location":{
+               "locationId":83,
+               "title":"Hyderabad, IN"
+            },
+            "candidateJobActionDate":"Sep 2017 01 09:33 AM",
+            "jobType":{
+               "jobTypeId":1,
+               "jobTypeTitle":"Full Time"
+            },
+            "salaryMin":0,
+            "startDate":"",
+            "status":3
+         },
+         "userId":{
+            "firstname":"Sudheer",
+            "totalExperienceText":"6 months",
+            "regdId":"efc9nWZTmGI:APA91bELO056WAaJz7pI0jCABeP5u-doFtXggK06dMmpsJSojwtgViRpIjj1anv7xtWGtpguudfq6vWTK_6NR9wQyMT_InCGPMqpenNOszi4x6d_wUz5XETV4Nmc-SfZIaQWuMoYR5iv",
+            "pic":"",
+            "userJobTitle":"Tech Head",
+            "userExperienceSet":[
+               {
+                  "totalExperienceText":"6 months",
+                  "endDate":"Jun 2017",
+                  "jobTitle":"Workruit",
+                  "isPresent":true,
+                  "company":"Hshsh",
+                  "location":"Gseng, Austria.",
+                  "startDate":"Jun 2017",
+                  "expId":254
+               }
+            ],
+            "coverLetter":"Hdhshshhssh",
+            "email":"sudheer7786@gmail.com",
+            "deviceType":"iOS",
+            "resume":"",
+            "minSalaryExp":1,
+            "telephone":"8374299220",
+            "userId":405,
+            "lastname":"Reddy",
+            "maxSalaryExp":50,
+            "userEducationSet":[
+               {
+                  "institution":"Hdhs",
+                  "educationId":203,
+                  "endDate":"Jun 2017",
+                  "degree":{
+                     "degreeId":39,
+                     "shortTitle":"A.A",
+                     "title":"Associate of Arts "
+                  },
+                  "isPresent":true,
+                  "location":"Hyderabad, Telangana.",
+                  "fieldOfStudy":"Hdhsh",
+                  "startDate":"Jun 2017"
+               }
+            ],
+            "hideSalary":true,
+            "totalExperience":0.4,
+            "userSkillsSet":[
+               {
+                  "skillId":683,
+                  "title":"Android Development"
+               },
+               {
+                  "skillId":17253,
+                  "title":"Architectural Drawings"
+               },
+               {
+                  "skillId":17244,
+                  "title":"Architecture"
+               },
+               {
+                  "skillId":5,
+                  "title":"3D Architectural Rendering"
+               },
+               {
+                  "skillId":417,
+                  "title":"Agile Methodologies"
+               },
+               {
+                  "skillId":684,
+                  "title":"Android SDK"
+               }
+            ],
+            "jobFunctions":[
+               {
+                  "jobFunctionId":144,
+                  "jobFunctionName":"Architect",
+                  "categoryId":2
+               },
+               {
+                  "jobFunctionId":145,
+                  "jobFunctionName":"Back-end Developer",
+                  "categoryId":9
+               },
+               {
+                  "jobFunctionId":143,
+                  "jobFunctionName":"Android Developer",
+                  "categoryId":6
+               }
+            ],
+            "totalExperienceDisplay":"0 years",
+            "location":"Hyderabad",
+            "userAcademic":[
+
+            ],
+            "status":1
+         }
+      },
+      {
+         "jobPostId":{
+            "endDate":"Sep 2018",
+            "jobPostId":610,
+            "experienceMin":0,
+            "description":"customer service intern",
+            "title":"Customer service intern Job",
+            "unpaid":false,
+            "salaryMax":37.5,
+            "skills":[
+               "Team Management",
+               "Negotiation",
+               "Advertising Sales",
+               "Sales Operations"
+            ],
+            "hideSalary":1,
+            "jobFunction":[
+               149
+            ],
+            "experienceMax":1,
+            "location":{
+               "locationId":80,
+               "title":"Bangalore, IN"
+            },
+            "candidateJobActionDate":"Sep 2017 01 08:07 AM",
+            "jobType":{
+               "jobTypeId":3,
+               "jobTypeTitle":"Internship"
+            },
+            "salaryMin":0,
+            "startDate":"Sep 2017",
+            "status":3
+         },
+         "userId":{
+            "firstname":"Mg91",
+            "totalExperienceText":"0.0 years",
+            "regdId":"NA",
+            "pic":"",
+            "userJobTitle":"Mg91",
+            "userExperienceSet":[
+
+            ],
+            "coverLetter":"Fresher",
+            "email":"mg91@workruit.com",
+            "deviceType":"iOS",
+            "resume":"",
+            "minSalaryExp":0,
+            "telephone":"8977131619",
+            "userId":478,
+            "lastname":"Mg9",
+            "maxSalaryExp":50,
+            "userEducationSet":[
+               {
+                  "institution":"Amssoi",
+                  "educationId":243,
+                  "endDate":"Sep 2015",
+                  "degree":{
+                     "degreeId":47,
+                     "shortTitle":"B.Com",
+                     "title":"Bachelor of Commerce "
+                  },
+                  "isPresent":false,
+                  "location":"Hyderabad, Telangana",
+                  "fieldOfStudy":"Commence",
+                  "startDate":"Jul 2013"
+               }
+            ],
+            "hideSalary":true,
+            "totalExperience":0,
+            "userSkillsSet":[
+               {
+                  "skillId":4938,
+                  "title":"Enterprise Software"
+               },
+               {
+                  "skillId":3475,
+                  "title":"Customer Satisfaction"
+               },
+               {
+                  "skillId":9128,
+                  "title":"Long Term Relationship Building"
+               }
+            ],
+            "jobFunctions":[
+               {
+                  "jobFunctionId":149,
+                  "jobFunctionName":"Customer Service",
+                  "categoryId":7
+               },
+               {
+                  "jobFunctionId":143,
+                  "jobFunctionName":"Android Developer",
+                  "categoryId":6
+               }
+            ],
+            "totalExperienceDisplay":"0 years",
+            "location":"Hyderabad",
+            "userAcademic":[
+
+            ],
+            "status":1
+         }
+      },
+      {
+         "jobPostId":{
+            "endDate":"Aug 2018",
+            "jobPostId":557,
+            "experienceMin":0,
+            "description":"Business development internship",
+            "title":"Business Develop Intern",
+            "unpaid":false,
+            "salaryMax":50,
+            "skills":[
+               "Business Strategy",
+               "Business Intelligence",
+               "Budgeting"
+            ],
+            "hideSalary":0,
+            "jobFunction":[
+               147
+            ],
+            "experienceMax":1,
+            "location":{
+               "locationId":83,
+               "title":"Hyderabad, IN"
+            },
+            "candidateJobActionDate":"Sep 2017 01 08:04 AM",
+            "jobType":{
+               "jobTypeId":3,
+               "jobTypeTitle":"Internship"
+            },
+            "salaryMin":0,
+            "startDate":"Aug 2017",
+            "status":3
+         },
+         "userId":{
+            "firstname":"Gshhsggshs",
+            "totalExperienceText":"11 months",
+            "regdId":"dBmog6LKteI:APA91bEcaqs_xMEiP88gUWqKZ2Ljkud70rdK-mpWfoFUQT1EumnSiNF2y3brc26w6JwY1Hz8K4z0BxqmTiUcCJus8_yA4sqIf7dUlhalXib0TZ-oyRb9as0ar8Nuo7jQ6KqI-tiBue5P",
+            "pic":"",
+            "userJobTitle":"No User Title",
+            "userExperienceSet":[
+               {
+                  "totalExperienceText":"11 months",
+                  "endDate":"Jun 2017",
+                  "jobTitle":"Ghshahaha",
+                  "isPresent":false,
+                  "company":"Hhhahaha",
+                  "location":"Hyderabad, Telangana.",
+                  "startDate":"Aug 2016",
+                  "expId":670
+               }
+            ],
+            "coverLetter":"Looking for a job in Business Analyst,Business Development,CEO roles.",
+            "email":"ffff@fff.com",
+            "deviceType":"iOS",
+            "resume":"",
+            "minSalaryExp":0,
+            "telephone":"9441603975",
+            "userId":1322,
+            "lastname":"Gaggshaff",
+            "maxSalaryExp":5,
+            "userEducationSet":[
+               {
+                  "institution":"Hahhshshsug",
+                  "educationId":506,
+                  "endDate":"Aug 2016",
+                  "degree":{
+                     "degreeId":39,
+                     "shortTitle":"A.A",
+                     "title":"Associate of Arts "
+                  },
+                  "isPresent":false,
+                  "location":"Hyderabad, Telangana.",
+                  "fieldOfStudy":"Gahhshsh",
+                  "startDate":"Aug 2015"
+               },
+               {
+                  "institution":"Hahhshshsug",
+                  "educationId":507,
+                  "endDate":"Aug 2016",
+                  "degree":{
+                     "degreeId":39,
+                     "shortTitle":"A.A",
+                     "title":"Associate of Arts "
+                  },
+                  "isPresent":false,
+                  "location":"Hyderabad, Telangana.",
+                  "fieldOfStudy":"Gahhshsh",
+                  "startDate":"Aug 2015"
+               },
+               {
+                  "institution":"Hahhshshsug",
+                  "educationId":508,
+                  "endDate":"Aug 2016",
+                  "degree":{
+                     "degreeId":39,
+                     "shortTitle":"A.A",
+                     "title":"Associate of Arts "
+                  },
+                  "isPresent":false,
+                  "location":"Hyderabad, Telangana.",
+                  "fieldOfStudy":"Gahhshsh",
+                  "startDate":"Aug 2015"
+               }
+            ],
+            "hideSalary":false,
+            "totalExperience":0.11,
+            "userSkillsSet":[
+               {
+                  "skillId":417,
+                  "title":"Agile Methodologies"
+               },
+               {
+                  "skillId":1957,
+                  "title":"Business Analysis"
+               },
+               {
+                  "skillId":1894,
+                  "title":"Budgeting"
+               }
+            ],
+            "jobFunctions":[
+               {
+                  "jobFunctionId":146,
+                  "jobFunctionName":"Business Analyst",
+                  "categoryId":1
+               },
+               {
+                  "jobFunctionId":147,
+                  "jobFunctionName":"Business Development",
+                  "categoryId":1
+               },
+               {
+                  "jobFunctionId":154,
+                  "jobFunctionName":"CEO",
+                  "categoryId":1
+               }
+            ],
+            "totalExperienceDisplay":"1.0",
+            "location":"Hyderabad",
+            "userAcademic":[
+
+            ],
+            "status":1
+         }
+      },
+      {
+         "jobPostId":{
+            "endDate":"Sep 2017",
+            "jobPostId":596,
+            "experienceMin":0,
+            "description":"Graphic design internship",
+            "title":"Graphic Design Internship",
+            "unpaid":false,
+            "salaryMax":50,
+            "skills":[
+               "Brand Development",
+               "Animation",
+               "Adobe Creative Suite"
+            ],
+            "hideSalary":0,
+            "jobFunction":[
+               157
+            ],
+            "experienceMax":1,
+            "location":{
+               "locationId":83,
+               "title":"Hyderabad, IN"
+            },
+            "candidateJobActionDate":"Sep 2017 01 08:04 AM",
+            "jobType":{
+               "jobTypeId":3,
+               "jobTypeTitle":"Internship"
+            },
+            "salaryMin":0,
+            "startDate":"Aug 2017",
+            "status":3
+         },
+         "userId":{
+            "firstname":"Mg80",
+            "totalExperienceText":"1.2 years",
+            "regdId":"NA",
+            "pic":"",
+            "userJobTitle":"Mg80",
+            "userExperienceSet":[
+               {
+                  "totalExperienceText":"1.2 years",
+                  "endDate":"Jun 2017",
+                  "jobTitle":"Mg80",
+                  "isPresent":true,
+                  "company":"Thub",
+                  "location":"Hyderabad, Telangana.",
+                  "startDate":"Oct 2016",
+                  "expId":271
+               }
+            ],
+            "coverLetter":"Mhmhmh",
+            "email":"mg80@workruit.com",
+            "deviceType":"Android",
+            "resume":"",
+            "minSalaryExp":0,
+            "telephone":"8977131619",
+            "userId":426,
+            "lastname":"Mg8",
+            "maxSalaryExp":50,
+            "userEducationSet":[
+               {
+                  "institution":"Badruka",
+                  "educationId":218,
+                  "endDate":"Jun 2017",
+                  "degree":{
+                     "degreeId":43,
+                     "shortTitle":"B.Arch",
+                     "title":"Bachelor of Architecture "
+                  },
+                  "isPresent":false,
+                  "location":"Hyderabad, Telangana.",
+                  "fieldOfStudy":"Management",
+                  "startDate":"Jun 2014"
+               }
+            ],
+            "hideSalary":false,
+            "totalExperience":1,
+            "userSkillsSet":[
+               {
+                  "skillId":13062,
+                  "title":"Risk Analysis"
+               },
+               {
+                  "skillId":13398,
+                  "title":"Sales Operations"
+               },
+               {
+                  "skillId":12855,
+                  "title":"Relationship Building"
+               },
+               {
+                  "skillId":14655,
+                  "title":"Storyboarding"
+               },
+               {
+                  "skillId":714,
+                  "title":"Animation"
+               },
+               {
+                  "skillId":14682,
+                  "title":"Strategic Thinking"
+               },
+               {
+                  "skillId":9573,
+                  "title":"Medical Aid"
+               }
+            ],
+            "jobFunctions":[
+               {
+                  "jobFunctionId":184,
+                  "jobFunctionName":"Medicine",
+                  "categoryId":5
+               },
+               {
+                  "jobFunctionId":153,
+                  "jobFunctionName":"Finance/Accounting",
+                  "categoryId":3
+               },
+               {
+                  "jobFunctionId":157,
+                  "jobFunctionName":"Graphic Design",
+                  "categoryId":2
+               }
+            ],
+            "totalExperienceDisplay":"0 years",
+            "location":"Hyderabad",
+            "userAcademic":[
+
+            ],
+            "status":1
+         }
+      },
+      {
+         "jobPostId":{
+            "endDate":"Sep 2017",
+            "jobPostId":596,
+            "experienceMin":0,
+            "description":"Graphic design internship",
+            "title":"Graphic Design Internship",
+            "unpaid":false,
+            "salaryMax":50,
+            "skills":[
+               "Brand Development",
+               "Animation",
+               "Adobe Creative Suite"
+            ],
+            "hideSalary":0,
+            "jobFunction":[
+               157
+            ],
+            "experienceMax":1,
+            "location":{
+               "locationId":83,
+               "title":"Hyderabad, IN"
+            },
+            "candidateJobActionDate":"Sep 2017 01 08:01 AM",
+            "jobType":{
+               "jobTypeId":3,
+               "jobTypeTitle":"Internship"
+            },
+            "salaryMin":0,
+            "startDate":"Aug 2017",
+            "status":3
+         },
+         "userId":{
+            "firstname":"Mani",
+            "totalExperienceText":"0.0 years",
+            "regdId":"NA",
+            "pic":"",
+            "userJobTitle":"Designer 3",
+            "userExperienceSet":[
+
+            ],
+            "coverLetter":"Thanks so that you can you give you an update for Microsoft corporation oneu",
+            "email":"mac10@workruit.com",
+            "deviceType":"iOS",
+            "resume":"",
+            "minSalaryExp":7,
+            "telephone":"9866345672",
+            "userId":22,
+            "lastname":"Challa",
+            "maxSalaryExp":16,
+            "userEducationSet":[
+               {
+                  "institution":"Hjgh",
+                  "educationId":13,
+                  "endDate":"May 2017",
+                  "degree":{
+                     "degreeId":39,
+                     "shortTitle":"A.A",
+                     "title":"Associate of Arts "
+                  },
+                  "isPresent":false,
+                  "location":"Chennur, Telangana",
+                  "fieldOfStudy":"Kjhhg",
+                  "startDate":"May 2015"
+               }
+            ],
+            "hideSalary":false,
+            "totalExperience":0,
+            "userSkillsSet":[
+               {
+                  "skillId":274,
+                  "title":"Adobe Creative Suite"
+               },
+               {
+                  "skillId":682,
+                  "title":"Android"
+               },
+               {
+                  "skillId":714,
+                  "title":"Animation"
+               },
+               {
+                  "skillId":1795,
+                  "title":"Branding"
+               }
+            ],
+            "jobFunctions":[
+               {
+                  "jobFunctionId":157,
+                  "jobFunctionName":"Graphic Design",
+                  "categoryId":2
+               },
+               {
+                  "jobFunctionId":174,
+                  "jobFunctionName":"UI/UX Designer",
+                  "categoryId":2
+               }
+            ],
+            "totalExperienceDisplay":"0 years",
+            "location":"Jaipur",
+            "userAcademic":[
+               {
+                  "institution":"Jhbh",
+                  "role":"Bhk",
+                  "endDate":"May 2016",
+                  "isPresent":false,
+                  "location":"Tiruppur, Tamil Nadu",
+                  "projectId":4,
+                  "startDate":"May 2015",
+                  "projectTitle":"Sgbh"
+               }
+            ],
+            "status":1
+         }
+      },
+      {
+         "jobPostId":{
+            "endDate":"",
+            "jobPostId":591,
+            "experienceMin":0,
+            "description":"Contract job new",
+            "title":"Architect contract New",
+            "unpaid":false,
+            "salaryMax":43.4,
+            "skills":[
+               "Construction Estimating",
+               "Calculations",
+               "Civil Drafting",
+               "Sustainable Design"
+            ],
+            "hideSalary":1,
+            "jobFunction":[
+               144
+            ],
+            "experienceMax":17.6,
+            "location":{
+               "locationId":80,
+               "title":"Bangalore, IN"
+            },
+            "candidateJobActionDate":"Aug 2017 31 01:58 PM",
+            "jobType":{
+               "jobTypeId":2,
+               "jobTypeTitle":"Contract"
+            },
+            "salaryMin":0,
+            "startDate":"",
+            "status":3
+         },
+         "userId":{
+            "firstname":"Gm91",
+            "totalExperienceText":"0.0 years",
+            "regdId":"NA",
+            "pic":"",
+            "userJobTitle":"intern",
+            "userExperienceSet":[
+
+            ],
+            "coverLetter":"Looking for a job in Architect,HR and Recruiting roles.",
+            "email":"gm91@workruit.com",
+            "deviceType":"Android",
+            "resume":"",
+            "minSalaryExp":0,
+            "telephone":"8977131619",
+            "userId":2048,
+            "lastname":"Gm9",
+            "maxSalaryExp":5,
+            "userEducationSet":[
+               {
+                  "institution":"Bhavans",
+                  "educationId":782,
+                  "endDate":"Aug 2017",
+                  "degree":{
+                     "degreeId":47,
+                     "shortTitle":"B.Com",
+                     "title":"Bachelor of Commerce "
+                  },
+                  "isPresent":false,
+                  "location":"Hyderabad, Telangana",
+                  "fieldOfStudy":"Commerce",
+                  "startDate":"Aug 2014"
+               }
+            ],
+            "hideSalary":false,
+            "totalExperience":0,
+            "userSkillsSet":[
+               {
+                  "skillId":2623,
+                  "title":"Civil Drafting"
+               },
+               {
+                  "skillId":111,
+                  "title":"Accounting"
+               },
+               {
+                  "skillId":2999,
+                  "title":"Construction Estimating"
+               }
+            ],
+            "jobFunctions":[
+               {
+                  "jobFunctionId":144,
+                  "jobFunctionName":"Architect",
+                  "categoryId":2
+               },
+               {
+                  "jobFunctionId":160,
+                  "jobFunctionName":"HR and Recruiting",
+                  "categoryId":0
+               }
+            ],
+            "totalExperienceDisplay":"0 years",
+            "location":"Hyderabad",
+            "userAcademic":[
+
+            ],
+            "status":1
+         }
+      },
+      {
+         "jobPostId":{
+            "endDate":"",
+            "jobPostId":591,
+            "experienceMin":0,
+            "description":"Contract job new",
+            "title":"Architect contract New",
+            "unpaid":false,
+            "salaryMax":43.4,
+            "skills":[
+               "Construction Estimating",
+               "Calculations",
+               "Civil Drafting",
+               "Sustainable Design"
+            ],
+            "hideSalary":1,
+            "jobFunction":[
+               144
+            ],
+            "experienceMax":17.6,
+            "location":{
+               "locationId":80,
+               "title":"Bangalore, IN"
+            },
+            "candidateJobActionDate":"Aug 2017 31 01:58 PM",
+            "jobType":{
+               "jobTypeId":2,
+               "jobTypeTitle":"Contract"
+            },
+            "salaryMin":0,
+            "startDate":"",
+            "status":3
+         },
+         "userId":{
+            "firstname":"Gm89",
+            "totalExperienceText":"0.0 years",
+            "regdId":"NA",
+            "pic":"",
+            "userJobTitle":"intern",
+            "userExperienceSet":[
+
+            ],
+            "coverLetter":"Looking for a job in Architect,Back-end Developer,HR and Recruiting roles.",
+            "email":"gm89@workruit.com",
+            "deviceType":"iOS",
+            "resume":"",
+            "minSalaryExp":0,
+            "telephone":"8977131619",
+            "userId":2046,
+            "lastname":"Gm8",
+            "maxSalaryExp":5,
+            "userEducationSet":[
+               {
+                  "institution":"Ams",
+                  "educationId":791,
+                  "endDate":"Dec 2015",
+                  "degree":{
+                     "degreeId":39,
+                     "shortTitle":"A.A",
+                     "title":"Associate of Arts "
+                  },
+                  "isPresent":false,
+                  "location":"Hyderabad, Telangana.",
+                  "fieldOfStudy":"Arts",
+                  "startDate":"Aug 2013"
+               }
+            ],
+            "hideSalary":false,
+            "totalExperience":0,
+            "userSkillsSet":[
+               {
+                  "skillId":111,
+                  "title":"Accounting"
+               },
+               {
+                  "skillId":2999,
+                  "title":"Construction Estimating"
+               },
+               {
+                  "skillId":10454,
+                  "title":"Network Security"
+               }
+            ],
+            "jobFunctions":[
+               {
+                  "jobFunctionId":144,
+                  "jobFunctionName":"Architect",
+                  "categoryId":2
+               },
+               {
+                  "jobFunctionId":160,
+                  "jobFunctionName":"HR and Recruiting",
+                  "categoryId":0
+               },
+               {
+                  "jobFunctionId":145,
+                  "jobFunctionName":"Back-end Developer",
+                  "categoryId":9
+               }
+            ],
+            "totalExperienceDisplay":"0 years",
+            "location":"Hyderabad",
+            "userAcademic":[
+
+            ],
+            "status":1
+         }
+      },
+      {
+         "jobPostId":{
+            "endDate":"Aug 2018",
+            "jobPostId":592,
+            "experienceMin":0,
+            "description":"Internship job",
+            "title":"Back end dev internship",
+            "unpaid":false,
+            "salaryMax":50,
+            "skills":[
+               "Network Security",
+               "Object Oriented Design",
+               "Python"
+            ],
+            "hideSalary":0,
+            "jobFunction":[
+               145
+            ],
+            "experienceMax":1,
+            "location":{
+               "locationId":83,
+               "title":"Hyderabad, IN"
+            },
+            "candidateJobActionDate":"Aug 2017 31 01:57 PM",
+            "jobType":{
+               "jobTypeId":3,
+               "jobTypeTitle":"Internship"
+            },
+            "salaryMin":0,
+            "startDate":"Aug 2017",
+            "status":3
+         },
+         "userId":{
+            "firstname":"Gm89",
+            "totalExperienceText":"0.0 years",
+            "regdId":"NA",
+            "pic":"",
+            "userJobTitle":"intern",
+            "userExperienceSet":[
+
+            ],
+            "coverLetter":"Looking for a job in Architect,Back-end Developer,HR and Recruiting roles.",
+            "email":"gm89@workruit.com",
+            "deviceType":"iOS",
+            "resume":"",
+            "minSalaryExp":0,
+            "telephone":"8977131619",
+            "userId":2046,
+            "lastname":"Gm8",
+            "maxSalaryExp":5,
+            "userEducationSet":[
+               {
+                  "institution":"Ams",
+                  "educationId":791,
+                  "endDate":"Dec 2015",
+                  "degree":{
+                     "degreeId":39,
+                     "shortTitle":"A.A",
+                     "title":"Associate of Arts "
+                  },
+                  "isPresent":false,
+                  "location":"Hyderabad, Telangana.",
+                  "fieldOfStudy":"Arts",
+                  "startDate":"Aug 2013"
+               }
+            ],
+            "hideSalary":false,
+            "totalExperience":0,
+            "userSkillsSet":[
+               {
+                  "skillId":111,
+                  "title":"Accounting"
+               },
+               {
+                  "skillId":2999,
+                  "title":"Construction Estimating"
+               },
+               {
+                  "skillId":10454,
+                  "title":"Network Security"
+               }
+            ],
+            "jobFunctions":[
+               {
+                  "jobFunctionId":144,
+                  "jobFunctionName":"Architect",
+                  "categoryId":2
+               },
+               {
+                  "jobFunctionId":160,
+                  "jobFunctionName":"HR and Recruiting",
+                  "categoryId":0
+               },
+               {
+                  "jobFunctionId":145,
+                  "jobFunctionName":"Back-end Developer",
+                  "categoryId":9
+               }
+            ],
+            "totalExperienceDisplay":"0 years",
+            "location":"Hyderabad",
+            "userAcademic":[
+
+            ],
+            "status":1
+         }
+      },
+      {
+         "jobPostId":{
+            "endDate":"Jul 2018",
+            "jobPostId":595,
+            "experienceMin":0,
+            "description":"Education internship job",
+            "title":"Education Inter",
+            "unpaid":false,
+            "salaryMax":48.6,
+            "skills":[
+               "Presentation Skills",
+               "Leadership",
+               "English"
+            ],
+            "hideSalary":1,
+            "jobFunction":[
+               152
+            ],
+            "experienceMax":1,
+            "location":{
+               "locationId":83,
+               "title":"Hyderabad, IN"
+            },
+            "candidateJobActionDate":"Aug 2017 28 02:35 PM",
+            "jobType":{
+               "jobTypeId":3,
+               "jobTypeTitle":"Internship"
+            },
+            "salaryMin":0,
+            "startDate":"Aug 2017",
+            "status":3
+         },
+         "userId":{
+            "firstname":"Gm84",
+            "totalExperienceText":"0.0 years",
+            "regdId":"NA",
+            "pic":"",
+            "userJobTitle":"No User Title",
+            "userExperienceSet":[
+
+            ],
+            "coverLetter":"",
+            "email":"gm84@workruit.com",
+            "deviceType":"iOS",
+            "resume":"",
+            "minSalaryExp":0,
+            "telephone":"8977131619",
+            "userId":1976,
+            "lastname":"Gm8",
+            "maxSalaryExp":5,
+            "userEducationSet":[
+               {
+                  "institution":"Amssoi",
+                  "educationId":677,
+                  "endDate":"Jun 2017",
+                  "degree":{
+                     "degreeId":39,
+                     "shortTitle":"A.A",
+                     "title":"Associate of Arts "
+                  },
+                  "isPresent":false,
+                  "location":"Hyderabad, Telangana.",
+                  "fieldOfStudy":"Arts",
+                  "startDate":"Aug 2014"
+               }
+            ],
+            "hideSalary":false,
+            "totalExperience":0,
+            "userSkillsSet":[
+               {
+                  "skillId":4567,
+                  "title":"Educational Outreach"
+               },
+               {
+                  "skillId":12233,
+                  "title":"Presentation Skills"
+               },
+               {
+                  "skillId":4565,
+                  "title":"Educational Consulting"
+               }
+            ],
+            "jobFunctions":[
+               {
+                  "jobFunctionId":152,
+                  "jobFunctionName":"Education",
+                  "categoryId":0
+               }
+            ],
+            "totalExperienceDisplay":"0 years years",
+            "location":"Hyderabad",
+            "userAcademic":[
+
+            ],
+            "status":1
+         }
+      },
+      {
+         "jobPostId":{
+            "endDate":"Jul 2018",
+            "jobPostId":594,
+            "experienceMin":0,
+            "description":"internship job",
+            "title":"Data analytics internship",
+            "unpaid":false,
+            "salaryMax":50,
+            "skills":[
+               "SAS",
+               "Data Visualization",
+               "Matlab"
+            ],
+            "hideSalary":0,
+            "jobFunction":[
+               142
+            ],
+            "experienceMax":1,
+            "location":{
+               "locationId":83,
+               "title":"Hyderabad, IN"
+            },
+            "candidateJobActionDate":"Aug 2017 28 07:43 AM",
+            "jobType":{
+               "jobTypeId":3,
+               "jobTypeTitle":"Internship"
+            },
+            "salaryMin":0,
+            "startDate":"Aug 2017",
+            "status":3
+         },
+         "userId":{
+            "firstname":"Hhhh",
+            "totalExperienceText":"0.0 years",
+            "regdId":"NA",
+            "pic":"",
+            "userJobTitle":"Hhhh",
+            "userExperienceSet":[
+
+            ],
+            "coverLetter":"Looking for a job in Account Management,Administrative,Advertising roles.",
+            "email":"mkl@bnv.com",
+            "deviceType":"iOS",
+            "resume":"",
+            "minSalaryExp":0,
+            "telephone":"9441603975",
+            "userId":1767,
+            "lastname":"Bbbbb",
+            "maxSalaryExp":5,
+            "userEducationSet":[
+               {
+                  "institution":"Ggg",
+                  "educationId":590,
+                  "endDate":"Aug 2010",
+                  "degree":{
+                     "degreeId":39,
+                     "shortTitle":"A.A",
+                     "title":"Associate of Arts "
+                  },
+                  "isPresent":false,
+                  "location":"Hyderabad, Telangana.",
+                  "fieldOfStudy":"Hjjjj",
+                  "startDate":"Aug 2006"
+               }
+            ],
+            "hideSalary":false,
+            "totalExperience":0,
+            "userSkillsSet":[
+               {
+                  "skillId":12215,
+                  "title":"Predictive Modeling"
+               },
+               {
+                  "skillId":10333,
+                  "title":"Natural Language Processing"
+               },
+               {
+                  "skillId":111,
+                  "title":"Accounting"
+               },
+               {
+                  "skillId":323,
+                  "title":"Advertising"
+               },
+               {
+                  "skillId":324,
+                  "title":"Advertising Agency"
+               },
+               {
+                  "skillId":13472,
+                  "title":"SAS"
+               }
+            ],
+            "jobFunctions":[
+               {
+                  "jobFunctionId":142,
+                  "jobFunctionName":"Data Analytics",
+                  "categoryId":0
+               }
+            ],
+            "totalExperienceDisplay":"0.0",
+            "location":"Hyderabad",
+            "userAcademic":[
+
+            ],
+            "status":1
+         }
+      },
+      {
+         "jobPostId":{
+            "endDate":"",
+            "jobPostId":559,
+            "experienceMin":0,
+            "description":"Hr recruiter",
+            "title":"Hr Recruiter",
+            "unpaid":false,
+            "salaryMax":50,
+            "skills":[
+               "Account Reconciliation",
+               "Accounting",
+               "Applied Mathematics"
+            ],
+            "hideSalary":0,
+            "jobFunction":[
+               160
+            ],
+            "experienceMax":20,
+            "location":{
+               "locationId":83,
+               "title":"Hyderabad, IN"
+            },
+            "candidateJobActionDate":"Aug 2017 28 06:50 AM",
+            "jobType":{
+               "jobTypeId":1,
+               "jobTypeTitle":"Full Time"
+            },
+            "salaryMin":0,
+            "startDate":"",
+            "status":3
+         },
+         "userId":{
+            "firstname":"Gm91",
+            "totalExperienceText":"0.0 years",
+            "regdId":"NA",
+            "pic":"",
+            "userJobTitle":"intern",
+            "userExperienceSet":[
+
+            ],
+            "coverLetter":"Looking for a job in Architect,HR and Recruiting roles.",
+            "email":"gm91@workruit.com",
+            "deviceType":"Android",
+            "resume":"",
+            "minSalaryExp":0,
+            "telephone":"8977131619",
+            "userId":2048,
+            "lastname":"Gm9",
+            "maxSalaryExp":5,
+            "userEducationSet":[
+               {
+                  "institution":"Bhavans",
+                  "educationId":782,
+                  "endDate":"Aug 2017",
+                  "degree":{
+                     "degreeId":47,
+                     "shortTitle":"B.Com",
+                     "title":"Bachelor of Commerce "
+                  },
+                  "isPresent":false,
+                  "location":"Hyderabad, Telangana",
+                  "fieldOfStudy":"Commerce",
+                  "startDate":"Aug 2014"
+               }
+            ],
+            "hideSalary":false,
+            "totalExperience":0,
+            "userSkillsSet":[
+               {
+                  "skillId":2623,
+                  "title":"Civil Drafting"
+               },
+               {
+                  "skillId":111,
+                  "title":"Accounting"
+               },
+               {
+                  "skillId":2999,
+                  "title":"Construction Estimating"
+               }
+            ],
+            "jobFunctions":[
+               {
+                  "jobFunctionId":144,
+                  "jobFunctionName":"Architect",
+                  "categoryId":2
+               },
+               {
+                  "jobFunctionId":160,
+                  "jobFunctionName":"HR and Recruiting",
+                  "categoryId":0
+               }
+            ],
+            "totalExperienceDisplay":"0 years",
+            "location":"Hyderabad",
+            "userAcademic":[
+
+            ],
+            "status":1
+         }
+      },
+      {
+         "jobPostId":{
+            "endDate":"",
+            "jobPostId":593,
+            "experienceMin":0,
+            "description":"Freelance job",
+            "title":"Business dev Freelance",
+            "unpaid":false,
+            "salaryMax":50,
+            "skills":[
+               "Direct Sales",
+               "SaaS",
+               "Problem Solving"
+            ],
+            "hideSalary":0,
+            "jobFunction":[
+               147
+            ],
+            "experienceMax":20,
+            "location":{
+               "locationId":83,
+               "title":"Hyderabad, IN"
+            },
+            "candidateJobActionDate":"Aug 2017 28 06:21 AM",
+            "jobType":{
+               "jobTypeId":4,
+               "jobTypeTitle":"Freelance"
+            },
+            "salaryMin":0,
+            "startDate":"",
+            "status":3
+         },
+         "userId":{
+            "firstname":"Supriya",
+            "totalExperienceText":"4.9 years",
+            "regdId":"NA",
+            "pic":"",
+            "userJobTitle":"Head of BD",
+            "userExperienceSet":[
+               {
+                  "totalExperienceText":"4.9 years",
+                  "endDate":"Mar 2017",
+                  "jobTitle":"Head of BD",
+                  "isPresent":false,
+                  "company":"Street Easy",
+                  "location":"New Delhi, Delhi.",
+                  "startDate":"Jul 2012",
+                  "expId":259
+               }
+            ],
+            "coverLetter":"Quick learner, very quantitative, highly inquisitive. Will help in growth of sales team  and build a scalable, repeatable process.",
+            "email":"pal4@workruit.com",
+            "deviceType":"iOS",
+            "resume":"",
+            "minSalaryExp":0,
+            "telephone":"8639217011",
+            "userId":411,
+            "lastname":"Rani",
+            "maxSalaryExp":50,
+            "userEducationSet":[
+               {
+                  "institution":"University of Pennsylvania",
+                  "educationId":208,
+                  "endDate":"May 2012",
+                  "degree":{
+                     "degreeId":44,
+                     "shortTitle":"B.A",
+                     "title":"Bachelor of Arts "
+                  },
+                  "isPresent":false,
+                  "location":"Philadelphia, PA.",
+                  "fieldOfStudy":"Business & Marketing",
+                  "startDate":"Aug 2008"
+               }
+            ],
+            "hideSalary":true,
+            "totalExperience":4.9,
+            "userSkillsSet":[
+               {
+                  "skillId":12855,
+                  "title":"Relationship Building"
+               },
+               {
+                  "skillId":4035,
+                  "title":"Direct Sales"
+               },
+               {
+                  "skillId":2854,
+                  "title":"Cold Calling"
+               },
+               {
+                  "skillId":1971,
+                  "title":"Business Intelligence"
+               },
+               {
+                  "skillId":4948,
+                  "title":"Entrepreneurship"
+               },
+               {
+                  "skillId":9429,
+                  "title":"Market Research"
+               },
+               {
+                  "skillId":3977,
+                  "title":"Digital Marketing"
+               },
+               {
+                  "skillId":4511,
+                  "title":"E-commerce"
+               },
+               {
+                  "skillId":5345,
+                  "title":"Facebook Marketing"
+               },
+               {
+                  "skillId":6522,
+                  "title":"Google Adwords"
+               },
+               {
+                  "skillId":6525,
+                  "title":"Google Analytics"
+               },
+               {
+                  "skillId":6672,
+                  "title":"Growth Hacking"
+               },
+               {
+                  "skillId":6674,
+                  "title":"Growth Strategies"
+               },
+               {
+                  "skillId":8482,
+                  "title":"Keyword Research"
+               },
+               {
+                  "skillId":8797,
+                  "title":"Leadership"
+               },
+               {
+                  "skillId":8801,
+                  "title":"Lead Generation"
+               },
+               {
+                  "skillId":9430,
+                  "title":"Market Risk"
+               },
+               {
+                  "skillId":12278,
+                  "title":"Problem Solving"
+               },
+               {
+                  "skillId":10416,
+                  "title":"Negotiation"
+               },
+               {
+                  "skillId":12308,
+                  "title":"Product Development"
+               },
+               {
+                  "skillId":12319,
+                  "title":"Product Marketing"
+               },
+               {
+                  "skillId":12369,
+                  "title":"Project Management"
+               },
+               {
+                  "skillId":12579,
+                  "title":"Qualitative Research"
+               }
+            ],
+            "jobFunctions":[
+               {
+                  "jobFunctionId":178,
+                  "jobFunctionName":"Digital Marketing",
+                  "categoryId":4
+               },
+               {
+                  "jobFunctionId":147,
+                  "jobFunctionName":"Business Development",
+                  "categoryId":1
+               }
+            ],
+            "totalExperienceDisplay":"0 years",
+            "location":"Hyderabad",
+            "userAcademic":[
+               {
+                  "institution":"UPenn",
+                  "role":"Lead Dancer",
+                  "endDate":"May 2013",
+                  "isPresent":false,
+                  "location":"Philadelphia, PA.",
+                  "projectId":46,
+                  "startDate":"Sep 2011",
+                  "projectTitle":"Penn Naach"
+               }
+            ],
+            "status":1
+         }
+      },
+      {
+         "jobPostId":{
+            "endDate":"",
+            "jobPostId":593,
+            "experienceMin":0,
+            "description":"Freelance job",
+            "title":"Business dev Freelance",
+            "unpaid":false,
+            "salaryMax":50,
+            "skills":[
+               "Direct Sales",
+               "SaaS",
+               "Problem Solving"
+            ],
+            "hideSalary":0,
+            "jobFunction":[
+               147
+            ],
+            "experienceMax":20,
+            "location":{
+               "locationId":83,
+               "title":"Hyderabad, IN"
+            },
+            "candidateJobActionDate":"Aug 2017 28 06:20 AM",
+            "jobType":{
+               "jobTypeId":4,
+               "jobTypeTitle":"Freelance"
+            },
+            "salaryMin":0,
+            "startDate":"",
+            "status":3
+         },
+         "userId":{
+            "firstname":"Mahathi",
+            "totalExperienceText":"4.7 years",
+            "regdId":"NA",
+            "pic":"",
+            "userJobTitle":"Business Dev - Associate",
+            "userExperienceSet":[
+               {
+                  "totalExperienceText":"4.7 years",
+                  "endDate":"Jun 2017",
+                  "jobTitle":"BD Associate",
+                  "isPresent":true,
+                  "company":"Storytech",
+                  "location":"Hyderabad, Telangana",
+                  "startDate":"May 2013",
+                  "expId":256
+               }
+            ],
+            "coverLetter":"Quick learner, very quantitative, highly inquisitive. Will help in growth of sales team  and build a scalable, repeatable process. ",
+            "email":"pal1@workruit.com",
+            "deviceType":"Android",
+            "resume":"",
+            "minSalaryExp":6,
+            "telephone":"8639217011",
+            "userId":408,
+            "lastname":"Reddy",
+            "maxSalaryExp":8,
+            "userEducationSet":[
+               {
+                  "institution":"State University",
+                  "educationId":205,
+                  "endDate":"May 2013",
+                  "degree":{
+                     "degreeId":43,
+                     "shortTitle":"B.Arch",
+                     "title":"Bachelor of Architecture "
+                  },
+                  "isPresent":false,
+                  "location":"Hyderabad, Telangana",
+                  "fieldOfStudy":"Business & Marketing",
+                  "startDate":"Aug 2010"
+               }
+            ],
+            "hideSalary":false,
+            "totalExperience":4.5,
+            "userSkillsSet":[
+               {
+                  "skillId":1971,
+                  "title":"Business Intelligence"
+               },
+               {
+                  "skillId":3474,
+                  "title":"Customer Retention"
+               },
+               {
+                  "skillId":12369,
+                  "title":"Project Management"
+               },
+               {
+                  "skillId":14676,
+                  "title":"Strategic Partnerships"
+               },
+               {
+                  "skillId":15151,
+                  "title":"Team Management"
+               },
+               {
+                  "skillId":13333,
+                  "title":"SaaS"
+               },
+               {
+                  "skillId":8797,
+                  "title":"Leadership"
+               }
+            ],
+            "jobFunctions":[
+               {
+                  "jobFunctionId":147,
+                  "jobFunctionName":"Business Development",
+                  "categoryId":1
+               }
+            ],
+            "totalExperienceDisplay":"4.00 years ",
+            "location":"Hyderabad",
+            "userAcademic":[
+               {
+                  "institution":"SU - HYD",
+                  "role":"Corporate Relations",
+                  "endDate":"Apr 2013",
+                  "isPresent":false,
+                  "location":"Hyderabad, Telangana",
+                  "projectId":43,
+                  "startDate":"Jan 2013",
+                  "projectTitle":"College Fest - NYA"
+               }
+            ],
+            "status":1
+         }
+      },
+      {
+         "jobPostId":{
+            "endDate":"Aug 2018",
+            "jobPostId":557,
+            "experienceMin":0,
+            "description":"Business development internship",
+            "title":"Business Develop Intern",
+            "unpaid":false,
+            "salaryMax":50,
+            "skills":[
+               "Business Strategy",
+               "Business Intelligence",
+               "Budgeting"
+            ],
+            "hideSalary":0,
+            "jobFunction":[
+               147
+            ],
+            "experienceMax":1,
+            "location":{
+               "locationId":83,
+               "title":"Hyderabad, IN"
+            },
+            "candidateJobActionDate":"Aug 2017 28 06:09 AM",
+            "jobType":{
+               "jobTypeId":3,
+               "jobTypeTitle":"Internship"
+            },
+            "salaryMin":0,
+            "startDate":"Aug 2017",
+            "status":3
+         },
+         "userId":{
+            "firstname":"Hshhs",
+            "totalExperienceText":"2.1 years",
+            "regdId":"dBmog6LKteI:APA91bEcaqs_xMEiP88gUWqKZ2Ljkud70rdK-mpWfoFUQT1EumnSiNF2y3brc26w6JwY1Hz8K4z0BxqmTiUcCJus8_yA4sqIf7dUlhalXib0TZ-oyRb9as0ar8Nuo7jQ6KqI-tiBue5P",
+            "pic":"",
+            "userJobTitle":"No User Title",
+            "userExperienceSet":[
+               {
+                  "totalExperienceText":"2.1 years",
+                  "endDate":"Aug 2016",
+                  "jobTitle":"Ttshhs",
+                  "isPresent":false,
+                  "company":"GgGha",
+                  "location":"Hyderabad, Telangana.",
+                  "startDate":"Aug 2014",
+                  "expId":666
+               }
+            ],
+            "coverLetter":"Looking for a job in Business Analyst,Business Development,General Business roles.",
+            "email":"hahahja@hahjaja.com",
+            "deviceType":"iOS",
+            "resume":"",
+            "minSalaryExp":0,
+            "telephone":"9441603975",
+            "userId":1317,
+            "lastname":"Ghahahaha",
+            "maxSalaryExp":5,
+            "userEducationSet":[
+               {
+                  "institution":"Gahha",
+                  "educationId":502,
+                  "endDate":"Aug 2016",
+                  "degree":{
+                     "degreeId":39,
+                     "shortTitle":"A.A",
+                     "title":"Associate of Arts "
+                  },
+                  "isPresent":false,
+                  "location":"Hyderabad, Telangana.",
+                  "fieldOfStudy":"Gshsjs",
+                  "startDate":"Aug 2015"
+               }
+            ],
+            "hideSalary":false,
+            "totalExperience":2.1,
+            "userSkillsSet":[
+               {
+                  "skillId":111,
+                  "title":"Accounting"
+               },
+               {
+                  "skillId":1894,
+                  "title":"Budgeting"
+               },
+               {
+                  "skillId":841,
+                  "title":"Applied Mathematics"
+               }
+            ],
+            "jobFunctions":[
+               {
+                  "jobFunctionId":146,
+                  "jobFunctionName":"Business Analyst",
+                  "categoryId":1
+               },
+               {
+                  "jobFunctionId":147,
+                  "jobFunctionName":"Business Development",
+                  "categoryId":1
+               },
+               {
+                  "jobFunctionId":156,
+                  "jobFunctionName":"General Business",
+                  "categoryId":1
+               }
+            ],
+            "totalExperienceDisplay":"1.0",
+            "location":"Hyderabad",
+            "userAcademic":[
+
+            ],
+            "status":1
+         }
+      },
+      {
+         "jobPostId":{
+            "endDate":"Aug 2018",
+            "jobPostId":557,
+            "experienceMin":0,
+            "description":"Business development internship",
+            "title":"Business Develop Intern",
+            "unpaid":false,
+            "salaryMax":50,
+            "skills":[
+               "Business Strategy",
+               "Business Intelligence",
+               "Budgeting"
+            ],
+            "hideSalary":0,
+            "jobFunction":[
+               147
+            ],
+            "experienceMax":1,
+            "location":{
+               "locationId":83,
+               "title":"Hyderabad, IN"
+            },
+            "candidateJobActionDate":"Aug 2017 28 06:09 AM",
+            "jobType":{
+               "jobTypeId":3,
+               "jobTypeTitle":"Internship"
+            },
+            "salaryMin":0,
+            "startDate":"Aug 2017",
+            "status":3
+         },
+         "userId":{
+            "firstname":"Ghhh",
+            "totalExperienceText":"4 months",
+            "regdId":"NA",
+            "pic":"",
+            "userJobTitle":"No User Title",
+            "userExperienceSet":[
+               {
+                  "totalExperienceText":"4 months",
+                  "endDate":"Aug 2017",
+                  "jobTitle":"Faggs",
+                  "isPresent":true,
+                  "company":"Bhahja",
+                  "location":"Hyderabad, Telangana.",
+                  "startDate":"Aug 2017",
+                  "expId":659
+               }
+            ],
+            "coverLetter":"Looking for a job in Business Analyst,Business Development,CEO roles.",
+            "email":"fgshahah@ghshsa.com",
+            "deviceType":"iOS",
+            "resume":"",
+            "minSalaryExp":0,
+            "telephone":"9441603975",
+            "userId":1282,
+            "lastname":"Vgahas",
+            "maxSalaryExp":5,
+            "userEducationSet":[
+               {
+                  "institution":"Gahhshs",
+                  "educationId":495,
+                  "endDate":"Aug 2015",
+                  "degree":{
+                     "degreeId":39,
+                     "shortTitle":"A.A",
+                     "title":"Associate of Arts "
+                  },
+                  "isPresent":false,
+                  "location":"Hyderabad, Telangana.",
+                  "fieldOfStudy":"Hahhshs",
+                  "startDate":"Aug 2012"
+               }
+            ],
+            "hideSalary":false,
+            "totalExperience":0.2,
+            "userSkillsSet":[
+               {
+                  "skillId":417,
+                  "title":"Agile Methodologies"
+               },
+               {
+                  "skillId":1957,
+                  "title":"Business Analysis"
+               },
+               {
+                  "skillId":1894,
+                  "title":"Budgeting"
+               }
+            ],
+            "jobFunctions":[
+               {
+                  "jobFunctionId":146,
+                  "jobFunctionName":"Business Analyst",
+                  "categoryId":1
+               },
+               {
+                  "jobFunctionId":147,
+                  "jobFunctionName":"Business Development",
+                  "categoryId":1
+               },
+               {
+                  "jobFunctionId":154,
+                  "jobFunctionName":"CEO",
+                  "categoryId":1
+               }
+            ],
+            "totalExperienceDisplay":"1.0",
+            "location":"Hyderabad",
+            "userAcademic":[
+
+            ],
+            "status":1
+         }
+      },
+      {
+         "jobPostId":{
+            "endDate":"",
+            "jobPostId":591,
+            "experienceMin":0,
+            "description":"Contract job new",
+            "title":"Architect contract New",
+            "unpaid":false,
+            "salaryMax":43.4,
+            "skills":[
+               "Construction Estimating",
+               "Calculations",
+               "Civil Drafting",
+               "Sustainable Design"
+            ],
+            "hideSalary":1,
+            "jobFunction":[
+               144
+            ],
+            "experienceMax":17.6,
+            "location":{
+               "locationId":80,
+               "title":"Bangalore, IN"
+            },
+            "candidateJobActionDate":"Aug 2017 28 06:04 AM",
+            "jobType":{
+               "jobTypeId":2,
+               "jobTypeTitle":"Contract"
+            },
+            "salaryMin":0,
+            "startDate":"",
+            "status":3
+         },
+         "userId":{
+            "firstname":"Sudheer",
+            "totalExperienceText":"6 months",
+            "regdId":"efc9nWZTmGI:APA91bELO056WAaJz7pI0jCABeP5u-doFtXggK06dMmpsJSojwtgViRpIjj1anv7xtWGtpguudfq6vWTK_6NR9wQyMT_InCGPMqpenNOszi4x6d_wUz5XETV4Nmc-SfZIaQWuMoYR5iv",
+            "pic":"",
+            "userJobTitle":"Tech Head",
+            "userExperienceSet":[
+               {
+                  "totalExperienceText":"6 months",
+                  "endDate":"Jun 2017",
+                  "jobTitle":"Workruit",
+                  "isPresent":true,
+                  "company":"Hshsh",
+                  "location":"Gseng, Austria.",
+                  "startDate":"Jun 2017",
+                  "expId":254
+               }
+            ],
+            "coverLetter":"Hdhshshhssh",
+            "email":"sudheer7786@gmail.com",
+            "deviceType":"iOS",
+            "resume":"",
+            "minSalaryExp":1,
+            "telephone":"8374299220",
+            "userId":405,
+            "lastname":"Reddy",
+            "maxSalaryExp":50,
+            "userEducationSet":[
+               {
+                  "institution":"Hdhs",
+                  "educationId":203,
+                  "endDate":"Jun 2017",
+                  "degree":{
+                     "degreeId":39,
+                     "shortTitle":"A.A",
+                     "title":"Associate of Arts "
+                  },
+                  "isPresent":true,
+                  "location":"Hyderabad, Telangana.",
+                  "fieldOfStudy":"Hdhsh",
+                  "startDate":"Jun 2017"
+               }
+            ],
+            "hideSalary":true,
+            "totalExperience":0.4,
+            "userSkillsSet":[
+               {
+                  "skillId":683,
+                  "title":"Android Development"
+               },
+               {
+                  "skillId":17253,
+                  "title":"Architectural Drawings"
+               },
+               {
+                  "skillId":17244,
+                  "title":"Architecture"
+               },
+               {
+                  "skillId":5,
+                  "title":"3D Architectural Rendering"
+               },
+               {
+                  "skillId":417,
+                  "title":"Agile Methodologies"
+               },
+               {
+                  "skillId":684,
+                  "title":"Android SDK"
+               }
+            ],
+            "jobFunctions":[
+               {
+                  "jobFunctionId":144,
+                  "jobFunctionName":"Architect",
+                  "categoryId":2
+               },
+               {
+                  "jobFunctionId":145,
+                  "jobFunctionName":"Back-end Developer",
+                  "categoryId":9
+               },
+               {
+                  "jobFunctionId":143,
+                  "jobFunctionName":"Android Developer",
+                  "categoryId":6
+               }
+            ],
+            "totalExperienceDisplay":"0 years",
+            "location":"Hyderabad",
+            "userAcademic":[
+
+            ],
+            "status":1
+         }
+      },
+      {
+         "jobPostId":{
+            "endDate":"",
+            "jobPostId":553,
+            "experienceMin":0,
+            "description":"Architect job",
+            "title":"Architect Job",
+            "unpaid":false,
+            "salaryMax":50,
+            "skills":[
+               "3D Architectural Rendering",
+               "Building Codes",
+               "Adobe Creative Suite"
+            ],
+            "hideSalary":1,
+            "jobFunction":[
+               144
+            ],
+            "experienceMax":20,
+            "location":{
+               "locationId":83,
+               "title":"Hyderabad, IN"
+            },
+            "candidateJobActionDate":"Aug 2017 08 12:43 PM",
+            "jobType":{
+               "jobTypeId":1,
+               "jobTypeTitle":"Full Time"
+            },
+            "salaryMin":0,
+            "startDate":"",
+            "status":3
+         },
+         "userId":{
+            "firstname":"Mg253",
+            "totalExperienceText":"4.5 years",
+            "regdId":"NA",
+            "pic":"/927/106264323797148.jpg",
+            "userJobTitle":"Mg253",
+            "userExperienceSet":[
+               {
+                  "totalExperienceText":"1.4 years",
+                  "endDate":"Aug 2017",
+                  "jobTitle":"Mg253",
+                  "isPresent":true,
+                  "company":"Thub",
+                  "location":"Hyderabad, Telangana",
+                  "startDate":"Aug 2016",
+                  "expId":592
+               },
+               {
+                  "totalExperienceText":"2.5 years",
+                  "endDate":"Jul 2017",
+                  "jobTitle":"Mg253",
+                  "isPresent":true,
+                  "company":"Thub",
+                  "location":"Hyderabad, Telangana",
+                  "startDate":"Jul 2015",
+                  "expId":583
+               },
+               {
+                  "totalExperienceText":"3.5 years",
+                  "endDate":"Nov 2016",
+                  "jobTitle":"Mg253",
+                  "isPresent":false,
+                  "company":"Tcs",
+                  "location":"Hyderabad, Telangana",
+                  "startDate":"Jul 2013",
+                  "expId":585
+               }
+            ],
+            "coverLetter":"Looking for a job in Architect role, located in Hyderabad.",
+            "email":"mg253@workruit.com",
+            "deviceType":"Android",
+            "resume":"",
+            "minSalaryExp":0,
+            "telephone":"8977131619",
+            "userId":927,
+            "lastname":"Mg25",
+            "maxSalaryExp":45.41,
+            "userEducationSet":[
+               {
+                  "institution":"Ams",
+                  "educationId":427,
+                  "endDate":"Oct 2016",
+                  "degree":{
+                     "degreeId":44,
+                     "shortTitle":"B.A",
+                     "title":"Bachelor of Arts "
+                  },
+                  "isPresent":false,
+                  "location":"Hyderabad, Telangana",
+                  "fieldOfStudy":"Arts",
+                  "startDate":"Jul 2013"
+               }
+            ],
+            "hideSalary":false,
+            "totalExperience":4.3,
+            "userSkillsSet":[
+               {
+                  "skillId":274,
+                  "title":"Adobe Creative Suite"
+               },
+               {
+                  "skillId":1913,
+                  "title":"Building Codes"
+               },
+               {
+                  "skillId":5,
+                  "title":"3D Architectural Rendering"
+               },
+               {
+                  "skillId":111,
+                  "title":"Accounting"
+               }
+            ],
+            "jobFunctions":[
+               {
+                  "jobFunctionId":144,
+                  "jobFunctionName":"Architect",
+                  "categoryId":2
+               },
+               {
+                  "jobFunctionId":153,
+                  "jobFunctionName":"Finance/Accounting",
+                  "categoryId":3
+               }
+            ],
+            "totalExperienceDisplay":"4.2 years",
+            "location":"Hyderabad",
+            "userAcademic":[
+               {
+                  "institution":"Ou",
+                  "role":"Test",
+                  "endDate":"Oct 2016",
+                  "isPresent":false,
+                  "location":"Hyderabad, Telangana",
+                  "projectId":130,
+                  "startDate":"Aug 2014",
+                  "projectTitle":"Lms"
+               }
+            ],
+            "status":1
+         }
+      },
+      {
+         "jobPostId":{
+            "endDate":"",
+            "jobPostId":553,
+            "experienceMin":0,
+            "description":"Architect job",
+            "title":"Architect Job",
+            "unpaid":false,
+            "salaryMax":50,
+            "skills":[
+               "3D Architectural Rendering",
+               "Building Codes",
+               "Adobe Creative Suite"
+            ],
+            "hideSalary":1,
+            "jobFunction":[
+               144
+            ],
+            "experienceMax":20,
+            "location":{
+               "locationId":83,
+               "title":"Hyderabad, IN"
+            },
+            "candidateJobActionDate":"Aug 2017 08 12:42 PM",
+            "jobType":{
+               "jobTypeId":1,
+               "jobTypeTitle":"Full Time"
+            },
+            "salaryMin":0,
+            "startDate":"",
+            "status":3
+         },
+         "userId":{
+            "firstname":"Mg38",
+            "totalExperienceText":"4.7 years",
+            "regdId":"drVckj1HMbM:APA91bHOcMkumU4uZNc45XasYZg9441BT6bgjv2rMOWZbFgPavLLYytsMkj7cBEEFKycQY27f01fN8gxf2syx_hD4ejZR3ySDmGqNi3GSHjTppeNb61HRd1Ddsb5V7EprvJja58QVZjw",
+            "pic":"",
+            "userJobTitle":"Mg38 Archit",
+            "userExperienceSet":[
+               {
+                  "totalExperienceText":"4.7 years",
+                  "endDate":"May 2017",
+                  "jobTitle":"Arch",
+                  "isPresent":true,
+                  "company":"Ttc",
+                  "location":"Hyderabad, Telangana",
+                  "startDate":"May 2013",
+                  "expId":123
+               }
+            ],
+            "coverLetter":"Internship",
+            "email":"mg38@workruit.com",
+            "deviceType":"Android",
+            "resume":"",
+            "minSalaryExp":1,
+            "telephone":"8977131619",
+            "userId":217,
+            "lastname":"Red",
+            "maxSalaryExp":50,
+            "userEducationSet":[
+               {
+                  "institution":"Bhavans",
+                  "educationId":138,
+                  "endDate":"May 2016",
+                  "degree":{
+                     "degreeId":40,
+                     "shortTitle":"A.S",
+                     "title":"Associate of Science "
+                  },
+                  "isPresent":false,
+                  "location":"Hyderabad, Telangana",
+                  "fieldOfStudy":"Science",
+                  "startDate":"May 2014"
+               }
+            ],
+            "hideSalary":true,
+            "totalExperience":4.5,
+            "userSkillsSet":[
+               {
+                  "skillId":5,
+                  "title":"3D Architectural Rendering"
+               },
+               {
+                  "skillId":274,
+                  "title":"Adobe Creative Suite"
+               },
+               {
+                  "skillId":1913,
+                  "title":"Building Codes"
+               }
+            ],
+            "jobFunctions":[
+               {
+                  "jobFunctionId":144,
+                  "jobFunctionName":"Architect",
+                  "categoryId":2
+               }
+            ],
+            "totalExperienceDisplay":"4.00 years ",
+            "location":"Hyderabad",
+            "userAcademic":[
+
+            ],
+            "status":1
+         }
+      },
+      {
+         "jobPostId":{
+            "endDate":"Aug 2018",
+            "jobPostId":557,
+            "experienceMin":0,
+            "description":"Business development internship",
+            "title":"Business Develop Intern",
+            "unpaid":false,
+            "salaryMax":50,
+            "skills":[
+               "Business Strategy",
+               "Business Intelligence",
+               "Budgeting"
+            ],
+            "hideSalary":0,
+            "jobFunction":[
+               147
+            ],
+            "experienceMax":1,
+            "location":{
+               "locationId":83,
+               "title":"Hyderabad, IN"
+            },
+            "candidateJobActionDate":"Aug 2017 08 12:15 PM",
+            "jobType":{
+               "jobTypeId":3,
+               "jobTypeTitle":"Internship"
+            },
+            "salaryMin":0,
+            "startDate":"Aug 2017",
+            "status":3
+         },
+         "userId":{
+            "firstname":"Hhh",
+            "totalExperienceText":"0.0 years",
+            "regdId":"NA",
+            "pic":"",
+            "userJobTitle":"No User Title",
+            "userExperienceSet":[
+
+            ],
+            "coverLetter":"Jjjjjjjjj bbbbbb",
+            "email":"teja2000@workruit.com",
+            "deviceType":"iOS",
+            "resume":"",
+            "minSalaryExp":0,
+            "telephone":"9441603975",
+            "userId":1140,
+            "lastname":"Uuuuu",
+            "maxSalaryExp":5,
+            "userEducationSet":[
+               {
+                  "institution":"Uuu",
+                  "educationId":465,
+                  "endDate":"Aug 2017",
+                  "degree":{
+                     "degreeId":39,
+                     "shortTitle":"A.A",
+                     "title":"Associate of Arts "
+                  },
+                  "isPresent":true,
+                  "location":"Hyderabad, Telangana.",
+                  "fieldOfStudy":"Hhhh",
+                  "startDate":"Aug 2016"
+               }
+            ],
+            "hideSalary":false,
+            "totalExperience":0,
+            "userSkillsSet":[
+               {
+                  "skillId":1971,
+                  "title":"Business Intelligence"
+               },
+               {
+                  "skillId":417,
+                  "title":"Agile Methodologies"
+               },
+               {
+                  "skillId":1957,
+                  "title":"Business Analysis"
+               }
+            ],
+            "jobFunctions":[
+               {
+                  "jobFunctionId":146,
+                  "jobFunctionName":"Business Analyst",
+                  "categoryId":1
+               },
+               {
+                  "jobFunctionId":147,
+                  "jobFunctionName":"Business Development",
+                  "categoryId":1
+               },
+               {
+                  "jobFunctionId":154,
+                  "jobFunctionName":"CEO",
+                  "categoryId":1
+               }
+            ],
+            "totalExperienceDisplay":"0.0",
+            "location":"Hyderabad",
+            "userAcademic":[
+
+            ],
+            "status":1
+         }
+      },
+      {
+         "jobPostId":{
+            "endDate":"Aug 2018",
+            "jobPostId":557,
+            "experienceMin":0,
+            "description":"Business development internship",
+            "title":"Business Develop Intern",
+            "unpaid":false,
+            "salaryMax":50,
+            "skills":[
+               "Business Strategy",
+               "Business Intelligence",
+               "Budgeting"
+            ],
+            "hideSalary":0,
+            "jobFunction":[
+               147
+            ],
+            "experienceMax":1,
+            "location":{
+               "locationId":83,
+               "title":"Hyderabad, IN"
+            },
+            "candidateJobActionDate":"Aug 2017 08 12:15 PM",
+            "jobType":{
+               "jobTypeId":3,
+               "jobTypeTitle":"Internship"
+            },
+            "salaryMin":0,
+            "startDate":"Aug 2017",
+            "status":3
+         },
+         "userId":{
+            "firstname":"asdafdf",
+            "totalExperienceText":"1.1 years",
+            "regdId":"NA",
+            "pic":"",
+            "userJobTitle":"No User Title",
+            "userExperienceSet":[
+               {
+                  "totalExperienceText":"1.1 years",
+                  "endDate":"Jul 2016",
+                  "jobTitle":"Asdfafdaf",
+                  "isPresent":false,
+                  "company":"Asdfafsdf",
+                  "location":"Hyderabad, Uttar Pradesh.",
+                  "startDate":"Jul 2015",
+                  "expId":421
+               }
+            ],
+            "coverLetter":"Asdfaf asdf asdf asdf asdf asdf asdf asdfsadf",
+            "email":"asdadffads@asdasf.asdfaf",
+            "deviceType":"iOS",
+            "resume":"",
+            "minSalaryExp":0,
+            "telephone":"9949325577",
+            "userId":773,
+            "lastname":"Asdfasdfasdf",
+            "maxSalaryExp":15,
+            "userEducationSet":[
+               {
+                  "institution":"Asdfadf",
+                  "educationId":361,
+                  "endDate":"Jul 2017",
+                  "degree":{
+                     "degreeId":44,
+                     "shortTitle":"B.A",
+                     "title":"Bachelor of Arts "
+                  },
+                  "isPresent":false,
+                  "location":"Bangalore, Karnataka.",
+                  "fieldOfStudy":"Sdfadfafd",
+                  "startDate":"Jul 2014"
+               }
+            ],
+            "hideSalary":false,
+            "totalExperience":1.1,
+            "userSkillsSet":[
+               {
+                  "skillId":417,
+                  "title":"Agile Methodologies"
+               },
+               {
+                  "skillId":1957,
+                  "title":"Business Analysis"
+               },
+               {
+                  "skillId":1971,
+                  "title":"Business Intelligence"
+               }
+            ],
+            "jobFunctions":[
+               {
+                  "jobFunctionId":146,
+                  "jobFunctionName":"Business Analyst",
+                  "categoryId":1
+               },
+               {
+                  "jobFunctionId":147,
+                  "jobFunctionName":"Business Development",
+                  "categoryId":1
+               },
+               {
+                  "jobFunctionId":154,
+                  "jobFunctionName":"CEO",
+                  "categoryId":1
+               }
+            ],
+            "totalExperienceDisplay":"3.0",
+            "location":"Hyderabad",
+            "userAcademic":[
+
+            ],
+            "status":1
+         }
+      },
+      {
+         "jobPostId":{
+            "endDate":"",
+            "jobPostId":558,
+            "experienceMin":0,
+            "description":"Finance job",
+            "title":"Finance Marketing",
+            "unpaid":false,
+            "salaryMax":50,
+            "skills":[
+               "Account Reconciliation",
+               "Accounting",
+               "Applied Mathematics"
+            ],
+            "hideSalary":0,
+            "jobFunction":[
+               153
+            ],
+            "experienceMax":20,
+            "location":{
+               "locationId":83,
+               "title":"Hyderabad, IN"
+            },
+            "candidateJobActionDate":"Aug 2017 08 12:08 PM",
+            "jobType":{
+               "jobTypeId":1,
+               "jobTypeTitle":"Full Time"
+            },
+            "salaryMin":0,
+            "startDate":"",
+            "status":3
+         },
+         "userId":{
+            "firstname":"Asdfaf",
+            "totalExperienceText":"9.1 years",
+            "regdId":"NA",
+            "pic":"",
+            "userJobTitle":"No User Title",
+            "userExperienceSet":[
+               {
+                  "totalExperienceText":"9.1 years",
+                  "endDate":"Jul 2016",
+                  "jobTitle":"Dsafafaf",
+                  "isPresent":false,
+                  "company":"Asdfafasdf",
+                  "location":"Hyderabad, Telangana.",
+                  "startDate":"Jul 2007",
+                  "expId":316
+               }
+            ],
+            "coverLetter":"Asdfasdf adds. F add afd",
+            "email":"sdafdfa@adsfasf.sadfsadf",
+            "deviceType":"iOS",
+            "resume":"",
+            "minSalaryExp":0,
+            "telephone":"9949325577",
+            "userId":553,
+            "lastname":"Asdfadfa",
+            "maxSalaryExp":5,
+            "userEducationSet":[
+               {
+                  "institution":"Asdfafa",
+                  "educationId":259,
+                  "endDate":"Jul 2017",
+                  "degree":{
+                     "degreeId":40,
+                     "shortTitle":"A.S",
+                     "title":"Associate of Science "
+                  },
+                  "isPresent":false,
+                  "location":"Hyde Park, United Kingdom.",
+                  "fieldOfStudy":"Asdfafaf",
+                  "startDate":"Jul 2016"
+               }
+            ],
+            "hideSalary":false,
+            "totalExperience":9.1,
+            "userSkillsSet":[
+               {
+                  "skillId":116,
+                  "title":"Account Reconciliation"
+               },
+               {
+                  "skillId":111,
+                  "title":"Accounting"
+               },
+               {
+                  "skillId":274,
+                  "title":"Adobe Creative Suite"
+               }
+            ],
+            "jobFunctions":[
+               {
+                  "jobFunctionId":153,
+                  "jobFunctionName":"Finance/Accounting",
+                  "categoryId":3
+               },
+               {
+                  "jobFunctionId":157,
+                  "jobFunctionName":"Graphic Design",
+                  "categoryId":2
+               },
+               {
+                  "jobFunctionId":174,
+                  "jobFunctionName":"UI/UX Designer",
+                  "categoryId":2
+               }
+            ],
+            "totalExperienceDisplay":"3.00 years ",
+            "location":"Hyderabad",
+            "userAcademic":[
+
+            ],
+            "status":1
+         }
+      }
+   ],
+   "status":"success"
+}

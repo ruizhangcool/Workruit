@@ -1,0 +1,263 @@
+<div ng-include="'views/includes/header.html'"></div>
+
+<div id="welcombox" class="mainbox welcombox applicant-nodata" ng-show="message==0">
+  <div class="panel panel-info sform col-md-6 col-sm-6 col-md-offset-3">
+    <div class="panel-body" >
+      <p class="text-center formhead"> No new matches </p>
+      <p class="text-center formsubhead">Your conversations with matched applicants will appear here.</p>
+      <p class="text-center formbtn">
+        <a href="#postjob" class="col-md-6 col-md-offset-3"><button class="btn btn-primary form-control"> POST A JOB </button></a></p>
+    </div>
+  </div>
+</div>
+
+<div class="content h-100 w-100 container-fluid" ng-show="message==1">
+  <div class="messages d-flex h-100 justify-content-between">
+
+    <!-- Search Box -->
+    <div class="chat-users h-100 py-3">
+      <div class="search-box px-3 pb-2">
+        <form>
+          <input type="text" class="form-control transition" placeholder="Search">
+        </form>
+      </div>
+
+      <!-- User List -->
+      <div class="users-box">
+        <div data-ng-repeat="profiles in recruiterApplicantMatches">
+
+          <!-- Without Data Badge -->
+          <div class="user transition" data-ng-class="(profiles.userId.userId == candidate.userId && profiles.jobPostId.jobPostId == job.jobPostId ) ? 'active' : ''"
+               data-ng-click="loadFullProfileChat(profiles.userId,profiles.jobPostId)" ng-if ="unreadCount['workruit_v1'+profiles.jobPostId.jobPostId+profiles.userId.userId] == null || unreadCount['workruit_v1'+profiles.jobPostId.jobPostId+profiles.userId.userId] <= 0">
+            <div class="avatar">
+              <img src="images/user_logo.png" class="user_img" ng-show="!profiles.userId.pic" />
+              <img src="{{imageUrl+profiles.userId.pic}}" class="user_img" ng-show="profiles.userId.pic" />
+            </div>
+            <div class="name">{{profiles.userId.firstname}}&nbsp;{{profiles.userId.lastname}}</div>
+            <div class="mood">{{profiles.userId.userJobTitle}}</div>
+          </div>
+
+          <!-- With Data Badge -->
+          <div class="user transition" data-ng-class="(profiles.userId.userId == candidate.userId && profiles.jobPostId.jobPostId == job.jobPostId ) ? 'active' : ''"
+               data-ng-click="loadFullProfileChat(profiles.userId,profiles.jobPostId)" ng-if ="unreadCount['workruit_v1'+profiles.jobPostId.jobPostId+profiles.userId.userId] > 0" data-badge="{{unreadCount['workruit_v1'+profiles.jobPostId.jobPostId+profiles.userId.userId]}}">
+            <div class="avatar">
+              <img src="images/user_logo.png" class="user_img" ng-show="!profiles.userId.pic" />
+              <img src="{{imageUrl+profiles.userId.pic}}" class="user_img" ng-show="profiles.userId.pic" />
+            </div>
+            <div class="name">{{profiles.userId.firstname}}&nbsp;{{profiles.userId.lastname}}</div>
+            <div class="mood">{{profiles.userId.userJobTitle}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chat Box -->
+    <div class="chat-body h-100 relative">
+      <form id="signupform" class="form-horizontal" role="form" action="about_company.html">
+
+        <!-- Chat Box Header -->
+        <div class="header px-4 py-3">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="name">{{candidate.firstname}} {{candidate.lastname}}</div>
+              <div class="project">Matched for <a href="" data-ng-click="editPostJob(job)" class="hundline">({{job.title}})</a></div>
+            </div>
+            <div class="col-md-6 text-right">
+              <div class="view-profile">
+                <a class="f14 hundline" data-ng-click="loadFullProfile(candidate, job)">View Profile</a>
+                <a href="#applicantsProfile" target="_new" class="f14 hundline" data-toggle="modal" data-target="#myModal2" ng-if="candidate.resume">View Resume</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chat Box -->
+        <div class="chat-box py-3">
+
+          <div ng-if="messages.length == 0 " style="margin-left: 20px;">No Messages to display</div>
+
+          <div ng-repeat="message in messages">
+            <!-- Self Chat Message -->
+            <div data-ng-if="message.from_id == email">
+              <div class="chat-date text-center w-100">
+                <span>{{message.date | workruitChatDate}}</span>
+              </div>
+
+              <div class="answer right">
+                <div class="text">{{message.msg}}</div>
+              </div>
+            </div>
+
+            <!-- Self Chat Message -->
+            <div data-ng-if="message.from_id != email">
+              <div class="chat-date text-center w-100">
+                <span>{{ message.date | workruitChatDate}}</span>
+              </div>
+
+              <div class="answer left">
+                <div class="text">{{message.msg}}</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="answer-add">
+            <input type="text" placeholder="Write a message..." data-ng-model="newMessage">
+            <span class="answer-btn" data-ng-click="sendMessage()">Send</span>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal1" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4>{{candidate.firstname}} {{candidate.lastname}} for {{job.title}}</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body" >
+        <div class="row">
+          <div class="candidate-container">
+            <div class="col-md-12 candidate-details" >
+
+              <div class="row">
+                <div class="col-md-8">
+                  <img src="images/pic1.png" class="profile-img" ng-show="!candidate.pic" />
+                  <img src="{{imageUrl+candidate.pic}}" class="profile-img" ng-show="candidate.pic" />
+                  <div class="user-detials">
+                    <span class="user-title">{{candidate.userJobTitle}}</span>
+                    <span class="user-designation text-uppercase">
+                   <span data-ng-repeat="fs in candidate.jobFunctions">
+                          {{fs.jobFunctionName}}
+                     {{(candidate.jobFunctions.length > 0 && $index != (candidate.jobFunctions.length -1))? '•':' '}}
+                      </span>
+                </span>
+                  </div>
+                </div>
+
+                <div class="col-md-4 user-info">
+                  <a href="javascript:void(0)"><img src="images/experience.svg">{{candidate.totalExperienceText}}</a>
+                  <a href="javascript:void(0)"><img src="images/location.svg">{{candidate.location}} </a>
+                  <a href="javascript:void(0)"><img src="images/salary.svg">
+                    <span ng-if="!candidate.hideSalary"> <i aria-hidden="true"></i>  {{candidate.minSalaryExp}}L - <i aria-hidden="true"></i> {{candidate.maxSalaryExp}}L</span>
+                    <span ng-if="candidate.hideSalary"> - <i aria-hidden="true" class="fa fa-inr fnormal f15"></i> - </span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- About Section -->
+              <div class="row full-info">
+                <div class="col-md-2">ABOUT ME</div>
+                <div class="col-md-7">{{candidate.coverLetter}} </div>
+                <div class="col-md-7 no-info" data-ng-if="!candidate.coverLetter">No information provided.</div>
+              </div>
+              <!-- /About Section -->
+
+              <!-- Experience Section -->
+              <div class="row full-info">
+                <div class="col-md-2">Experience</div>
+                <div class="col-md-7 no-info" data-ng-if="candidate.userExperienceSet.length==0">No information provided.</div>
+                <div class="col-md-7" data-ng-if="candidate.userExperienceSet.length!=0">
+                  <div class="row" data-ng-repeat="exp in candidate.userExperienceSet">
+                    <div class="col-md-6">
+                      <span class="company">{{exp.company}}</span>
+                      <span class="designation">{{exp.jobTitle}}</span>
+                    </div>
+                    <div class="col-md-6 txt-aln-r">
+                <span class="date">
+                   <span> {{exp.startDate}} - <span ng-if="!exp.isPresent">{{exp.endDate}}</span> <span ng-if="exp.isPresent">present</span></span>
+                </span>
+                      <span class="place">{{exp.location}}</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <!-- /Experience Section -->
+
+              <!-- Education Section -->
+              <div class="row full-info">
+                <div class="col-md-2">Education</div>
+                <div class="col-md-7 no-info" data-ng-if="candidate.userEducationSet.length==0">No information provided.</div>
+                <div class="col-md-7" data-ng-if="candidate.userEducationSet.length!=0">
+                  <div class="row" data-ng-repeat="edu in candidate.userEducationSet">
+                    <div class="col-md-6">
+                      <span class="company">{{edu.institution}} </span>
+                      <span class="designation">{{edu.fieldOfStudy}}</span>
+                    </div>
+                    <div class="col-md-6 txt-aln-r">
+                <span class="date">
+                  <span> {{edu.startDate}} - <span ng-if="!edu.isPresent">{{edu.endDate}}</span> <span ng-if="edu.isPresent">present</span></span>
+                </span>
+                      <span class="place">{{edu.location}}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /Experience Section -->
+
+              <!-- Academic Projects Section -->
+              <div class="row full-info">
+                <div class="col-md-2">Academic Projects</div>
+                <div class="col-md-7 no-info" data-ng-if="candidate.userAcademic.length==0">No information provided.</div>
+                <div class="col-md-7" data-ng-if="candidate.userAcademic.length!=0" >
+                  <div class="row" data-ng-repeat="edu in candidate.userAcademic" >
+                    <div class="col-md-6">
+                      <span class="company">{{edu.projectTitle}} </span>
+                      <span class="designation">{{edu.role}}</span>
+                    </div>
+                    <div class="col-md-6 txt-aln-r">
+                <span class="date">
+                  <span> {{edu.startDate}} - <span ng-if="!edu.isPresent">{{edu.endDate}}</span> <span ng-if="edu.isPresent">present</span></span>
+                </span>
+                      <span class="place">{{edu.location}}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /Academic Projects Section -->
+
+              <!-- Skills Projects Section -->
+              <div class="row full-info">
+                <div class="col-md-2">Skills</div>
+                <div class="col-md-7">
+              <span data-ng-repeat="skilldata in candidate.userSkillsSet">{{skilldata.title}}{{(candidate.userSkillsSet.length > 0 && $index != (candidate.userSkillsSet.length -1))? ', ':' '}}
+              </span>
+                </div>
+              </div>
+              <!-- /Skills Projects Section -->
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal2" role="dialog">
+  <div class="modal-dialog  modal-lg">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"> {{candidate.firstname}} {{candidate.lastname}} for {{job.title}}</h4>
+      </div>
+      <div class="modal-body" >
+        <iframe src="{{trustSrc(imageUrl+candidate.resume)}}" width="100%" height="500"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $('body').css("height", '100%');
+</script>

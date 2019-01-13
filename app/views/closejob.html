@@ -1,0 +1,230 @@
+<div ng-include="'views/includes/header.html'"></div>
+
+<div class="container">
+  <div id="signupbox" style="margin-top: 100px; margin-bottom: 50px;"	class="mainbox about_company">
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <div class="panel-title">Closed Job</div>
+      </div>
+      <div class="panel-body">
+        <form id="editJobForm"  name="" class="form-horizontal" role="form">
+
+          <legend> Job Summary </legend>
+editJobForm
+          <div class="form-group">
+            <input type="hidden" data-ng-model="job.status"/>
+            <label class="col-md-3 control-label">
+              Title </label>
+            <div class="col-md-9">
+              <input type="text" class="form-control" name="jobtitle" data-ng-model="job.title" ng-disabled="true"
+                     placeholder="Job Title" validator="required">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-md-3 control-label">
+              Function </label>
+            <div class="col-md-9">
+              <select class="form-control" data-ng-model="job.jobFunction" ng-disabled="true" validator="required">
+                <option value=""> - Job Function - </option>
+                <option data-ng-repeat="jf in masterData.jobFunctions" value="{{jf.jobFunctionId}}">{{jf.jobFunctionName}}</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-md-3 control-label">
+              Location </label>
+            <div class="col-md-9">
+              <select class="form-control" name="jobRole" data-ng-model="job.location" validator="required" ng-disabled="true">
+                <option value=""> - Job Location - </option>
+                <option data-ng-repeat="loc in masterData.locations" value="{{loc.locationId}}">{{loc.title}}</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-md-3 control-label"> Job
+              Description </label>
+            <div class="col-md-9">
+              <textarea class="form-control" rows="10" data-ng-model="job.description" validator="required" ng-disabled="true"> </textarea>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-md-3 control-label"> Job Skills </label>
+
+            <div class="col-md-9" ng-disabled="true" >
+              <tags-input ng-model="tags" add-on-paste="true" replace-spaces-with-dashes="false" placeholder="Add a skill" on-tag-removed="tagRemoved($tag)" ng-disabled="true">
+                <auto-complete source="loadTags($query)"
+                               min-length="0"
+                               load-on-focus="false"
+                               load-on-empty="false"
+                               max-results-to-show="32" ></auto-complete>
+              </tags-input>
+                <!-- Username -->
+                <div class="form-group">
+                  <label>Username</label>
+                  <div ng-dropdown-multiselect="" option="industrylist" selected-model="industry" extra-settings="industryDropDownSettings" style="width: 100%;"></div>
+                  <p class="help-block" style="padding-left:5px; margin-top: 5px; margin-bottom: 5px;">Username</p>
+                </div>
+
+          <legend> Job Details </legend>
+          <div class="form-group">
+            <label class="col-md-3 control-label"> Job Type </label>
+            <div class="col-md-9">
+              <select class="form-control" name="jobType" data-ng-model="job.jobType" ng-disabled="true" validator="required">
+                <option value=""> - job type - </option>
+                <option ng-repeat="jobtypes in masterData.jobTypes" value="{{jobtypes.jobTypeId}}">{{jobtypes.jobTypeTitle}}</option>
+              </select>
+            </div>
+          </div>
+
+          <div ng-if="job.jobType">
+
+
+
+            <div  style="margin-bottom: 0px;" ng-if="job.jobType == 3" ng-disabled="true" >
+              <div class="form-group">
+                <label  class="col-md-3 control-label"> Start Date </label>
+                <div class="col-md-3">
+                  <select id="startMonth" ng-disabled="true" name="startMonth" data-ng-options="mn for mn in months track by mn" data-ng-model="job.startMonth" class="form-control">
+                    <option value
+                </div>
+                <div class="col-md-3">
+                  <select id="startYear" ng-disabled="true" name="startYear" data-ng-options="yr for yr in years track by yr" class="form-control" data-ng-model="job.startYear">
+                    <option value=""> -Select Year- </option>
+                  </select>
+                </div>
+
+              </div>
+
+              <div class="form-group" ng-disabled="true" >
+                <label  class="co=""> -Select Month- </option>
+                  </select>l-md-3 control-label"> End Date </label>
+                <div class="col-md-3">
+                  <select id="endMonth" ng-disabled="true" name="endMonth" data-ng-options="mn for mn in months track by mn" data-ng-model="job.endMonth" class="form-control">
+                    <option value=""> -Select Month- </option>
+                  </select>
+                </div>
+                <div class="col-md-3">
+                  <select id="endYear" ng-disabled="true" name="endYear" data-ng-options="yr for yr in years track by yr" class="form-control" data-ng-model="job.endYear">
+                    <option value=""> -Select Year- </option>
+                  </select>
+                </div>
+                <div class="col-md-2" style="margin-top: 10px; padding-right: 0px;">
+                  <input type="checkbox" data-ng-model="job.unpaid" /> Unpaid
+                </div>
+
+              </div>
+              <div class="form-group">
+                <p class="help-block col-md-offset-3 col-md-9"
+                   style="margin-top: 5px; margin-bottom: 5px;"></p>
+              </div>
+              <div class="form-group" style="margin-bottom: 0px;" ng-if="!job.unpaid">
+
+
+                <label class="col-md-3 control-label"> Salary
+                </label>
+                <div class="col-md-7 control-label">
+                  <rzslider  rz-slider-model="salSlider.min"
+                             rz-slider-high="salSlider.max"
+                             rz-slider-options="salSlider.options"></rzslider> </div>
+                <div class="col-md-2" style="margin-top: 10px; padding-right: 0px;">
+                  <input type="checkbox" data-ng-model="job.hideSalary" ng-true-value="1" ng-false-value="0"/> Hide Salary
+                </div>
+                <div class="form-group salary-filed">
+                  <p class="help-block col-md-offset-3 col-md-9"
+                     style="margin-top: 5px; margin-bottom: 5px;">Include salary
+                    per Annum</p>
+                </div>
+
+
+              </div>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 0px;" ng-if="job.jobType!=3">
+
+
+              <label class="col-md-3 control-label"> Salary
+              </label>
+              <div class="col-md-7 control-label">
+                <rzslider  rz-slider-model="salSlider.min"
+                           rz-slider-high="salSlider.max"
+                           rz-slider-options="salSlider.options"
+                           ng-disabled="true"></rzslider> </div>
+              <div class="col-md-2" style="margin-top: 10px; padding-right: 0px;">
+                <input type="checkbox" data-ng-model="job.hideSalary" ng-true-value="1" ng-false-value="0"/> Hide Salary
+              </div>
+              <div class="form-group salary-filed">
+                <p class="help-block col-md-offset-3 col-md-9"
+                   style="margin-top: 5px; margin-bottom: 5px;">Include salary
+                  per Annum</p>
+              </div>
+
+
+            </div>
+            <div class="form-group" ng-if="job.jobType!=3">
+
+              <label class="col-md-3 control-label">
+                Expe<div class="modal fade" id="appDownloadDialogr role="dial
+                <div class="modal-dial
+                ogo></g"></ience </label>
+              <div class="col-md-7 control-label"><rzslider  rz-slider-model="expSlider.min"
+                                                             rz-slider-high="expSlider.max"
+                                                             rz-slider-options="expSlider.options"
+                                                             ng-disabled="true" ></rzslider> </div>
+              <div class="col-md-2" style="margin-top: 10px; padding-right: 0px;">
+                In Years</div>
+
+            </div>
+
+            <div class="form-group" data-ng-show="false">
+              <label class="col-md-3 control-label"> Equity
+              </label>
+              <div class="col-md-3">
+
+                <div class="input-group">
+              <span class="input-group-addon" disabled><i
+                class="fa fa-percent" aria-hidden="true"></i></span>
+                  <input type="text" class="form-control equity" name="equity_from" data-ng-model="job.equityFrom" ng-disabled="job.noEquity"
+                         placeholder="Min" >
+                </div>
+
+
+
+                <!--<input type="text" class="form-control equity" name="equity_from" data-ng-model="job.equityFrom" ng-disabled="job.noEquity"
+                       placeholder="%" />-->
+              </div>
+              <div class="col-md-1 hifun">-</div>
+              <div class="col-md-3">
+
+                <div class="input-group">
+              <span class="input-group-addon" disabled><i
+                class="fa fa-percent" aria-hidden="true"></i></span>
+                  <input type="text" class="form-control equity" name="equity-to" data-ng-model="job.equityTo" ng-disabled="job.noEquity"
+                         placeholder="Max" >
+                </div>
+
+
+                <!--<input type="text" class="form-control equity" name="equity-to" data-ng-model="job.equityTo" ng-disabled="job.noEquity"
+                       placeholder="%" />-->
+              </div>
+              <div class="col-md-2" style="margin-top: 10px; padding-right: 0px;">
+                <input type="checkbox" data-ng-model="job.noEquity" id="equity_check" /> No Equity
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-md-offset-3 col-md-9" data-ng-if="job.status!=3">
+                <button id="btn-fbsignup" type="button"
+                        class="btn btn-primary form-control" validation-submit="editJobForm" data-ng-click="savePostJob()">SUBMIT</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+

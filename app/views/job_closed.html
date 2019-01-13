@@ -1,0 +1,50 @@
+<div ng-include="'views/includes/header.html'"></div>
+
+<div class="job-grid-container">
+
+<div class="breadcrumb after_menu">
+            <div class="container">
+                 <span ><a href="#jobs"> Active </a> &nbsp;({{activeLength}})</span>
+              <span ><a href="#pending"> Pending </a> &nbsp;({{pendingLength}})</span>
+              <span class="active"><a href="#closed"> Closed </a> &nbsp;({{closedLength}})</span>
+
+            </div>
+   </div>
+
+<div class="container data-container">
+
+<div id="welcombox" class="mainbox welcombox" ng-show="closedCount == 0">
+    <div class="panel panel-info sform col-md-6 col-sm-6 col-md-offset-3">
+      <div class="panel-body" >
+        <p class="text-center formhead"> No closed jobs</p>
+        <p class="text-center formsubhead">Post your job today.</p>
+        <p class="text-center formbtn">
+          <a href="#postjob" class="col-md-6 col-md-offset-3"><button class="btn btn-primary form-control"> POST A JOB </button></a></p>
+      </div>
+    </div>
+  </div>
+
+   <div ng-show="closedCount == 1">
+        <div class="col-sm-12 post_job_table after_breadcrumb1 activity-tbl-heading">
+          <div class="col-sm-4"> POSITION </div>
+          <div class="col-sm-4"> LOCATION </div>
+          <div class="col-sm-4"> DATE </div>
+          <!--<div class="col-sm-4"> STATUS </div>-->
+      </div>
+
+        <div data-ng-repeat = "jobsData in userPendingJobData">
+          <div  class="col-sm-12 post_job_table after_breadcrumb2" ng-show="jobsData.status == 3">
+            <div class="col-sm-4"> <a href="" data-ng-click="viewClosePostjob(jobsData)" class="hundline"> {{jobsData.title}} </a></div>
+            <div class="col-sm-4"> {{jobsData.location.title}} </div>
+            <div class="col-sm-4"> {{jobsData.createdDate | workruitDate }}</div>
+          </div>
+        </div>
+        <div class="col-sm-12 after_breadcrumb2 post_job_table" data-ng-if="!userPendingJobData.length">
+            <div class="col-sm-4">
+            	No Jobs to Display
+            </div>
+        </div>
+  </div>
+</div>
+
+</div>

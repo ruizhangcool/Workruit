@@ -1,0 +1,130 @@
+<div ng-include="'views/includes/header.html'"></div>
+
+<div class="content h-100 w-100">
+  <div class="container data-container">
+
+    <div class="row justify-content-end">
+      <div class="col-md-6">
+        <ul class="nav nav-pills nav-fill" role="tablist" id="tabs">
+          <li class="nav-item"><a class="nav-link transition active" data-toggle="tab" data-target="#active" role="tab" aria-controls="active" aria-selected="true" ng-click="changeJobType(0)">Active ({{}})</a></li>
+          <li class="nav-item"><a class="nav-link transition" data-toggle="tab" data-target="#pending" role="tab" aria-controls="pending" aria-selected="false" ng-click="changeJobType(1)">Pending ({{pendingLength}})</a></li>
+          <li class="nav-item"><a class="navactiveLength-link transition" data-toggle="tab" data-target="#closed" role="tab" aria-controls="closed" aria-selected="false" ng-click="changeJobType(2)">Closed ({{closedLength}})</a></li>
+        </ul>
+      </div>
+      <div class="col-md-2 offset-md-1">
+        <a href="#postjob" class="btn btn-primary btn-lg btn-block"  ng-show="activeLength > 0">Post a job</a>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-md-12">
+
+        <!-- Active Jobs -->
+        <div class="tab-content" id="tabsContent">
+
+          <div id="welcombox-active" class="mainbox welcombox" ng-show="jobType == 0 && activeLength == 0">
+            <div class="panel panel-info sform col-md-6 col-sm-6 col-md-offset-3">
+              <div class="panel-body" >
+                <p class="text-center formhead"> No active jobs</p>
+                <p class="text-center formsubhead">Let’s post your job!</p>
+                <p class="text-center formbtn">
+                  <a href="#postjob" class="col-md-6 col-md-offset-3"><button class="btn btn-primary form-control">Post a job</button></a></p>
+              </div>
+            </div>
+          </div>
+
+          <div id="welcombox-pending" class="mainbox welcombox" ng-show="jobType == 1 && pendingLength == 0">
+            <div class="panel panel-info sform col-md-6 col-sm-6 col-md-offset-3">
+              <div class="panel-body" >
+                <p class="text-center formhead"> No pending jobs</p>
+                <p class="text-center formsubhead">Let’s post your job!</p>
+                <p class="text-center formbtn">
+                  <a href="#postjob" class="col-md-6 col-md-offset-3"><button class="btn btn-primary form-control">Post a job</button></a></p>
+              </div>
+            </div>
+          </div>
+
+          <div id="welcombox-closed" class="mainbox welcombox" ng-show="jobType == 2 && closedLength == 0">
+            <div class="panel panel-info sform col-md-6 col-sm-6 col-md-offset-3">
+              <div class="panel-body" >
+                <p class="text-center formhead"> No closed jobs</p>
+                <p class="text-center formsubhead">Let’s post your job!</p>
+                <p class="text-center formbtn">
+                  <a href="#postjob" class="col-md-6 col-md-offset-3"><button class="btn btn-primary form-control">Post a job</button></a></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Active Jobs -->
+          <div class="tab-pane fade show active" id="active" role="tabpanel" aria-labelledby="active" ng-show="activeLength > 0">
+            <table class="table table-hover">
+              <thead>
+              <tr>
+                <th>Position</th>
+                <th>Function</th>
+                <th>Posted</th>
+                <th>Expires</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr data-ng-repeat = "jobsData in userJobData" ng-show="jobsData.status == 2">
+                <td><a href="" data-ng-click="editPostJob(jobsData)" class="hundline txtblack"> {{jobsData.title}} </a></td>
+                <td>{{getJobFunctionName(jobsData.jobFunction)}}</td>
+                <td>{{jobsData.createdDate | workruitDate}}</td>
+                <td>{{ (jobsData.expire_date | date: "MMM y d h:mm:ss a") | workruitDate}}</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Pending jobs -->
+          <div class="tab-pane fade" id="pending" role="tabpanel" aria-labelledby="pending" ng-show="pendingLength > 0">
+            <table class="table table-hover">
+              <thead>
+              <tr>
+                <th>Position</th>
+                <th>Function</th>
+                <th>Posted</th>
+                <th>Expires</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr data-ng-repeat = "jobsData in userJobData" ng-show="jobsData.status == 1 || jobsData.status == 4">
+                <td><a href="" data-ng-click="editPostJob(jobsData)" class="hundline txtblack"> {{jobsData.title}} </a></td>
+                <td>{{getJobFunctionName(jobsData.jobFunction)}}</td>
+                <td>{{jobsData.createdDate | workruitDate}}</td>
+                <td>{{ (jobsData.expire_date | date: "MMM y d h:mm:ss a") | workruitDate}}</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Closed Jobs -->
+          <div class="tab-pane fade" id="closed" role="tabpanel" aria-labelledby="closed" ng-show="closedLength > 0">
+            <table class="table table-hover">
+              <thead>
+              <tr>
+                <th>Position</th>
+                <th>Function</th>
+                <th>Posted</th>
+                <th>Expires</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr data-ng-repeat = "jobsData in userJobData" ng-show="jobsData.status == 3">
+                <td><a href="" data-ng-click="editPostJob(jobsData)" class="hundline txtblack"> {{jobsData.title}} </a></td>
+                <td>{{getJobFunctionName(jobsData.jobFunction)}}</td>
+                <td>{{jobsData.createdDate | workruitDate}}</td>
+                <td>{{ (jobsData.expire_date | date: "MMM y d h:mm:ss a") | workruitDate}}</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $('body').css("height", 'auto');
+</script>

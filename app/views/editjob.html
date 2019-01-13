@@ -1,0 +1,199 @@
+<div ng-include="'views/includes/header.html'"></div>
+
+<div class="content w-100">
+  <div class="container" id="signupbox" data-ng-if="showPostjobFrom">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card w-100">
+          <div class="card-body">
+            <form id="jobpostform" name="jobpostform" class="form-horizontal" role="form">
+
+              <!-- Title -->
+              <div class="form-group" ng-class="{'error': submitted && (job.title == null || job.title.length == 0)}">
+                <input type="hidden" data-ng-model="job.status"/>
+                <label>Title</label>
+                <input type="text" class="form-control transition" name="jobTitle" data-ng-model="job.title" placeholder="Job Title" required>
+                <div class="invalid-feedback" ng-show="submitted && (job.title == null || job.title.length == 0)">Job Title is required.</div>
+              </div>
+
+              <!-- Functon -->
+              <div class="form-group" ng-class="{'error': submitted && (job.jobFunction == null || job.jobFunction.length == 0)}">
+                <label>Function</label>
+                <select class="selectpicker form-control transition" ng-disabled="true" name="jobFunction" data-ng-model="job.jobFunction" ng-change="loadSkillsByJobFunction()" required>
+                  <optgroup ng-repeat='group in jobFunctionsArr' label="{{group.categoryTitle}}">
+                    <option ng-repeat='veh in group.categoryValues' value='{{veh.id}}'>{{veh.value}}</option>
+                  </optgroup>
+                  <option ng-repeat="opt in jobFunctionOptions" value="{{opt.categoryId}}">{{opt.categoryTitle}}</option>
+                </select>
+                <div class="invalid-feedback" ng-show="submitted && (job.jobFunction == null || job.jobFunction.length == 0)">Job Function is required.</div>
+              </div>
+
+              <!-- Location -->
+              <div class="form-group" ng-class="{'error': submitted && (job.location == null || job.location.length == 0)}">
+                <label>Location</label>
+                <select class="form-control" name="jobLocation" data-ng-model="job.location" required>
+                  <option data-ng-repeat="loc in masterData.locations" value="{{loc.locationId}}">{{loc.title}}</option>
+                </select>
+                <div class="invalid-feedback" ng-show="submitted && (job.location == null || job.location.length == 0)">Location is required.</div>
+              </div>
+
+              <!-- Description -->
+              <div class="form-group" ng-class="{'error': submitted && (job.description == null || job.description.length == 0)}">
+                <label>Description</label>
+                <textarea class="form-control" name="jobDescription" rows="5" data-ng-model="job.description" required>
+                </textarea>
+                <div class="invalid-feedback" ng-show="submitted && (job.description == null || job.description.length == 0)">Description is required.</div>
+              </div>
+
+              <!-- Skills -->
+              <div class="form-group" ng-class="{'error': submitted && tags.length < 3}">
+                <label>Skills</label>
+                <md-chips ng-model="tags" md-autocomplete-snap md-require-match="true" md-on-remove="tagRemoved($chip)">
+                  <md-autocomplete
+                    md-search-text="searchText"
+                    md-items="item in loadTags(searchText)"
+                    md-item-text="item"
+                    md-autoselect="true"
+                    md-select-on-match="true"
+                    md-no-cache="true"
+                    md-require-match="true"
+                    placeholder="Add a skill">
+                    <span md-highlight-text="searchText">{{item}}</span>
+                  </md-autocomplete>
+                  <md-chip-template>
+                    <span md-chip-remove
+                      <!-- Username -->
+                      <div class="form-group">
+                      </div>
+                        <l
+
+
+              <!-- Suggested Skills -->
+              <div class="form-group" ng-show="jobFunctionSkills.length > 0">
+                <label>Skills</label><br>
+                <span data-ng-repeat="jfs in jobFunctionSkills" class=" badge" data-ng-click="addSkill(jfs)">
+                  {{jfs}} <span class="skill-add"><img src="images/plus-sign.svg" width="10" /></span>
+                </span>
+              </div>
+
+              <!-- Job Type -->
+              <div class="form-group" ng-class="{'error': submitted && (job.jobType == null || job.jobType.length == 0)}">
+                <label>Job Type</label>
+                <select class="form-control" ng-disabled="true" name="jobType" data-ng-model="job.jobType" required>
+                  <option ng-repeat="jobtypes in masterData.jobTypes" value="{{jobtypes.jobTypeId}}">{{jobtypes.jobTypeTitle}}</option>
+                </select>
+                <div class="invalid-feedback" ng-show="submitted && (job.jobType == null || job.jobType.length == 0)">Job Type is required.</div>
+              </div>
+
+              <div ng-if="job.jobType">
+
+                <!-- Internship -->
+                <div  style="margin-bottom: 0px;" ng-if="job.jobType == 3">
+
+                  <div class="form-group" ng-class="{'error': submitted && (job.startMonth == null || job.startMonth.length == 0 || job.startYear == null || job.startYear.length == 0)}">
+                    <label>Start Date</label>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <select id="startMonth" name="startMonth" ng-disabled="true" data-ng-options="mn for mn in months track by mn" data-ng-model="job.startMonth" class="form-control" required>
+                        </select>
+                      </div>
+                      <div class="col-sm-6">
+                        <select id="startYear" name="startYear" ng-disabled="true" data-ng-options="yr for yr in years track by yr" class="form-control" data-ng-model="job.startYear" required>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="invalid-feedback" ng-show="submitted && (job.startMonth == null || job.startMonth.length == 0 || job.startYear == null || job.startYear.length == 0)">This field is required.</div>
+                  </div>
+
+                  <div class="form-group" ng-class="{'error': submitted && (job.endMonth == null || job.endMonth.length == 0 || job.endYear == null || job.endYear.length == 0)}">
+                    <label>End Date</label>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <select id="endMonth" name="endMonth" ng-disabled="true" data-ng-options="mn for mn in months track by mn" data-ng-model="job.endMonth" class="form-control" required>
+                        </select>
+                      </div>
+                      <div class="col-sm-6">
+                        <select id="endYear" name="endYear" ng-disabled="true" data-ng-options="yr for yr in years track by yr" class="form-control" data-ng-model="job.endYear" required>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="invalid-feedback" ng-show="submitted && (job.endMonth == null || job.endMonth.length == 0 || job.endYear == null || job.endYear.length == 0)">This field is required.</div>
+                  </div>
+
+                  <div class="form-group job-details-container">
+                    <p class="help-block col-md-offset-3 col-md-9"
+                       style="margin-top: 5px; margin-bottom: 5px;"></p>
+                  </div>
+
+                  <div class="form-group">
+
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <label>Salary <input type="checkbox" data-ng-model="job.hideSalary" class="switch ml-3" id="salary"><label class="switch-label" for="salary">Toggle</label></label>
+                      </div>
+                      <div class="col-sm-6">
+                        <label>Unpaid <input type="checkbox" class="switch ml-3" data-ng-model="job.unpaid" id="Unpaid"><label class="switch-label" for="Unpaid">Unpaid</label></label>
+                      </div>
+                    </div>
+
+
+                    <div class="row" ng-if="!job.unpaid">
+                      <div class="col-sm-6">
+                        <select id="min_salary" name="min_salary" data-ng-model="salSlider.min" data-ng-options="item for item in min_salary track by item" class="form-control" validator="required">
+                        </select>
+                      </div>
+                      <div class="col-sm-6">
+                        <select id="max_salary" name="max_salary" data-ng-model="salSlider.max" data-ng-options="item for item in max_salary track by item" class="form-control" validator="required">
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group job-details-container" style="margin-bottom: 0px;" ng-if="job.jobType!=3">
+
+                  <!-- Salary -->
+                  <div class="form-group" ng-if="job.jobType!=3" ng-class="{'error': submitted && (salSlider.min == null || salSlider.min.length == 0 || salSlider.max == null || salSlider.max.length == 0)}">
+                    <label>Salary <input type="checkbox" ng-model="job.hideSalary" class="switch ml-3" id="salary"><label class="switch-label" for="salary">Toggle</label></label>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <select id="min_salary" name="min_salary" data-ng-model="salSlider.min" data-ng-options="item for item in min_salary track by item" class="form-control" required>
+                        </select>
+                      </div>
+                      <div class="col-sm-6">
+                        <select id="max_salary" name="max_salary" data-ng-model="salSlider.max" data-ng-options="item for item in max_salary track by item" class="form-control" required>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="invalid-feedback" ng-show="submitted && (salSlider.min == null || salSlider.min.length == 0 || salSlider.max == null || salSlider.max.length == 0)">This field is required.</div>
+                  </div>
+                </div>
+
+                <!-- Experience -->
+                <div class="form-group" ng-if="job.jobType!=3" ng-class="{'error': submitted && (expSlider.min == null || expSlider.min.length == 0 || expSlider.max == null || expSlider.max.length == 0)}">
+                  <label>Experience (years)</label>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <select id="min_exp" name="min_exp" data-ng-model="expSlider.min" data-ng-options="item for item in min_experience track by item" class="form-control" required>
+                      </select>
+                    </div>
+                    <div class="col-sm-6">
+                      <select id="max_exp" name="max_exp" data-ng-model="expSlider.max" data-ng-options="item for item in max_experience track by item" class="form-control" required>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="invalid-feedback" ng-show="submitted && (expSlider.min == null || expSlider.min.length == 0 || expSlider.max == null || expSlider.max.length == 0)">This field is required.</div>
+                </div>
+              </div>
+
+              <div class="form-group" id="save_job_box" ng-show="job.jobType != null">
+                <button id="btn-fbsignup" type="button" class="btn btn-primary btn-lg" id="save_job_button" data-ng-click="savePostJob()">Save changes</button>
+                <button type="button" class="btn btn-default btn-close btn-lg" data-ng-click="closeJob()">Close job</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
